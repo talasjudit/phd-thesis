@@ -5,8 +5,12 @@
 % Set {innerside margin / outerside margin / topmargin / bottom margin}  and
 % other page dimensions
 \ifsetCustomMargin
-  \RequirePackage[left=37mm,right=30mm,top=35mm,bottom=30mm]{geometry}
-  \setFancyHdr % To apply fancy header after geometry package is loaded
+  \RequirePackage[left=45mm,right=20mm,top=20mm,bottom=20mm]{geometry}
+  \usepackage{fancyhdr}
+  \fancyhf{} 
+  \renewcommand{\headrulewidth}{0pt}
+  \fancyfoot[C]{\thepage} % Page number in the center of the footer
+  \pagestyle{fancy} 
 \fi
 
 % Add spaces between paragraphs
@@ -43,6 +47,32 @@
 
 % *****************************************************************************
 % **************************** Custom Packages ********************************
+
+\RequirePackage{titlesec}
+
+\newcommand{\PreContentTitleFormat}{\titleformat{\chapter}[display]{\bfseries\Large}
+{\Huge{\chaptertitlename} \Huge\thechapter}
+{1ex}{}
+[\vspace{1ex}]}
+\newcommand{\ContentTitleFormat}{\titleformat{\chapter}[display]{\normalfont\huge}
+{\Large\filleft{\chaptertitlename} \Huge\thechapter}{1ex}
+{\titlerule\vspace{1ex}\filright}
+[\vspace{1ex}\titlerule]}
+\newcommand{\PostContentTitleFormat}{\PreContentTitleFormat}
+\PreContentTitleFormat
+
+% Customize section titles to be bold and smaller
+\titleformat{\section}
+  {\bfseries\fontsize{14pt}{16pt}\selectfont} % Bold and smaller font for sections
+  {\thesection} % Section numbering
+  {1em} % Space between number and title
+  {}
+
+\titleformat{\subsection}
+  {\bfseries\normalsize} % Bold and smaller font for subsections
+  {\thesubsection} % Subsection numbering
+  {1em} % Space between number and title
+  {}
 
 % ************************* Algorithms and Pseudocode **************************
 
@@ -96,6 +126,8 @@
 % \onehalfspacing
 % \singlespacing
 
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em} 
 
 % ************************ Formatting / Footnote *******************************
 
@@ -113,7 +145,7 @@
 
 % Add `custombib' in the document class option to use this section
 \ifuseCustomBib
-   \RequirePackage[square, sort, numbers, authoryear]{natbib} % CustomBib
+   \RequirePackage[numbers,sort&compress,authoryear]{natbib} % CustomBib
 
 % If you would like to use biblatex for your reference management, as opposed to the default `natbibpackage` pass the option `custombib` in the document class. Comment out the previous line to make sure you don't load the natbib package. Uncomment the following lines and specify the location of references.bib file
 

@@ -3,7 +3,7 @@
 %****************************** Second Chapter *********************************
 %*******************************************************************************
 
-\chapter{My second chapter}
+\chapter{The spatiotemporal expression of RdDM components and small RNA landscapes in the germline of \textit{Arabidopsis thaliana}}
 
 \ifpdf
     \graphicspath{{Chapter2/Figs/Raster/}{Chapter2/Figs/PDF/}{Chapter2/Figs/}}
@@ -12,99 +12,82 @@
 \fi
 
 
-\section[Short title]{Reasonably long section title}
-
-% Uncomment this line, when you have siunitx package loaded.
-%The SI Units for dynamic viscosity is \si{\newton\second\per\metre\squared}.
-I'm going to randomly include a picture Figure~\ref{fig:minion}.
+\section{Abstract}
 
 
-If you have trouble viewing this document contact Krishna at: \href{mailto:kks32@cam.ac.uk}{kks32@cam.ac.uk} or raise an issue at \url{https://github.com/kks32/phd-thesis-template/}
+%\begin{figure}[htbp!] 
+%\centering    
+%\includegraphics[width=1.0\textwidth]{minion}
+%\caption[Minion]{This is just a long figure caption for the minion in Despicable Me from Pixar}
+%\label{fig:minion}
+%\end{figure}
+
+\section{Introduction}
+\section{Imaging the localisation of NRPD1 in Arabidopsis anthers}
+\subsection{Selection in roots}
+\subsection{Localisation in meiocytes, microspores and pollen}
+
+\section{Imaging the localisation of NRPE1 in Arabidopsis anthers}
+\subsection{Selection in roots}
+\subsection{Localisation in meiocytes, microspores and pollen}
+
+\section{Microspore and sperm sRNA profiles}
+\subsection{Overlap with features of interests (TE families, classy dependent loci, HyperTEs MetGenes)}
+\subsection{H3K9me2 levels in soma and sperm}
+gfdgggfd
+\subsection{Methylation levels of sperm specific clusters and reactivated MetGenes}
+gfsdgdfsgffgsdgfg
+\section{Phased small interfering sRNAs}
+gfdgsdgfds
+\section{Discussion}
+ghfdjhgjhdsgjf
+fgjfhgfdjf
+\section{Materials and Methods}
+
+\subsection{Plant materials and growth conditions}
+
+\textit{Arabidopsis thaliana} plants were grown in 16h light/8h dark conditions, in 21°C, 70\% humidity in a controlled environment chamber on germination medium (GM) without glucose supplementation. The following lines have been grown: Col-0 wild type plant for the microspore and pollen sRNA sequencing libraries. For the anther imaging experiments, the transgenic reporter lines pCLSY1::CLSY1-eGFP (clsy1), pCLSY2::CLSY2-eGFP (WT), pCLSY3::-CLSY3-Venus (clsy3) and pCLSY4::CLSY4-eGFP (clsy4), pNRPD1::NRPD1-eGFP (WT), pNRPE1::NRPE1-eGFP (WT) were used with pAGO4::AGO4-Venus or ), pCLSY3::-CLSY3-Venus (clsy3) for a positive control.
+
+\subsection{Microscopy}
+
+Meiocyte and microspore stage anthers were dissected using a Leica dissecting microscope on 0.8\% agar and vacuum infiltrated in DAPI buffer (Galbraith’s buffer (45 mM MgCl2-6H2O, 30 mM trisodium citrate, 20 mM MOPS, pH 7.0), 1 µg/mL DAPI, and 0.01\% [v/v] Triton X-100) briefly, then imaged using imaging spacers (SecureSealTM Grace BioLabs). Individual microspores and pollen were imaged after isolation from unopened flower buds and opened flowers respectively, by collecting ~500 µL of flower buds into DAPI buffer, briefly vortexing and pelleting cells. All samples were imaged using Leica Stellaris 8 and Leica SP8X confocal microscopes.
+
+\subsection{Isolation of microspores and pollen using fluorescence-activated cell sorting}
+
+\textit{Arabidopsis thaliana} microspores were isolated by manually collecting microspore stage flower buds, using the morphology described previously \citep{RN86}. The buds were collected into 1.5mL microcentrifuge tubes and suspended in PEB (10 mM CaCl2, 2 mM MES, 1 mM KCl, 1\% H3BO3, 10\% Sucrose, pH 7.5) buffer. The microspore cells were isolated as described previously \citep{RN140}. Briefly, the buds were gently ground in a clean pestle and mortar in PEB buffer and filtered through Miracloth (Merck-Millipore 475855) into a 1.5mL Eppendorf tube. This crude fraction was centrifuged for 5 minutes at 800g to gently pellet the microspore cells. The pellet was resuspended in 500µL PEB and sequentially filtered through 30µm and 20µm mesh filters (CellTrics®).
+
+The fraction was separated using fluorescence-activated cell sorting (FACS) on a BD FACSMelody cell sorter (Beckton Dickinson) into TRI reagent (Zymo Research). The purity of the sorted cells was inspected using a widefield microscope.
+
+Sperm cells were isolated as previously described \citep{RN140,RN141} except the sperm cell release step was repeated 4 times to maximise sperm cell release from pollen grain. Sperm cells were stained using SYBR green and SITOX orange and sperm cells and nuclei were sorted into TRI reagent (Zymo Research).
+
+\subsection{sRNA sequencing}
+
+RNA was released from isolated microspores by vortexing the samples with RNase free glass beads (Sigma-Aldrich) for 4 minutes before proceeding with RNA isolation. RNA was isolated from all samples using the Direct-zol™ RNA kit (Zymo Research, CN: R2061).
+
+2 replicates of sRNA sequencing libraries were constructed per cell type (microspore, sperm cell, sperm nuclei) using the RealSeq®-biofluids NGS Library Preparation Kit for miRNAs and small RNAs. For the three library types the number of cells used for each replicate were as follows: 300 000 cells for microspore, 600 000 cells for sperm cells, and 1 500 000 cells for sperm nuclei.
+
+Briefly, the RealSeq® adapters were ligated and blocked, then the sample was circularised, and the adapter dimers were removed. Then reverse transcription was performed as well as PCR amplification and size selection to end up with the final library.
+
+Further, gel separation  and purification was performed to enrich the sRNA libraries for the desired fragment lengths (20-30 nucleotides long) as described previously \citep{RN187}. The libraries were ran on Novex TBE 6\% gels (Invitrogen, CN: EC6265BOX) along with a custom RNA ladder consisting of bands that were 146bp and 161bp in length. 
+
+The gel was run for 45 mins with 120V and then stained using ethidium bromide. The gel was illuminated with UV light and the area between the two bands were then cut out using a clean razor blade and the gel slice was weighed. 2 volumes of elution buffer (0.5 M ammonium acetate, 10 mM magnesium sulfate, 1 mM EDTA (pH 8.0), 0.1\% SDS) was added to the gel slice. The sample was incubated at 37°C on a rotary platform (1000 RPM) for 4 hours. 
+
+The sample was then centrifuged at 12000g for 1 minute at 4°C in a microcentrifuge. The supernatant was transferred into a fresh 1.5mL Eppendorf tube. An additional 200µL of elution buffer was added to the polyacrilamide gel fragment, vortexed, re-centrifuged and the two supernatants were combined. Any remaining fragments of polyacrilamide were removed  by passing the supernatant through a plastic column containng cellulose acetate filters. Two volumes of cold absolute ethanol was added and the solution was incubated on ice for 30 minutes. The DNA was recovered by centrifugation at 12000g got 10 minutes at 4°C. The pellet was dried and resuspended in 200µL TE buffer (10mM Tris-HCl, 1mM EDTA, pH 7.6) and 25µL of 3M sodium acetate (pH 5.2) was added. The precipitation step was repeated, the pellet was rinsed with 70\% ethanol and thoroughly dried before resuspending in TE buffer to a final volume of 30µL. The sample was incubated at 4°C overnight to redissolve the DNA.
+
+The concentration and size distribution of purified sRNA libraries were determined using  High Sensitivity DNA Chips (Agilent Technologies, CN: 5067-5594).
+
+The sRNA libraries were sequenced using a NextSeq 500 (Illumina).
+
+\subsection{Bioinformatics and data analysis}
+
+Adaptor trimming and filtering of reads that are 18nt to 28nt in length was performed on the raw sequencing data using Cutadapt \citep{RN88} v1.9.1). These reads were mapped to the Arabidopsis thaliana reference genome TAIR10 using Bowtie \citep{RN89}. 24nt clusters were extracted and loci were kept that overlapped previously determined non-overlapping genomic features of interest such as canocical RdDM loci (9629 loci), HyperTEs (797 loci), MetGenes (435 loci), transposons (TEs), genes17,20, and H3K9me2 enriched loci. These overlapping feature files were produced using BEDtools (v2.27.0) \citep{RN90}. 24nt sRNA clusters were extracted using ShortStack \citep{RN142} (n = 45639). To firstly identify true 24 nucleotide clusters, the ShortStack clusters from the two replicates were filtered to keep clusters where the predominant read length was 24 nucleotides long, where log2(RPKM+1) 24nt sRNA > log2(RPKM+1) 25nt sRNA +2 and that were >99bp (n = 34032).
+
+Following this general filtering step, sperm cell specific clusters were identified where:
+log2(RPKM+1) 24nt sperm cell sRNA > 0 \& where:
+log2(RPKM+1) 24nt sperm cell sRNA - log2(RPKM+1) 24nt (other tissues: tapetum, meiocyte, microspore, root seedling and leaf) sRNA > 3 which resulted in 513 loci.
+
+The euchromatic/heterochromatic annotation was allocated based on data from reference \cite{RN183} and classified into 5 chromatin states based on H3K9me2/H3: euchromatic (less than 0.6), intermediate euchromatic (bw. 0.6 and 0.9), intermediate (bw 0.9 and 1.4), intermediate heterochromatic (bw. 1.4 and 2.6), heterochromatic (above 2.6). 
+
+The sRNA analysis pipeline is available from GitHub on request. Figures were plot using ggplot2 and pheatmap packages in R (v4.0.3).
 
 
-\begin{figure}[htbp!] 
-\centering    
-\includegraphics[width=1.0\textwidth]{minion}
-\caption[Minion]{This is just a long figure caption for the minion in Despicable Me from Pixar}
-\label{fig:minion}
-\end{figure}
-
-
-\section*{Enumeration}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae laoreet lectus. Donec lacus quam, malesuada ut erat vel, consectetur eleifend tellus. Aliquam non feugiat lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque a dolor sit amet dui malesuada malesuada id ac metus. Phasellus posuere egestas mauris, sed porta arcu vulputate ut. Donec arcu erat, ultrices et nisl ut, ultricies facilisis urna. Quisque iaculis, lorem non maximus pretium, dui eros auctor quam, sed sodales libero felis vel orci. Aliquam neque nunc, elementum id accumsan eu, varius eu enim. Aliquam blandit ante et ligula tempor pharetra. Donec molestie porttitor commodo. Integer rutrum turpis ac erat tristique cursus. Sed venenatis urna vel tempus venenatis. Nam eu rhoncus eros, et condimentum elit. Quisque risus turpis, aliquam eget euismod id, gravida in odio. Nunc elementum nibh risus, ut faucibus mauris molestie eu.
- Vivamus quis nunc nec nisl vulputate fringilla. Duis tempus libero ac justo laoreet tincidunt. Fusce sagittis gravida magna, pharetra venenatis mauris semper at. Nullam eleifend felis a elementum sagittis. In vel turpis eu metus euismod tempus eget sit amet tortor. Donec eu rhoncus libero, quis iaculis lectus. Aliquam erat volutpat. Proin id ullamcorper tortor. Fusce vestibulum a enim non volutpat. Nam ut interdum nulla. Proin lacinia felis malesuada arcu aliquet fringilla. Aliquam condimentum, tellus eget maximus porttitor, quam sem luctus massa, eu fermentum arcu diam ac massa. Praesent ut quam id leo molestie rhoncus. Praesent nec odio eget turpis bibendum eleifend non sit amet mi. Curabitur placerat finibus velit, eu ultricies risus imperdiet ut. Suspendisse lorem orci, luctus porta eros a, commodo maximus nisi.
-
-Nunc et dolor diam. Phasellus eu justo vitae diam vehicula tristique. Vestibulum vulputate cursus turpis nec commodo. Etiam elementum sit amet erat et pellentesque. In eu augue sed tortor mollis tincidunt. Mauris eros dui, sagittis vestibulum vestibulum vitae, molestie a velit. Donec non felis ut velit aliquam convallis sit amet sit amet velit. Aliquam vulputate, elit in lacinia lacinia, odio lacus consectetur quam, sit amet facilisis mi justo id magna. Curabitur aliquet pulvinar eros. Cras metus enim, tristique ut magna a, interdum egestas nibh. Aenean lorem odio, varius a sollicitudin non, cursus a odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
-\begin{enumerate}
-\item The first topic is dull
-\item The second topic is duller
-\begin{enumerate}
-\item The first subtopic is silly
-\item The second subtopic is stupid
-\end{enumerate}
-\item The third topic is the dullest
-\end{enumerate}
-Morbi bibendum est aliquam, hendrerit dolor ac, pretium sem. Nunc molestie, dui in euismod finibus, nunc enim viverra enim, eu mattis mi metus id libero. Cras sed accumsan justo, ut volutpat ipsum. Nam faucibus auctor molestie. Morbi sit amet eros a justo pretium aliquet. Maecenas tempor risus sit amet tincidunt tincidunt. Curabitur dapibus gravida gravida. Vivamus porta ullamcorper nisi eu molestie. Ut pretium nisl eu facilisis tempor. Nulla rutrum tincidunt justo, id placerat lacus laoreet et. Sed cursus lobortis vehicula. Donec sed tortor et est cursus pellentesque sit amet sed velit. Proin efficitur posuere felis, porta auctor nunc. Etiam non porta risus. Pellentesque lacinia eros at ante iaculis, sed aliquet ipsum volutpat. Suspendisse potenti.
-
-Ut ultrices lectus sed sagittis varius. Nulla facilisi. Nullam tortor sem, placerat nec condimentum eu, tristique eget ex. Nullam pretium tellus ut nibh accumsan elementum. Aliquam posuere gravida tellus, id imperdiet nulla rutrum imperdiet. Nulla pretium ullamcorper quam, non iaculis orci consectetur eget. Curabitur non laoreet nisl. Maecenas lacinia, lorem vel tincidunt cursus, odio lorem aliquet est, gravida auctor arcu urna id enim. Morbi accumsan bibendum ipsum, ut maximus dui placerat vitae. Nullam pretium ac tortor nec venenatis. Nunc non aliquet neque. 
-
-\section*{Itemize}
-\begin{itemize}
-\item The first topic is dull
-\item The second topic is duller
-\begin{itemize}
-\item The first subtopic is silly
-\item The second subtopic is stupid
-\end{itemize}
-\item The third topic is the dullest
-\end{itemize}
-
-\section*{Description}
-\begin{description}
-\item[The first topic] is dull
-\item[The second topic] is duller
-\begin{description}
-\item[The first subtopic] is silly
-\item[The second subtopic] is stupid
-\end{description}
-\item[The third topic] is the dullest
-\end{description}
-
-
-\clearpage
-
-\tochide\section{Hidden section}
-\textbf{Lorem ipsum dolor sit amet}, \textit{consectetur adipiscing elit}. In magna nisi, aliquam id blandit id, congue ac est. Fusce porta consequat leo. Proin feugiat at felis vel consectetur. Ut tempus ipsum sit amet congue posuere. Nulla varius rutrum quam. Donec sed purus luctus, faucibus velit id, ultrices sapien. Cras diam purus, tincidunt eget tristique ut, egestas quis nulla. Curabitur vel iaculis lectus. Nunc nulla urna, ultrices et eleifend in, accumsan ut erat. In ut ante leo. Aenean a lacinia nisl, sit amet ullamcorper dolor. Maecenas blandit, tortor ut scelerisque congue, velit diam volutpat metus, sed vestibulum eros justo ut nulla. Etiam nec ipsum non enim luctus porta in in massa. Cras arcu urna, malesuada ut tellus ut, pellentesque mollis risus.Morbi vel tortor imperdiet arcu auctor mattis sit amet eu nisi. Nulla gravida urna vel nisl egestas varius. Aliquam posuere ante quis malesuada dignissim. Mauris ultrices tristique eros, a dignissim nisl iaculis nec. Praesent dapibus tincidunt mauris nec tempor. Curabitur et consequat nisi. Quisque viverra egestas risus, ut sodales enim blandit at. Mauris quis odio nulla. Cras euismod turpis magna, in facilisis diam congue non. Mauris faucibus nisl a orci dictum, et tempus mi cursus.
-
-Etiam elementum tristique lacus, sit amet eleifend nibh eleifend sed \footnote{My footnote goes blah blah blah! \dots}. Maecenas dapibu augue ut urna malesuada, non tempor nibh mollis. Donec sed sem sollicitudin, convallis velit aliquam, tincidunt diam. In eu venenatis lorem. Aliquam non augue porttitor tellus faucibus porta et nec ante. Proin sodales, libero vitae commodo sodales, dolor nisi cursus magna, non tincidunt ipsum nibh eget purus. Nam rutrum tincidunt arcu, tincidunt vulputate mi sagittis id. Proin et nisi nec orci tincidunt auctor et porta elit. Praesent eu dolor ac magna cursus euismod. Integer non dictum nunc.
-
-
-\begin{landscape}
-
-\section*{Subplots}
-I can cite Wall-E (see Fig.~\ref{fig:WallE}) and Minions in despicable me (Fig.~\ref{fig:Minnion}) or I can cite the whole figure as Fig.~\ref{fig:animations}
-
-
-\begin{figure}
-  \centering
-  \begin{subfigure}[b]{0.3\textwidth}
-    \includegraphics[width=\textwidth]{TomandJerry}
-    \caption{Tom and Jerry}
-    \label{fig:TomJerry}   
-  \end{subfigure}             
-  \begin{subfigure}[b]{0.3\textwidth}
-    \includegraphics[width=\textwidth]{WallE}
-    \caption{Wall-E}
-    \label{fig:WallE}
-  \end{subfigure}             
-  \begin{subfigure}[b]{0.3\textwidth}
-    \includegraphics[width=\textwidth]{minion}
-    \caption{Minions}
-    \label{fig:Minnion}
-  \end{subfigure}
-  \caption{Best Animations}
-  \label{fig:animations}
-\end{figure}
-
-
-\end{landscape}

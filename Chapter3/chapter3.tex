@@ -2,7 +2,7 @@
 %*******************************************************************************
 %****************************** Third Chapter **********************************
 %*******************************************************************************
-\chapter{My third chapter}
+\chapter{The dynamic sRNA profile and inheritance of paternal epigenetic modifications post-fertilisation in the embryo of \textit{Marchantia polymorpha}}
 
 % **************************** Define Graphics Path **************************
 \ifpdf
@@ -11,146 +11,61 @@
     \graphicspath{{Chapter3/Figs/Vector/}{Chapter3/Figs/}}
 \fi
 
-\section{First section of the third chapter}
-And now I begin my third chapter here \dots
 
-And now to cite some more people~\citet{Rea85,Ancey1996}
+\section{Abstract}
 
-\subsection{First subsection in the first section}
-\dots and some more 
+\section{Introduction}
 
-\subsection{Second subsection in the first section}
-\dots and some more \dots
+Recently, our group has shown that during spermatogenesis, there extensive DNA methylation reprogramming in Marchantia. As well as the deposition of 5-methylcytosine (5mC), there is an additional wave of DNA methylation reprogramming whereby N4-methylcytosine (4mC) - an epigenetic modification previously only found in prokaryotes – is deposited at the majority of CG cites across the genome \citep{RN189}. 
 
-\subsubsection{First subsub section in the second subsection}
-\dots and some more in the first subsub section otherwise it all looks the same
-doesn't it? well we can add some text to it \dots
+Data from mature embryo reveals that this 4mC methylation is not present. Several hypotheses could explain why this happens. The most likely is that following fertilisation, paternal epigenetic marks are lost passively through cell division. Alternatively, the marks could be maintained through the first few cell divisions and then are actively or passively lost. We also know that the pronuclei take 3 days to fuse \citep{RN139}, so it is also possible that removing paternal epigenetic marks is required for zygote formation. 
 
-\subsection{Third subsection in the first section}
-\dots and some more \dots
+Therefore, my project here will help complement the work that has already been done on 4mC methylation in Marchantia; please see our lab’s preprint for other details of this project \citep{RN189}. Namely, I have already managed to isolate and image embryos 12 days after fertilisation (DAF), and I plan to isolate and stage embryos that are as young as possible to make sure that we can detect 4mC signals if paternal epigenetic marks are maintained through zygote formation but are passively lost during cell division.
 
-\subsubsection{First subsub section in the third subsection}
-\dots and some more in the first subsub section otherwise it all looks the same
-doesn't it? well we can add some text to it and some more and some more and
-some more and some more and some more and some more and some more \dots
+\section{Overview of DNA methylation in the germline of Marchantia polymorpha}
 
-\subsubsection{Second subsub section in the third subsection}
-\dots and some more in the first subsub section otherwise it all looks the same
-doesn't it? well we can add some text to it \dots
+Recently, our group has shown that during Marchantia spermiogenesis extensive DNA methylation reprogramming occurs. As well as the deposition of 5-methylcytosine (5mC), there is an additional wave of DNA methylation reprogramming whereby N4-methylcytosine (4mC) – an epigenetic modification previously only found in prokaryotes – is deposited at the majority of CG cites across the genome \citep{RN189}.
 
-\section{Second section of the third chapter}
-and here I write more \dots
+However, this methylation is absent in the mature embryo (containing over 1000 cells). The exact point in time when 4mC methylation disappears post-fertilisation remains unknown, as does whether the paternal genome retains any 4mC marks during the early stages of zygotic development. The first division of the zygote in Marchantia takes place around 4 days post-fertilisation1 which suggests that 4mC may be required to be actively removed for pronuclear fusion to occur. This aligns with the observed phenotype where embryos fertilised by Mpdn4mt1 sperm develop more rapidly, though this phenotype needs to be confirmed during early embryonic development. Alternatively, 4mC methylation could be lost passively following fertilisation through dilution by cell division, or actively removed post-fertilisation for DNA replication or cell division to function normally. 4mC may also be crucial in the correct genome dosage/transcriptional activity during early embryonic development. 
 
-\section{The layout of formal tables}
-This section has been modified from ``Publication quality tables in \LaTeX*''
- by Simon Fear.
+In Arabidopsis, 5mC methylation is lost actively to maintain homeostasis of DNA methylation levels through several DNA glycosylases, including ROS1 \citep{RN168}. Therefore, the orthologs of ROS1 in Marchantia, MpROS1a and MpROS1x (located on the female sex chromosome) offer possible candidates for erasing paternal 4mC methylation as they are expressed in the sperm \citep{RN212} and mature eggs/embryos \citep{RN257} respectively.
 
-The layout of a table has been established over centuries of experience and 
-should only be altered in extraordinary circumstances. 
+It has also recently been shown that other epigenetic marks, namely the heterochromatic histone modification H3K27me3 is deposited at the pronuclear stage exclusively on the paternal genome and causes the repression of the paternal genome persisting until the conclusion of embryogenesis \citep{RN160}. In contrast, in mammalian germlines, H3K27me3¬ mediated imprinting is limited to a few loci within the female gamete \citep{RN172}.
 
-When formatting a table, remember two simple guidelines at all times:
-
-\begin{enumerate}
-  \item Never, ever use vertical rules (lines).
-  \item Never use double rules.
-\end{enumerate}
-
-These guidelines may seem extreme but I have
-never found a good argument in favour of breaking them. For
-example, if you feel that the information in the left half of
-a table is so different from that on the right that it needs
-to be separated by a vertical line, then you should use two
-tables instead. Not everyone follows the second guideline:
-
-There are three further guidelines worth mentioning here as they
-are generally not known outside the circle of professional
-typesetters and subeditors:
-
-\begin{enumerate}\setcounter{enumi}{2}
-  \item Put the units in the column heading (not in the body of
-          the table).
-  \item Always precede a decimal point by a digit; thus 0.1
-      {\em not} just .1.
-  \item Do not use `ditto' signs or any other such convention to
-      repeat a previous value. In many circumstances a blank
-      will serve just as well. If it won't, then repeat the value.
-\end{enumerate}
-
-A frequently seen mistake is to use `\textbackslash begin\{center\}' \dots `\textbackslash end\{center\}' inside a figure or table environment. This center environment can cause additional vertical space. If you want to avoid that just use `\textbackslash centering'
+Hence, investigating the methylation profiles of early Marchantia embryos during the first zygotic divisions and examining the early developmental phenotype of Mpdn4mt1 mutants will complement our previous work, expanding our understanding of how paternal DNA methylation affects early embryonic development.
 
 
-\begin{table}
-\caption{A badly formatted table}
-\centering
-\label{table:bad_table}
-\begin{tabular}{|l|c|c|c|c|}
-\hline 
-& \multicolumn{2}{c}{Species I} & \multicolumn{2}{c|}{Species II} \\ 
-\hline
-Dental measurement  & mean & SD  & mean & SD  \\ \hline 
-\hline
-I1MD & 6.23 & 0.91 & 5.2  & 0.7  \\
-\hline 
-I1LL & 7.48 & 0.56 & 8.7  & 0.71 \\
-\hline 
-I2MD & 3.99 & 0.63 & 4.22 & 0.54 \\
-\hline 
-I2LL & 6.81 & 0.02 & 6.66 & 0.01 \\
-\hline 
-CMD & 13.47 & 0.09 & 10.55 & 0.05 \\
-\hline 
-CBL & 11.88 & 0.05 & 13.11 & 0.04\\ 
-\hline 
-\end{tabular}
-\end{table}
+\section{sRNA analysis}
+\subsection{Source of sRNAs in the sporophyte (paternal sRNAs with genome shut down?}
+\subsection{Mismatch tageting \textit{de novo} methylation (SLMs)}
 
-\begin{table}
-\caption{A nice looking table}
-\centering
-\label{table:nice_table}
-\begin{tabular}{l c c c c}
-\hline 
-\multirow{2}{*}{Dental measurement} & \multicolumn{2}{c}{Species I} & \multicolumn{2}{c}{Species II} \\ 
-\cline{2-5}
-  & mean & SD  & mean & SD  \\ 
-\hline
-I1MD & 6.23 & 0.91 & 5.2  & 0.7  \\
+\section{AMD-seq of early Marchantia embryos}
 
-I1LL & 7.48 & 0.56 & 8.7  & 0.71 \\
+\section{4mC/5mC methylation compared to H3K27me3 CutI\&Run}
 
-I2MD & 3.99 & 0.63 & 4.22 & 0.54 \\
+\section{Developmental phenotype of Mpdn4mt1 mutant embryos}
 
-I2LL & 6.81 & 0.02 & 6.66 & 0.01 \\
+\section{Discussion}
 
-CMD & 13.47 & 0.09 & 10.55 & 0.05 \\
+\section{Materials and Methods}
 
-CBL & 11.88 & 0.05 & 13.11 & 0.04\\ 
-\hline 
-\end{tabular}
-\end{table}
+\subsection{Plant materials and growth conditions}
+
+Male and female \textit{Marchantia polymorpha, L.} subsp. \textit{rudealis} accessions Takaragaike-1 (Tak-1, male) Takaragaike-2 (Tak-2, female) and Cam-2 was used. The plants were grown on 1\% agar (Sigma-Aldrich), supplemented with ½ strength Gamborg's B5 medium. They were grown in a controlled environment chamber (Conviron) at 21°C with 70\% humidity under constant light with far-red light for induction of sexual reproduction, as described previously \citep{RN212,RN254}.
+
+\subsection{Plasmid construction and transformation}
 
 
-\begin{table}
-\caption{Even better looking table using booktabs}
-\centering
-\label{table:good_table}
-\begin{tabular}{l c c c c}
-\toprule
-\multirow{2}{*}{Dental measurement} & \multicolumn{2}{c}{Species I} & \multicolumn{2}{c}{Species II} \\ 
-\cmidrule{2-5}
-  & mean & SD  & mean & SD  \\ 
-\midrule
-I1MD & 6.23 & 0.91 & 5.2  & 0.7  \\
 
-I1LL & 7.48 & 0.56 & 8.7  & 0.71 \\
+\subsection{Microscopy} 
 
-I2MD & 3.99 & 0.63 & 4.22 & 0.54 \\
+Tak-2 or Cam-2 archegonia were either fertilised with Tak-1 sperm or left unfertilised. The archegoniophores were collected for dissection and imaging and either observed live or fixed and stained for observation. For live cell imaging, the embryos were manually dissected, collected on cavity slides and washed twice with 1x PBS to remove any maternal tissue. They were then stained with DAPI for 5 mins and briefly vacuum infiltrated and observed using slides with imaging spacers (SecureSealTM Grace BioLabs) and/or cavities (BRAND® cavity slides) \citep{RN139}. 
 
-I2LL & 6.81 & 0.02 & 6.66 & 0.01 \\
+For observing developmental synchronicity and the Mpdn4mt1 early developmental phenotype, rows of archegonia will be dissected from the base of digitate rays. Invoucres will be removed for clarity and samples will be fixed in PFA fixative (4\% formadehyde, 1x PBS, 0.01\% Triton X-100 and 1 ug/mL DAPI/Hoecht 3342 (ThermoFisher Scientific 62249), vacuum infiltrated 4 times for 2 minutes and incubating samples for 15 minutes on a gentle shake. Then the fixative will be discarded, and the sample washed twice using 1X PBS. The tissue will be cleared using ClearSee Alpha24 (50mL ClearSee25 + 0.315g sodium sulfite (Na2SO4) for a few days. The tissues will be mounted either using ClearSee Alpha or VECTASHIELD® and observed using imaging spacers (Gene Frame, ThermoFisher Scientific). The embryo/egg cells were imaged using directly using a Leica Stellaris 8 or Leica SP8X confocal microscope.
 
-CMD & 13.47 & 0.09 & 10.55 & 0.05 \\
 
-CBL & 11.88 & 0.05 & 13.11 & 0.04\\ 
-\bottomrule
-\end{tabular}
-\end{table}
+\subsection{AMD-Sequencing library construction and data analysis}
+
+Dissected Tak-1 x Cam-2 embryos will be used to construct 4mC-AMD-seq libraries using ACCEL-NGS methyl seq DNA library kit (Qiagen, 59104) after treatment of sheared DNA with APOBEC (NEB \#E7120S), following manufacturer’s instructions.
+
+Reads will be processed using SAMtools v1.9 \citep{RN174}, BEDtools v2.27.1 \citep{RN90} and Picard v2.18.27 \citep{RN173} then mapped to the Takv6 genome \citep{RN179} using bwa v0.7.17 \citep{RN182}. To distinguish between maternal and paternal sequencing reads, a SNP analysis will be conducted. SNPs will be called using gatk v4.0.1.2 \citep{RN177} wherein the SNPs between the parental Tak-1 and Cam-2 will be replaced with Ns. The parental reads will be assigned using SNPSplit v0.3.4 \citep{RN178} and counts for each parental genome will be calculated using SAMtools v1.9 and BEDTools v2.27.1. Please see reference \cite{RN160}  for a detailed description of the pipeline.

@@ -1,30 +1,42 @@
 % ************************ Thesis Information & Meta-data **********************
 %% The title of the thesis
-\title{Writing your PhD thesis in \texorpdfstring{\\ \LaTeX2e}{LaTeX2e}}
-%\texorpdfstring is used for PDF metadata. Usage:
-%\texorpdfstring{LaTeX_Version}{PDF Version (non-latex)} eg.,
-%\texorpdfstring{$sigma$}{sigma}
+\title{Investigating DNA methylation reprogramming in plant germlines}
+
 
 %% Subtitle (Optional)
-\subtitle{Using the CUED template}
+%\subtitle{}
 
 %% The full name of the author
-\author{Krishna Kumar}
+\author{Judit Tálas}
 
 %% Department (eg. Department of Engineering, Maths, Physics)
-\dept{Department of Engineering}
+\dept{
+\makebox[\textwidth][c]{% 
+\begin{minipage}{0.9\textwidth}
+\centering 
+Department of Cell and Developmental Biology
+\newline
+John Innes Centre
+\end{minipage}%
+}
+\vspace{2em} % Adds vertical space after the department
+}
+
+
+%% Add extra vertical space after the department
+% Adjust the value as needed
 
 %% University and Crest
-\university{University of Cambridge}
+\university{University of East Anglia}
 % Crest minimum should be 30mm.
-\crest{\includegraphics[width=0.2\textwidth]{University_Crest}}
+%\crest{\includegraphics[width=0.2\textwidth]{Figs/UEA_logo.pdf}}
 %% Use this crest, if you are using the college crest
 %% Crest long miminum should be 65mm
-%\crest{\includegraphics[width=0.45\textwidth]{University_Crest_Long}}
+\crest{\includegraphics[width=0.45\textwidth]{Figs/UEA_crest.png}}
 
 %% College shield [optional] 
 % Crest minimum should be 30mm.
-%\collegeshield{\includegraphics[width=0.2\textwidth]{CollegeShields/Kings}}
+%\collegeshield{\includegraphics[width=0.45\textwidth]{Figs/Funders_logo.pdf}}
 
 
 %% Supervisor (optional)
@@ -57,18 +69,31 @@
 %% You can redefine the submission text:
 % Default as per the University guidelines:
 % ``This dissertation is submitted for the degree of''
-%\renewcommand{\submissiontext}{change the default text here if needed}
+\renewcommand{\submissiontext}{
+\makebox[\textwidth][c]{% 
+\begin{minipage}{0.9\textwidth} 
+\centering 
+\small 
+This copy of the thesis has been supplied on condition that anyone who consults it is understood to recognise that its copyright rests with the author and that use of any information derived therefrom must be in accordance with current UK Copyright Law. In addition, any quotation or extract must include full attribution.
+\vspace{2em}
+\newline
+\fontsize{14pt}{14pt}\selectfont 
+This dissertation is submitted for the degree of
+\vspace{1em}
+\end{minipage}%
+}
+}
 
 %% Full title of the Degree
 \degreetitle{Doctor of Philosophy}
 
 %% College affiliation (optional)
-\college{King's College}
+%\college{King's College}
 
 %% Submission date
 % Default is set as {\monthname[\the\month]\space\the\year}
 %\degreedate{September 2014} 
 
 %% Meta information
-\subject{LaTeX} \keywords{{LaTeX} {PhD Thesis} {Engineering} {University of
-Cambridge}}
+\subject{LaTeX} \keywords{{LaTeX} {PhD Thesis} {Biology} {University of
+East Anglia}}
