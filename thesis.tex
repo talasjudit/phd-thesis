@@ -174,12 +174,29 @@
 
 % ********************************** Appendices ********************************
 
-\begin{appendices} % Using appendices environment for more functunality
+% Remove automatic "Appendix" prefix from chapter titles
+\appendix
+\renewcommand{\thechapter}{} % Prevent chapter numbering from showing automatically
 
-\include{Appendix1/appendix1}
-\include{Appendix2/appendix2}
+\renewcommand{\thefigure}{A\arabic{figure}} % For figures in Appendix 1
+\renewcommand{\thetable}{A\arabic{table}}   % For tables in Appendix 1
+\setcounter{figure}{0} % Reset the figure counter
+\setcounter{table}{0}  % Reset the table counter
 
-\end{appendices}
+\chapter*{\LARGE Appendix A - Chapter 2}
+\addcontentsline{toc}{chapter}{Appendix A - Chapter 2} % Add to TOC manually
+\label{appendix:chapter2}
+\input{Appendix1/appendix1}
+
+\renewcommand{\thefigure}{B\arabic{figure}} % For figures in Appendix 2
+\renewcommand{\thetable}{B\arabic{table}}   % For tables in Appendix 2
+\setcounter{figure}{0} % Reset the figure counter
+\setcounter{table}{0}  % Reset the table counter
+
+\chapter*{\LARGE Appendix B - Chapter 3}
+\addcontentsline{toc}{chapter}{Appendix B - Chapter 3} % Add to TOC manually
+\label{appendix:chapter3}
+\input{Appendix2/appendix2}
 
 % *************************************** Index ********************************
 \printthesisindex % If index is present

@@ -22,7 +22,7 @@ Data from mature embryo reveals that this 4mC methylation is not present. Severa
 
 Therefore, my project here will help complement the work that has already been done on 4mC methylation in Marchantia; please see our lab’s preprint for other details of this project \citep{RN189}. Namely, I have already managed to isolate and image embryos 12 days after fertilisation (DAF), and I plan to isolate and stage embryos that are as young as possible to make sure that we can detect 4mC signals if paternal epigenetic marks are maintained through zygote formation but are passively lost during cell division.
 
-\section{Overview of DNA methylation in the germline of Marchantia polymorpha}
+\subsection{Overview of DNA methylation in the germline of Marchantia polymorpha}
 
 Recently, our group has shown that during Marchantia spermiogenesis extensive DNA methylation reprogramming occurs. As well as the deposition of 5-methylcytosine (5mC), there is an additional wave of DNA methylation reprogramming whereby N4-methylcytosine (4mC) – an epigenetic modification previously only found in prokaryotes – is deposited at the majority of CG cites across the genome \citep{RN189}.
 
@@ -36,7 +36,7 @@ Hence, investigating the methylation profiles of early Marchantia embryos during
 
 
 \section{sRNA analysis}
-\subsection{Source of sRNAs in the sporophyte (paternal sRNAs with genome shut down?}
+\section{Source of sRNAs in the sporophyte (paternal sRNAs with genome shut down?}
 \subsection{Mismatch tageting \textit{de novo} methylation (SLMs)}
 
 \section{AMD-seq of early Marchantia embryos}
@@ -51,21 +51,37 @@ Hence, investigating the methylation profiles of early Marchantia embryos during
 
 \subsection{Plant materials and growth conditions}
 
-Male and female \textit{Marchantia polymorpha, L.} subsp. \textit{rudealis} accessions Takaragaike-1 (Tak-1, male) Takaragaike-2 (Tak-2, female) and Cam-2 was used. The plants were grown on 1\% agar (Sigma-Aldrich), supplemented with ½ strength Gamborg's B5 medium. They were grown in a controlled environment chamber (Conviron) at 21°C with 70\% humidity under constant light with far-red light for induction of sexual reproduction, as described previously \citep{RN212,RN254}.
+Male and female \textit{Marchantia polymorpha, L.} subsp. \textit{rudealis} accessions Takaragaike-1 (Tak-1, male) Takaragaike-2 (Tak-2, female) and Cam-2 (female) was used. The plants were grown on 1\% agar (Sigma-Aldrich), supplemented with ½ strength Gamborg's B5 medium. They were grown in a controlled environment chamber (Conviron) at 21°C with 70\% humidity under constant light with far-red light for induction of sexual reproduction, as described previously \citep{RN212,RN254}.
 
-\subsection{Plasmid construction and transformation}
+\subsection{Plasmid construction}
 
+Four constructs were generated in total  using a Gateway\textregistered cloning system with either constitutive promoter 35S or the endogenous promoter EF$\alpha$, driving either citrine or tdTomato fluorophores with a nuclear localisation signal (NLS).
 
+The insert for the BP reaction was amplified from plasmids pMpGWB115 (plasmid \#68569, Addgene) and pMpGWB116 (plasmid \#68570, Addgene) \citep{RN72} to get the citrine-NLS and tdTomato-NLS fragments respectively. The BP reactions were performed using the donor plasmid pDONR\texttrademark221 (Thermo Fisher (Invitrogen)). The LR reactions were performed using plasmids pMpGWB102 (plasmid \#68556, Addgene) and pMpGWB103 (plasmid \#68557, Addgene)\citep{RN72} as the backbones for the 35S and EF$\alpha$ promoter driven expression clones respectively. These constructs yielded the final 4 expression clones: MpGWB102(p35S)-citrine-NLS, MpGWB102(p35S)-tdTomato-NLS, MpGWB103(pEF$\alpha$)-citrine-NLS, MpGWB103(pEF$\alpha$)-tdTomato-NLS. The constructs were transformed into \textit{Escherichia  coli}, purified and the sequence confirmed, followed by transformation into \textit{Agrobacterium tumefaciens} strain MP90.
+
+The primers used and plasmid maps are available in Appendix B Table \ref{table:reporter_primers} and Figures \ref{fig:35S_citrine_map}, \ref{fig:35S_tdTomato_map}, \ref{fig:EFalpha_citrine_map} and \ref{fig:EFalpha_tdTomato_map}.
+
+\subsection{Thallus and sporeling transformation}
+
+For thallus transformation, Tak-1 gemmae were grown for 18-20 days in a controlled environment chamber (Conviron) at 21°C with 70\% humidity under constant light on 1.2\% agar (Sigma-Aldrich), supplemented with ½ strength Gamborg's B5 medium. Following 18-20 days, thalli were cut and the basal fragments regenerated on plates supplemented with 1\% sucrose for 3 days. THe thalli were then co-cultured with Agrobacteria (strain MP90) in 0M51C liquid media for 3 days and transformants selected on 1\% agar (Sigma-Aldrich) supplemented with 10 µg/mL hygromycin and 120 µg/mL cefotaxime for several weeks. Fluorescent gemmae were selected from transformant thalli and regenerated again to avoid chimeric plants\citep{RN147}. 
+
+For sporeling transformation, sporangia of backgrounds WT x WT, WT x Mp\textit{dn4mt1} \#6 and T x Mp\textit{dn4mt1} \#21 were sterilised in 1mL of Milton's sterilising solution on a rotating shaker for 20 minutes. The spores were pelleted and washed with sterile water twice. The sterilised spore suspension was added into 25mL 0M51C liquid medium and the flasks were incubated in a growth chamber with constant light at 1500-2000 lux, 23 °C for 5-7 days. Induced Agrobacterial cultures (strain MP90) containing each vector was co-cultivated with the sporelings for 2 days on a rotating shaker. the spore culture was strained and washed with sterile water and transformants were selected on 1\% agar (Sigma-Aldrich) supplemented with 10 µg/mL hygromycin and 120 µg/mL cefotaxime for several weeks\citep{RN146}.
+
+\subsection{Semi in vitro culture and crossing}
+
+Semi in vitro culture and crossing was performed as described previously\citep{RN139}. Briefly, mature female archegonia were collected into 5mL tubes containing 3mL water and co-cultured with male antheridia for 1 hour under white light at 22°C. The fertilised archegonia were then washed and incubated in 5mL tubes containing 3mL of fresh water under white light at 22°C until observation.
 
 \subsection{Microscopy} 
 
-Tak-2 or Cam-2 archegonia were either fertilised with Tak-1 sperm or left unfertilised. The archegoniophores were collected for dissection and imaging and either observed live or fixed and stained for observation. For live cell imaging, the embryos were manually dissected, collected on cavity slides and washed twice with 1x PBS to remove any maternal tissue. They were then stained with DAPI for 5 mins and briefly vacuum infiltrated and observed using slides with imaging spacers (SecureSealTM Grace BioLabs) and/or cavities (BRAND® cavity slides) \citep{RN139}. 
+The archegoniophores were collected for dissection and imaging and were either observed live or were fixed for imaging. For live cell imaging, rows of archegonia were manually dissected from the base of digitate rays and the embryo dissected out using micro knives or double lancet sapphire surgical knives (Fine Science Tools, World Precision Instruments) collected on cavity slides (BRAND\textregistered) and washed twice with 1x PBS to remove any maternal tissue. They were then stained with DAPI for 5 mins and briefly vacuum infiltrated and observed using slides with imaging spacers (Thermo Scientific™ Gene Frame) or on cavity slides \citep{RN139}. 
 
-For observing developmental synchronicity and the Mpdn4mt1 early developmental phenotype, rows of archegonia will be dissected from the base of digitate rays. Invoucres will be removed for clarity and samples will be fixed in PFA fixative (4\% formadehyde, 1x PBS, 0.01\% Triton X-100 and 1 ug/mL DAPI/Hoecht 3342 (ThermoFisher Scientific 62249), vacuum infiltrated 4 times for 2 minutes and incubating samples for 15 minutes on a gentle shake. Then the fixative will be discarded, and the sample washed twice using 1X PBS. The tissue will be cleared using ClearSee Alpha24 (50mL ClearSee25 + 0.315g sodium sulfite (Na2SO4) for a few days. The tissues will be mounted either using ClearSee Alpha or VECTASHIELD® and observed using imaging spacers (Gene Frame, ThermoFisher Scientific). The embryo/egg cells were imaged using directly using a Leica Stellaris 8 or Leica SP8X confocal microscope.
+For observing developmental synchronicity and the Mp\textit{dn4mt1} early developmental phenotype,  rows of archegonia were manually dissected from the base of digitate rays removing involucres. The fluorescent samples were fixed and stained using the iTOMEI protocol \citep{RN148} and mounted in iohexol with imaging spacers (Thermo Scientific™ Gene Frame). The embryo/egg cells were imaged using a Leica SP8X confocal microscope.
+
+\subsection{AMD-sequencing and bisulfite-sequencing library construction}
+
+Dissected Tak-1 x Cam-2 embryos were used to construct 4mC-AMD-seq libraries using the xGen™ Methyl-Sequencing DNA Library Preparation Kit (IDT, 10009860) after treatment of sheared DNA with APOBEC3A (NEB \#E7120S), following manufacturer’s instructions. In parallel, a bisulfite sequencing library was also contructed after APOBEC3A treatment using the Imprint\textregistered DNA Modification Kit (Sigma-Aldrich, MOD50)
 
 
-\subsection{AMD-Sequencing library construction and data analysis}
+\subsection{Data analysis}
 
-Dissected Tak-1 x Cam-2 embryos will be used to construct 4mC-AMD-seq libraries using ACCEL-NGS methyl seq DNA library kit (Qiagen, 59104) after treatment of sheared DNA with APOBEC (NEB \#E7120S), following manufacturer’s instructions.
-
-Reads will be processed using SAMtools v1.9 \citep{RN174}, BEDtools v2.27.1 \citep{RN90} and Picard v2.18.27 \citep{RN173} then mapped to the Takv6 genome \citep{RN179} using bwa v0.7.17 \citep{RN182}. To distinguish between maternal and paternal sequencing reads, a SNP analysis will be conducted. SNPs will be called using gatk v4.0.1.2 \citep{RN177} wherein the SNPs between the parental Tak-1 and Cam-2 will be replaced with Ns. The parental reads will be assigned using SNPSplit v0.3.4 \citep{RN178} and counts for each parental genome will be calculated using SAMtools v1.9 and BEDTools v2.27.1. Please see reference \cite{RN160}  for a detailed description of the pipeline.
+Reads were were processed using SAMtools v1.9 \citep{RN174}, BEDtools v2.27.1 \citep{RN90} and Picard v2.18.27 \citep{RN173} then mapped to the Takv6 genome \citep{RN179} using bwa v0.7.17 \citep{RN182}. To distinguish between maternal and paternal sequencing reads, a SNP analysis will be conducted. SNPs will be called using gatk v4.0.1.2 \citep{RN177} wherein the SNPs between the parental Tak-1 and Cam-2 will be replaced with Ns. The parental reads will be assigned using SNPSplit v0.3.4 \citep{RN178} and counts for each parental genome will be calculated using SAMtools v1.9 and BEDTools v2.27.1. Please see reference \cite{RN160}  for a detailed description of the pipeline.

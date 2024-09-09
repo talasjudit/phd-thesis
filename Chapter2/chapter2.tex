@@ -23,25 +23,94 @@
 %\end{figure}
 
 \section{Introduction}
+
+
+\section{Summary points}
+
+CLSY regulated loci become less abundant in MS and SC SN. 
+Genic features - more similar to somatic tissues.
+Perfect matching HyperTE 24nt sRNA?
+
+
+
 \section{Imaging the localisation of NRPD1 in Arabidopsis anthers}
 \subsection{Selection in roots}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
 \subsection{Localisation in meiocytes, microspores and pollen}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 \section{Imaging the localisation of NRPE1 in Arabidopsis anthers}
-\subsection{Selection in roots}
-\subsection{Localisation in meiocytes, microspores and pollen}
 
-\section{Microspore and sperm sRNA profiles}
+\subsection{Selection in roots}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+\subsection{Localisation in meiocytes, microspores and pollen}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
+\section{Germline sRNA sequencing project}
+
+Overlap of 24 nucleotide sRNA clusters with genomic features of interest
+Following on from work from last year, to further understand the sRNA landscape in sperm cells, the following analytic approach was used: Firstly, real 24 nucleotide sRNA clusters from 2 sperm cell replicates were filtered out (see Methods for filtering parameters), then the whole sperm cell cluster set was checked to see if any patterns could be identified relating to enrichment in CLASSY dependent loci, TE families and chromatin state, as well as some other genomic features of interest. Secondly, it was important to identify a subset of sperm cell specific loci (c513, see methods for this pipeline) and cross reference with the features of interest as well as the methylation levels in the subset.
+
+Initially, it was important to get a snapshot of the distribution of sRNAs in different tissues within the full set of sperm cell specific clusters ( n = ~34000). In Figure 1 an annotation of TE families was examined and the RPKM value of the 24 nucleotide sRNAs at the full set of sperm clusters overlapping the TE annotation was plotted and as comparison, these loci were checked in other tissues. From this, we can see a highly derepressed set of TE families conserved between the pollen, sperm cell and sperm nucleus. This set of TE families was determined to be from the LTR/Gypsy superfamily, specifically ATGP2 and ATGP2N, the latter of which has previously been reported to gain chromatin accessibility and be transcriptionally upregulated in met1 mutants. In this study ATGP2N was part of a subset of 3 groups of TEs that gained chromatin accessibility and increased in transcription as well as an increase in the production of 21nt sRNAs in the inflorescences of met1 mutants. The other 2 groups gained accessibility but had no change in transcription or sRNA production, one already being highly expressed in wild type plants, and the other remaining repressed with respect to transcription and sRNA production even with increased chromatin accessibility 32.
+
+Another group of TEs were also identified which had highest production of 24nt sRNAs specifically in the sperm cell, low sRNAs in pollen and intermediate sRNA levels in soma. These belonged to superfamilies LTR/Gypsy (ATGP1), DNA/HAT (ATHATN4, ATHATN7, SIMPLEHAT2) and DNA/MuDR (VANDAL2, VANDAL6).
+
+Figure 2 depicts an updated diagram of the sRNA levels of HyperTEs overlapping sperm cell specific clusters in different tissues.
+
+Here we can see that the HyperTEs overlapping these genomic regions are most highly expressed in the tapetum, meiocyte and microspore, with an intermediate expression in sperm cells and sperm nuclei. However, it must be highlighted that pollen shows higher relative levels of sRNAs when compared to the sperm cell, suggesting that the HyperTE derived sRNAs must be synthesised in the vegetative nucleus.
+
+To further dissect the nature of sRNA clusters within sperm, Figure 3 shows the comparison of the logRPKM values of sperm cell specific sRNA clusters between meiocyte and sperm, highlighted by genomic features of interest. We can clearly observe here that a large subset of sperm specific clusters that are producing sRNAs overlap with HyperTEs and these are correspondingly very highly upregulated in the meiocyte.
+On the other hand, loci in which RPKM values were low in the meiocyte but high in sperm were a mixture of canonical RdDM loci and other sperm specific loci that do not overlap any genomic features of interest.
+
+Similarly, highlighting CLSY dependent loci in this same dataset yield results consistent with Figure 3. In Figure 4 loci which still are highly upregulated in the meiocyte overlap CLSY3 dependent loci, but surprisingly loci that produce sRNAs in sperm distinctly from the meiocyte do not exclusively overlap CLSY1 and CLSY2 dependent loci as would be expected in somatic tissues but rather a lot of these loci do not overlap any CLSY dependent loci at all. It has also been observed in Figure S2, that a small cluster (n = 18) of sperm and pollen specific loci have highly abundant sRNAs and overlap with CLSY3-4 dependent loci. This is not present in either CLSY single (CLSY3 or CLSY4) overlapping loci. These findings underline the hypothesis that sperm has a distinct sRNA profile from both earlier germline cells and soma.
+
+Finally, checking whether loci which are synthesising abundant sRNAs in the sperm compared to meiocytes have different chromatin states with respect to H3K9me2 as a proxy for euchromatic or heterochromatic chromatin state, we can conclude that this subset tends more heterochromatic than loci that are still synthesising sRNAs in the meiocyte (Figure 5). However as described in the methods, the chromatin states in the annotation that was used was defined using somatic tissue, so this should be repeated with a H3K9me2 ChIP-Seq data from germline tissue.
+ 
+When comparing sperm cell cluster derived 24 nucleotide sRNAs from sperm cells to the seedling, we can see a subset of loci that do not produce as much small RNA in soma as they do in sperm which almost all tend to be heterochromatic (Figure 6).
+
+As expected, the full set of sperm cell specific clusters highly correlate between the sperm cell and sperm nucleus (Figure 7). Furthermore, loci which synthesise abundant sRNA (Figure 7 purple cluster where logRPKM > 6) in both sperm cell and sperm nucleus tend to be heterochromatic. 
+
+To further confirm the identity of these sperm specific heterochromatic loci, another filtering step was implemented whereby clusters were filtered out that had less than 3 RPKM difference between the sperm cell and other somatic (root, seedling, and leaf) and other germline tissues (meiocyte and tapetum). This yielded 513 sperm and pollen specific loci (c513). When comparing this subset of loci in the sperm cell against the seedling (Figure 8), we can clearly identify that the majority (43\%) of loci were intermediate heterochromatic or heterochromatic. This dataset can be further grouped into 2 groups. Group 1 contained 66\% of loci that synthesise sRNAs in both seedling and sperm (seedling logRPKM > 0), of which 83\% were heterochromatic. Group 2 contains the remaining sRNA clusters, (seedling logRPKM = 0), of which 74\% do not overlap any H3K9me2 markers. It must be noted that these observations might be skewed as the H3K9me2 markers are derived from somatic tissue, therefore this analysis needs to be repeated with appropriate H3K9me2 data from the germline to draw any final conclusions however these data seem to suggest that sperm specific sRNA clusters which have low but non-zero sRNAs in the soma, tend to be heterochromatic (Figure 8 purple cluster).
+ 
+
+Finally, it is important to check whether the c513 subcluster has a specific methylation pattern distinct from the whole set. We can conclude that generally, sperm methylation is consistently high, intermediate, and low in the CG CHG and CHH context throughout germline development respectively (Figure 9 A-C, red bars) (from meiocyte to sperm). This is in contrast with the methylation within the c513 subset which generally seems lower in sperm than the whole subset (Figure 9 bars labelled WT\_SC for wild type sperm cell). However, if we look at methylation in other tissues, we can immediately conclude that this pattern is not specific to sperm.
+
+MetGene reactivation
+
+It was observed in the previous report that a subset of MetGenes were producing sRNAs in the sperm cell, which is in stark contrast to other sex cells. Therefore, it was important to survey the methylation state of this subset compared to the whole set of MetGenes. Filtering the subset of MetGenes which were producing sRNAs, it was revealed that around 20\% of MetGenes produce sRNAs in sperm. Since previous work has identified that MetGenes produce no perfect matching sRNAs in the meiocyte and tapetum17, it is likely that the clusters which produce sRNAs in meiocyte and tapetum are either at HyperTE/MetGenes boundaries, or are HyperTE derived. However, the majority of reactivated MetGenes in the sperm cell and sperm nucleus do not overlap the same loci (Figure 10 clusters 1,2: sperm specific reactivation and cluster 3: HyperTE/boundary derived meiocyte and tapetum specific clusters). Furthermore, the subset of loci that are uniquely upregulated in sperm cell and sperm nuclei (Figure 10 clusters 1-2) are not enriched in CLSY dependent loci (only 5 are broadly CLSY dependent out of 53 sperm specific reactivated MetGenes).
+
+When checking the methylation score of all sperm reactivated subset of MetGenes tend to have a higher methylation score in all germline tissues (methylation of MetGenes are low in soma in all sequence contexts), so the higher methylation is not sperm cell specific (Figure 11).
+
+
+
+
+Summary
+
+In conclusion, sperm has a distinct sRNA profile from both earlier germline cells and soma, identifying a cluster of TEs (ATGP2 and ATGP2N) and a cluster of CLSY3-4 dependent loci (n = 18) that are highly abundantly producing sRNAs specifically in the sperm cell and pollen respectively.
+
+There is no significant unique population within any genomic features of interest in sperm specific clusters. A small cluster of highly conserved sperm specific small RNAs were identified, of which the majority are heterochromatic (though this analysis needs to be repeated with ChIP-Seq data from germline).
+
+Whilst around 20\% of MetGenes are reactivated specifically in sperm cells and sperm nuclei, this does not result in overall higher methylation in these tissues in any sequence contexts.
+
+
 \subsection{Overlap with features of interests (TE families, classy dependent loci, HyperTEs MetGenes)}
+
 \subsection{H3K9me2 levels in soma and sperm}
-gfdgggfd
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
 \subsection{Methylation levels of sperm specific clusters and reactivated MetGenes}
-gfsdgdfsgffgsdgfg
-\section{Phased small interfering sRNAs}
-gfdgsdgfds
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+\subsection{Phased small interfering sRNAs}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
 \section{Discussion}
-ghfdjhgjhdsgjf
-fgjfhgfdjf
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
 \section{Materials and Methods}
 
 \subsection{Plant materials and growth conditions}
@@ -52,7 +121,7 @@ fgjfhgfdjf
 
 Meiocyte and microspore stage anthers were dissected using a Leica dissecting microscope on 0.8\% agar and vacuum infiltrated in DAPI buffer (Galbraith’s buffer (45 mM MgCl2-6H2O, 30 mM trisodium citrate, 20 mM MOPS, pH 7.0), 1 µg/mL DAPI, and 0.01\% [v/v] Triton X-100) briefly, then imaged using imaging spacers (SecureSealTM Grace BioLabs). Individual microspores and pollen were imaged after isolation from unopened flower buds and opened flowers respectively, by collecting ~500 µL of flower buds into DAPI buffer, briefly vortexing and pelleting cells. All samples were imaged using Leica Stellaris 8 and Leica SP8X confocal microscopes.
 
-\subsection{Isolation of microspores and pollen using fluorescence-activated cell sorting}
+\subsection{Isolation of microspores and pollen using fluorescence activated cell sorting}
 
 \textit{Arabidopsis thaliana} microspores were isolated by manually collecting microspore stage flower buds, using the morphology described previously \citep{RN86}. The buds were collected into 1.5mL microcentrifuge tubes and suspended in PEB (10 mM CaCl2, 2 mM MES, 1 mM KCl, 1\% H3BO3, 10\% Sucrose, pH 7.5) buffer. The microspore cells were isolated as described previously \citep{RN140}. Briefly, the buds were gently ground in a clean pestle and mortar in PEB buffer and filtered through Miracloth (Merck-Millipore 475855) into a 1.5mL Eppendorf tube. This crude fraction was centrifuged for 5 minutes at 800g to gently pellet the microspore cells. The pellet was resuspended in 500µL PEB and sequentially filtered through 30µm and 20µm mesh filters (CellTrics®).
 
@@ -89,5 +158,4 @@ log2(RPKM+1) 24nt sperm cell sRNA - log2(RPKM+1) 24nt (other tissues: tapetum, m
 The euchromatic/heterochromatic annotation was allocated based on data from reference \cite{RN183} and classified into 5 chromatin states based on H3K9me2/H3: euchromatic (less than 0.6), intermediate euchromatic (bw. 0.6 and 0.9), intermediate (bw 0.9 and 1.4), intermediate heterochromatic (bw. 1.4 and 2.6), heterochromatic (above 2.6). 
 
 The sRNA analysis pipeline is available from GitHub on request. Figures were plot using ggplot2 and pheatmap packages in R (v4.0.3).
-
 

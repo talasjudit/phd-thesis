@@ -1,6 +1,63 @@
 %!TEX root = ../thesis.tex
 % ******************************* Thesis Appendix B ********************************
 
-\renewcommand{\thechapter}{\arabic{chapter}}
 
-\chapter{Chapter 3} 
+\begin{table}[htbp]
+    \centering
+    \scriptsize % Keep the font size as scriptsize
+    \caption{Primers used for nuclear reporter line cloning}
+    \label{table:reporter_primers}
+    \begin{tabular}{>{\raggedright\arraybackslash}p{3.4cm} >{\raggedright\arraybackslash}p{2.8cm} >{\raggedright\arraybackslash}p{4.7cm} >{\raggedright\arraybackslash}p{1.9cm}}
+    \toprule
+    Construct Target & Name & Sequence & Purpose \\
+    \midrule
+    pMpGWB115 or pMpGWB116 & attB1-fluo-NLS-attB2-f1 & \seqsplit{GGGGACAAGTTTGTACAAAAAAGCAGGCTTAATGGTGAGCAAGGGCGAG} & citrine/tdTom insert + attB sites \\
+    pMpGWB115 or pMpGWB117 & attB1-fluo-NLS-attB2-r1 & \seqsplit{GGGGACCACTTTGTACAAGAAAGCTGGGTTCTATCCTCCAACCTTTCTCTTCTTCTTAGG} & citrine/tdTom insert + attB sites \\
+    \midrule
+    pMpGWB102-Citrine-NLS \& pMpGWB103-Citrine-NLS entry clones (pDONR221) & citrine-ent-seq-f1 & \seqsplit{TTAATGGTGAGCAAGGGC} & Entry clone sequencing \\
+    & citrine-ent-seq-r1 & \seqsplit{TGGGTTCTATCCTCCAACC} & Entry clone sequencing \\
+    pMpGWB102-tdTom-NLS \& pMpGWB103-tdTom-NLS entry clones (pDONR221) & tdTom-ent-seq-f1 & \seqsplit{AGGCTTAATGGTGAGCAAG} & Entry clone sequencing \\
+    & tdTom-ent-seq-r1 & \seqsplit{GGGTTCTATCCTCCAACC} & Entry clone sequencing \\
+    \midrule
+    pMpGWB102-Citrine-NLS & 102-citrine-exp-seq-f1 & \seqsplit{TTGGAGAGAACACGGG} & Expression clone sequencing \\
+    & 102-citrine-exp-seq-r1 & \seqsplit{CTGGGTTCTATCCTCCAAC} & Expression clone sequencing \\
+    pMpGWB102-tdTom-NLS & 102-tdTom-exp-seq-f1 & \seqsplit{AGAGAACACGGGGGACTC} & Expression clone sequencing \\
+    & 102-tdTom-exp-seq-r2 & \seqsplit{TCGGAGGAGGCGGTG} & Expression clone sequencing \\
+    & 102-tdTom-exp-seq-r1 & \seqsplit{ACAAGAAAGCTGGGTTCTATCCTC} & Expression clone sequencing \\
+    \midrule
+    pMpGWB103-Citrine-NLS & 103-citrine-exp-seq-f1 & \seqsplit{CCTCGAGCGAGTGATTTTTTAGG} & Expression clone sequencing \\
+    & 103-citrine-exp-seq-r1 & \seqsplit{GGGTTCTATCCTCCAACCTTTC} & Expression clone sequencing \\
+    pMpGWB103-tdTom-NLS & 103-tdTom-exp-seq-f1 & \seqsplit{ATTTCGCTAATCATTCCCTAATTTC} & Expression clone sequencing \\
+    & 103-tdTom-exp-seq-r2 & \seqsplit{CGGCCATGTTGTTGTC} & Expression clone sequencing \\
+    & 103-tdTom-exp-seq-r1 & \seqsplit{AAGAAAGCTGGGTTCTATCC} & Expression clone sequencing \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1\textwidth]{Appendix2/Figs/1-expression-clone-pMpGWB102(35S)+citrine Map.pdf}
+\caption{Plasmid map of pMpGWB102(35S)-citrine-NLS}
+\label{fig:35S_citrine_map}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1\textwidth]{Appendix2/Figs/2-expression-clone-pMpGWB102(35S)+tdTomato Map.pdf}
+\caption{Plasmid map of pMpGWB102(35S)-tdTomato-NLS}
+\label{fig:35S_tdTomato_map}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1\textwidth]{Appendix2/Figs/3-expression-clone-pGWB103(EFalpha)+citrine Map.pdf}
+\caption{Plasmid map of pMpGWB103(EF$\alpha$)-citrine-NLS}
+\label{fig:EFalpha_citrine_map}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1\textwidth]{Appendix2/Figs/4-expression-clone-pGWB103(EFalpha)+tdTomato Map.pdf}
+\caption{Plasmid map of pMpGWB102(EF$\alpha$)-tdTomato-NLS}
+\label{fig:EFalpha_tdTomato_map}
+\end{figure}
