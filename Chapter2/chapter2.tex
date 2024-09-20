@@ -179,10 +179,12 @@ It is crucial to investigate whether the heterochromatic sperm-specific n568 sub
 \caption{\textbf{Sperm-specific heterochromatic loci exhibit significantly lower overall methylation levels compared to the entire sperm dataset}}
 \label{fig:SC_hetero_clusters}
 \captionsetup{font=small}
-    \caption*{CG, CHG and CHH methylation levels of all sperm clusters (dark green) and the heterochromatic 568 loci subset (light greeen). ***: p-value < 0.001, **: p-value < 0.01,*: p-value < 0.05}
+    \caption*{CG, CHG and CHH methylation levels of all sperm clusters (dark green) and the heterochromatic 568 loci subset (light green). ***: p-value < 0.001, **: p-value < 0.01,*: p-value < 0.05}
 \end{figure}
 
-\section{A subset of MetGenes produce 24nt sRNAs specifically in the sperm cell}
+\section{A subset of MetGenes produce 24nt sRNAs and gain CHH methylation specifically in the sperm cell}
+
+In contrast to other sex cells, about 20\% of MetGenes generate 24nt sRNAs in the sperm cell, with a subset producing sRNAs exclusively in sperm (Figure \ref{fig:hm_metgene_reactivated}, clusters 1 and 2, Figure \ref{fig:boxplot-SCPL}B). Since previous work has identified that MetGenes produce no perfect matching sRNAs in the meiocyte and tapetum\citep{RN187}, it is likely that the clusters which produce sRNAs in meiocyte and tapetum are either at HyperTE/MetGenes boundaries, or are HyperTE derived. However, the majority of sRNA producing MetGenes in the sperm cell and sperm nucleus do not overlap the same loci (Figure \ref{fig:hm_metgene_reactivated}, clusters 1 and 2: sperm specific reactivation, cluster 3: HyperTE/boundary derived meiocyte and tapetum specific clusters). Furthermore, the subset of loci that produce sRNAs uniquely in the sperm cell and sperm nucleus are not enriched in CLSY dependent loci (only 5 are broadly CLSY dependent out of 53 sperm specific reactivated MetGenes).
 
 \begin{figure}[htbp!] 
 \centering
@@ -193,14 +195,20 @@ It is crucial to investigate whether the heterochromatic sperm-specific n568 sub
     \caption*{Clusters 1,2: sperm specific sRNA production. Cluster 3: HyperTE/MetGene boundary derived meiocyte and tapetum specific clusters}
 \end{figure}
 
+Next, it was important to determine whether the increased sRNA production actually leads to increased DNA methylation in the sperm cell. Overall, the sperm cell-specific MetGenes exhibited higher CG and CHG methylation compared to the full set in meiocytes and microspores (Figure \ref{fig:boxplot_MetGene_methylation}A,B,D,E), and higher methylation in the CHG context in sperm. Interestingly, the only tissue where this subset showed higher CHH methylation was in the sperm cell, suggesting that renewed sRNA production at these loci also drives methylation in the sperm cell (Figure \ref{fig:boxplot_MetGene_methylation}C,F).
+
 \begin{figure}[htbp!] 
 \centering    
     \includegraphics[width=1\textwidth]{Chapter2/Figs/Figure12_Reactivated_MetGenes_methylation.pdf}
 \caption{\textbf{The reactivated MetGenes gain CHH methylation in the sperm cell.}}
 \label{fig:boxplot_MetGene_methylation}
 \captionsetup{font=small}
-    \caption*{(Box plots of CG (A), CHG (B) and CHH (C) methylation of all MetGenes compared to the reactivated subset, in germline and somatic tissues. Heatmaps of the CG (D) CHG (E) and CHH (F) methylation of sperm sRNA producing MetGenes. ***: p-value < 0.001, **: p-value < 0.01,*: p-value < 0.05}
+    \caption*{(Box plots of CG (A), CHG (B) and CHH (C) methylation of all MetGenes compared to the reactivated subset, in germline and somatic tissues. Heatmaps of the CG (D) CHG (E) and CHH (F) methylation MetGenes that produce sRNAs in the sperm cell. ***: p-value < 0.001, **: p-value < 0.01,*: p-value < 0.05}
 \end{figure}
+
+\section{ATGP2N TEs produce highly abundant 24nt sRNAs in sperm cells, the sperm nucleus, and pollen.}
+
+As previously mentioned, after meiosis, HyperTE-derived sRNAs cease to be the dominant source of 24nt sRNAs in the sperm cell. Therefore it is important to analyse the landscape of 24nt sRNAs from sperm clusters overlapping TEs (Figure \ref{fig:TE_families}A). This revealed a cluster of TE families conserved across pollen, sperm cells, and sperm nuclei, which produce uniquely abundant sRNAs (Figure \ref{fig:TE_families}A, cluster 8, n=24). Within this subset, approximately 90\% of transposons belong to the LTR/Gypsy superfamily, and about 70\% are from the ATGP2 and ATGP2N families. Of these, about 40\% overlap CLSY3/4 dependent loci specifically.
 
 \begin{figure}[htbp!] 
 \centering    
@@ -208,13 +216,24 @@ It is crucial to investigate whether the heterochromatic sperm-specific n568 sub
 \caption{\textbf{ATGP2N TEs produce highly abundant 24nt sRNAs in the sperm cell, sperm nucleus and pollen}}
 \label{fig:TE_families}
 \captionsetup{font=small}
-    \caption*{(A) Heatmap showing the 24nt sRNA production of TE families in germline and somatic tissues. cluster 9 contains the ATGP2N families. (B) Snapshot CHH methylation levels of an ATGP2N TE which produces abundant sRNAs in the sperm. (C) Boxplots of CHH methylation levels of the ATGP2 subset compared to all TEs in germline and somatic tissues. ***: p-value < 0.001, **: p-value < 0.01,*: p-value < 0.05}
+    \caption*{(A) Heatmap showing the 24nt sRNA production of TE families in germline and somatic tissues. Cluster 9 contains the ATGP2N families.}
+\end{figure}
+
+ATGP2N has previously been reported to gain chromatin accessibility and be transcriptionally upregulated in \textit{met1} mutants. In this study ATGP2N was part of a subset of TEs that gained chromatin accessibility and increased in transcription as well as an increase in the production of 21nt sRNAs in the inflorescences of \textit{met1} mutants. The other groups gained accessibility but had no change in transcription or sRNA production, one already being highly expressed in wild type plants, and the other remaining repressed with respect to transcription and sRNA production even with increased chromatin accessibility\citep{RN184}. Though CHH methylation of TEs in the germline and somatic tissues seemed generally low, the ATGP2N family had slightly increased CHH methylation in all tissues, most notably for us, in the vegetative cell (Figure \ref{fig:TE_methylation}B and C).
+
+\begin{figure}[htbp!] 
+\centering    
+    \includegraphics[width=1\textwidth]{Chapter2/Figs/Figure14_TE_methylation.pdf}
+\caption{\textbf{ATGP2N TEs produce highly abundant 24nt sRNAs in the sperm cell, sperm nucleus and pollen}}
+\label{fig:TE_methylation}
+\captionsetup{font=small}
+    \caption*{(A) Snapshot CHH methylation levels of three ATGP2N TEs which produces abundant sRNAs in the sperm. (A) Boxplots of CG, CHG and CHH methylation levels of the ATGP2 subset compared to all TEs in germline and somatic tissues. ***: p-value < 0.001, **: p-value < 0.01,*: p-value < 0.05}
 \end{figure}
 
 
 
 \section{Discussion}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
 
 \section{Materials and Methods}
 
