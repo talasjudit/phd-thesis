@@ -34,7 +34,18 @@ It has also recently been shown that other epigenetic marks, namely the heteroch
 
 Hence, investigating the methylation profiles of early Marchantia embryos during the first zygotic divisions and examining the early developmental phenotype of Mpdn4mt1 mutants will complement our previous work, expanding our understanding of how paternal DNA methylation affects early embryonic development.
 
-\section{Developmental phenotype of Mpdn4mt1 mutant embryos}
+\begin{figure}[htbp!] 
+\centering    
+    \includegraphics[width=1\textwidth]{Chapter3/Figs/Intro/burstpeak_nuclei_number.pdf}
+\caption{\textbf{Embryos fertilised by \textit{dn4mt1} knockout sperm develop more rapidly than WT}}
+\label{fig:burstpeak}
+\captionsetup{font=small}
+    \caption*{Total percentage of burst sporophytes every day since first mature sporophyte, fertilised with wild type sperm (blue), two independent lines of \textit{dn4mt1} knockout sperm (\#6 dark green, \#21 light green) or 5mC (\textit{cmta} (dark brown) or \textit{dnmt3B}) knockout sperm (light brown). }
+\end{figure}
+
+\section{4mC sequencing in early \textit{Marchantia} embryos}
+
+To establish an effective method for staging early Marchantia embryos and identify the earliest feasible window for embryo extraction for AMD sequencing, several approaches were explored. Despite incorporating detergents, vacuum-assisted staining, and testing various stains (DAPI, Hoechst 33342, and ethidium bromide), live-cell staining of developing embryos within the archegonium remained inconsistent. This inconsistency likely arises from the embryo's position within a cavity (the venter) surrounded by somatic cells and cell walls (Figure \ref{fig:egg_embryo} rows one and two). Moreover, variations in environmental conditions during embryo development significantly impacted growth, as illustrated in Figure \ref{fig:embryo_diff} which shows the same genotype embryos 10 days post-fertilisation under different growth conditions. To ensure consistency and reproducibility, a controlled crossing method was adopted, wherein archegoniophores were exposed to sperm in a tube for an hour, ensuring synchronised fertilization and uniform embryo development. This approach is particularly suited for studying early embryo development, as embryos can be cultured under these conditions for up to two weeks\citep{RN139}. Under these conditions, the earliest developing embryos could be manually dissected was around 7-8 days after fertilisation (Figure \ref{fig:egg_embryo}).
 
 \begin{figure}[htbp!] 
 \centering    
@@ -45,75 +56,36 @@ Hence, investigating the methylation profiles of early Marchantia embryos during
     \caption*{Unstained egg cell (first row), DAPI stained egg cell (second row), and embryos 8 days (third row), and 10 days (fourth row) after fertilisation. Scale bar 10$\mu$m}
 \end{figure}
 
-\begin{figure}[htbp!] 
-\centering    
-    \includegraphics[width=1\textwidth]{Chapter3/Figs/Figure2_Reporter_line_gemmae_screening.pdf}
-\caption{\textbf{Gemmae screening of constitutively expressed nuclear reporter lines}}
-\label{fig:gemma:screen}
-\captionsetup{font=small}
-    \caption*{Nuclear signal of tdTomato or citrine (second column, red or yellow respectively, white arrows) in gemmae, driven by either 35S constitutive promoter (first row) native constitutive promoter EF$\alpha$ (second and third rows). Scale bar 10$\mu$m.}
-\end{figure}
+As previously established, 4mC methylation is deposited in the CG context over gene bodies and outside of TEs during spermiogenesis by \textit{DN4MT1} (Figure \ref{fig:ends_analysis}A)\citep{RN189}. Although 5mC methylation across all sequence contexts over TEs increases during germline development, non-CG methylation is specifically deposited during spermiogenesis by \textit{MpCMTa} and \textit{MpDNMT3B} (Figure \ref{fig:ends_analysis}B,D,F)\citep{RN189}.  Additionally, this methylation pattern is deposited and maintained over gene bodies (excluding the transcription start site, TSS), with 4mC serving as the primary methylation mark at the TSS. 
+
+As early embryos are difficult to harvest, first AMD-seq (sequencing specifically 4mC) and EM-seq (sequencing specifically 5mC) was tested on wild type sperm and compared to data previously collected from wild type sperm and \textit{dn4mt1} sperm(Figure \ref{fig:ends_analysis} WT sperm rep2 AMD-seq (light green) and dn4mt1 sperm AMD-seq(grey)). The expected methylation patterns over genes and TEs in the 4mC and 5mC contexts were confirmed by the sperm AMD-seq and EM-seq libraries (Figure \ref{fig:ends_analysis} wild type sperm rep2 AMD-seq(light green), wild type sperm EM-seq(dark brown).) 
 
 \begin{figure}[htbp!] 
 \centering    
-    \includegraphics[width=1\textwidth]{Chapter3/Figs/Figure3_Reporter_line_antheridia.pdf}
-\caption{\textbf{The tdTomato based nuclear reporter lines are expressed in the antheridia}}
-\label{fig:antheridia_screen}
-\captionsetup{font=small}
-    \caption*{Nuclear signal of tdTomato or citrine (second column, red or green respectively) in the antheridiophore, driven by either 35S constitutive promoter (first row) native constitutive promoter EF$\alpha$ (second and third rows). Scale bar 10$\mu$m.}
-\end{figure}
-
-\begin{figure}[htbp!] 
-\centering    
-    \includegraphics[width=1\textwidth]{Chapter3/Figs/Figure4_reporter_line_malevsfemale.pdf}
-\caption{\textbf{Tak1 male nuclear reporter lines crossed to Tak2 females have no nuclear expression in the embryo}}
-\label{fig:malevsfemale}
-\captionsetup{font=small}
-    \caption*{Nuclear signal of tdTomato (second column, red, white arrows) in embryos crossing EF$\alpha$::tdTomato-NLS Tak1 male to WT Tak2 female, 3 days (first row) and 16 days (second row) after fertilisation. Expression of EF$\alpha$::tdTomato-NLS (third row) and  35S::tdTomato-NLS (fourth row) in WT female thallus. Scale bar 10$\mu$m.}
-\end{figure}
-
-\begin{figure}[htbp!] 
-\centering    
-    \includegraphics[width=1\textwidth]{Chapter3/Figs/Figure5_Developmental_stages.pdf}
-\caption{\textbf{Developmental stages of the early embryo (Tak1 male x EF$\alpha$::tdTomato-NLS WT female)}}
-\label{fig:dev_stages}
-\captionsetup{font=small}
-    \caption*{(A) Zygote (B) Zygote dividing (C) Two-cell stage (D) Two-cell embryo dividing (E) Four-cell stage. Scale bar 10$\mu$m.}
-\end{figure}
-
-\begin{figure}[htbp!] 
-\centering    
-    \includegraphics[width=1\textwidth]{Chapter3/Figs/Figure6_burstpeak_nuclei_number.pdf}
-\caption{\textbf{Embryos fertilised by \textit{dn4mt1} knockout sperm develop more rapidly than WT}}
-\label{fig:burstpeak}
-\captionsetup{font=small}
-    \caption*{(A) Total percentage of burst sporophytes every day since first mature sporophyte, fertilised with wild type sperm (blue), two independent lines of \textit{dn4mt1} knockout sperm (\#6 dark green, \#21 light green) or 5mC (\textit{cmta} (dark brown) or \textit{dnmt3B}) knockout sperm (light brown). (B) Mean nucleus number of embryos from 1-7 days after fertilisation, fertilised by wild type (blue), \textit{dn4mt1} knockout \#6 (dark green), or \textit{dn4mt1} knockout \#21 (light green) sperm. }
-\end{figure}
-
-\begin{figure}[htbp!] 
-\centering    
-    \includegraphics[width=0.75\textwidth]{Chapter3/Figs/Figure7_circularity.pdf}
-\caption{\textbf{Embryos fertilised by \textit{dn4mt1} knockout sperm elongate earlier and tend mroe circular earlier than those fertilised by wild type sperm}}
-\label{fig:circularity}
-\captionsetup{font=small}
-    \caption*{(A) Mean longitudinal diameter, (B) Mean transverse diameter, (C) Mean circularity of embryos 1-7 days after fertilisation, fertilised by wild type (blue), \textit{dn4mt1} knockout \#6 (dark green), or \textit{dn4mt1} knockout \#21 (light green) sperm.}
-\end{figure}
-
-
-\section{AMD-seq of early Marchantia embryos}
-
-\begin{figure}[htbp!] 
-\centering    
-    \includegraphics[width=1\textwidth]{Chapter3/Figs/Figure8_ends_analysis.pdf}
+    \includegraphics[width=1\textwidth]{Chapter3/Figs/Figure2_ends_analysis.pdf}
 \caption{\textbf{4mC methylation occurs in the CG context and is enriched in genic regions and outside of TEs, while 5mC methylation is largerly confined to TEs}}
 \label{fig:ends_analysis}
 \captionsetup{font=small}
     \caption*{Panel showing 4mC and 5mC methylation across TEs (A) and Genes (B) in CG (first row), CHG (second row) and CHH (third row) sequence contexts in wild type sperm \textit{dn4mt1 sperm}, the embryo 7-8 and 14 days after fertilisation.}
 \end{figure}
 
+Secondly, pre-meiotic embryos were dissected and sequenced using AMD-seq to establish a baseline for comparing early embryonic methylation patterns (Figure \ref{fig:ends_analysis}, 14 DAF embryos (orange)). The results confirmed the absence of 4mC methylation over genes or outside TEs (Table \ref{tab:methylation_levels}). Subsequently, 300 embryos at 7–8 DAF were collected, with 200 used for AMD sequencing library construction and the remaining 100 embryos used for bisulfite sequencing libraries, pre-treated with APOBEC3A for an alternative 4mC sequencing method. Although AMD-seq is theoretically capable of handling low DNA input down to picogram levels\citep{idtdna_methylseq_kit}, this was not tested prior to sequencing the early embryos.The bisulfite sequencing protocol, on the other hand, was developed for low-input or single-cell sequencing and this has been robustly tested in our lab. Due to conversion issues, the AMD-seq library was not usable in this study. 
+
+\begin{figure}[htbp!] 
+\centering    
+    \includegraphics[width=1\textwidth]{Chapter3/Figs/Figure3_H3K27me3.pdf}
+\caption{\textbf{H3K27me3 levels are elevated in the paternal genome and correlate with the presence of 5mC over genes}}
+\label{fig:h3k27me3}
+\captionsetup{font=small}
+    \caption*{Heatmaps showing the relative H3K27me3 levels in Marchantia embryos over the genes and TEs in the paternal and maternal genomes.}
+\end{figure}
+
+At a surface level, the early embryo AMD-seq data indicated marginally higher 4mC methylation across genes compared to the mature AMD sequencing library (Figure \ref{tab:methylation_levels}). However, this increase fell within the error range of the experimental limitations (Table \ref{tab:methylation_levels}, "CHG and CHH levels of 4mC"). Moreover, the low levels of residual 4mC methylation did not display the expected distribution over genes and TEs, with no relative increase outside TEs or over genes. This suggests that the removal of paternal 4mC methylation may be essential for embryo development. However, starting with a methylation level of around 20\% in the zygote (based on the sperm AMD-seq levels), passive loss of 4mC by the 16–32 cell stage (7–8 days after fertilisation in our conditions) would result in very low residual 4mC methylation levels (Table \ref{tab:methylation_levels}). 
+
+It has been previously demonstrated that during embryonic development the paternal genome is transcriptionally silenced and is marked with the repressive chromatin mark H3K27me3 mediated by maternally expressed Polycomb Repressive Complex 2 (PRC2) in the male pronucleus before the first zygotic division, approximately 3 days after fertilisation \citep{RN160}.  This suggests the existence of a mechanism for paternal genome recognition, with blanket 4mC methylation being a potential candidate. To this end, visualizing H3K27me3 data across genes and TEs from this study confirms a paternal bias in the deposition of H3K27me3. However, the pattern of H3K27me3 occupancy around gene and transposon transcription start sites does not align with the distribution of 4mC. Additionally, Dr. Shujuan Xu confirmed that H3K27me3 paternal foci still form in embryos fertilized by \textit{dn4mt1} knockout sperm, 13 days after fertilisation \ref{fig:immuno}. These findings suggest that paternal genome recognition is not directly linked to blanket 4mC methylation. To obtain a definitive answer, developing reliable 4mC immunostaining and/or single-cell AMD sequencing methods for the zygote or early embryo is necessary, provided successful dissection at this developmental stage is achievable.
+
 \begin{table}[htbp!]
 \centering
-\label{tab:methylation_levels}
 \captionsetup{font=small}
 \begin{tabular}{|p{5cm}|c|c|c||c|c|c|}
 \hline
@@ -135,25 +107,32 @@ Zygote & 0.202 & 0.030 & 0.031 & 0.241 & 0.030 & 0.030 \\
 \hline
 \end{tabular}
 \caption{\textbf{Methylation levels across WT sperm, \textit{dn4mt1} sperm and the early embryo}}
+\label{tab:methylation_levels}
 \end{table}
-
-\begin{figure}[htbp!] 
-\centering    
-    \includegraphics[width=1\textwidth]{Chapter3/Figs/Figure9_H3K27me3.pdf}
-\caption{\textbf{H3K27me3 levels are elevated in the paternal genome and correlate with the presence of 5mC over genes}}
-\label{fig:h3k27me3}
-\captionsetup{font=small}
-    \caption*{Heatmaps showing the relative H3K27me3 levels in Marchantia embryos over the genes and TEs in the paternal and maternal genomes.}
-\end{figure}
 
 
 \section{sRNA analysis}
-\section{Source of sRNAs in the sporophyte (paternal sRNAs with genome shut down?}
-\subsection{Mismatch tageting \textit{de novo} methylation (SLMs)}
+
+\subsection{Mismatch targeting \textit{de novo} methylation (SLMs)}
+
+As described previously, \textit{de novo} metylation of genes in \textit{Arabidopsis} male meiocytes is mediated by 24nt sRNAs produced by HyperTE loci in the tapetum, the biogenesis of which is driven by CLSY3 chromatin remodeller. Gene body methylation also exists specifically in the embryo and sporophyte of \textit{Marchantia} (Figure \ref{fig:SLM_examples}, data from dr James Walker). Sporophytic non-CG DMRs were determined as described before\citep{jimmythesis} and filtered to yield 221 metylated genic loci (MetGenes).
 
 \begin{figure}[htbp!] 
 \centering    
-    \includegraphics[width=1\textwidth]{Chapter3/Figs/Figure10_SLM_source_target.pdf}
+    \includegraphics[width=1\textwidth]{Chapter3/Figs/Figure4_SLM_examples.pdf}
+\caption{\textbf{Sporophyte specific methylation exists in the embryos of \textit{Marchantia}}}
+\label{fig:SLM_examples}
+\captionsetup{font=small}
+    \caption*{}
+\end{figure}
+
+With access to sRNA sequencing libraries from thallus, embryo, and sporophyte (constructed by dr James Walker), the next step was to determine whether MetGenes could be targeted for methylation through mismatch targeting. To investigate this, the sRNA libraries were mapped to the reference genome allowing for 0 and 3 mismatches. The sRNAs from the 3 mismatch dataset were then remapped onto the 0 mismatch dataset to identify identical sRNA sequences capable of targeting both TEs and genes with up to 3 mismatches. Reads overlapping MetGenes with 3 mismatches and TEs with 0 mismatches were then extracted. The resulting TE-MetGene pairs are visualised in Figure \ref{fig:SLM_targeting}A. It must be noted that one limitation of this method is the challenge of obtaining a comprehensive TE annotation for the gene model used in the study, as not all MetGenes could be paired with annotated TEs.
+
+Indeed when aligning the sequence of a source TE to its corresponding MetGene, an almost perfectly matching \~160bp sequence was found (Figure \ref{fig:SLM_targeting}B). Notably, this alignment corresponds to the exact location where sporophyte-specific methylation is deposited within the MetGene (Figure \ref{fig:TE_SLM_pairs}).
+
+\begin{figure}[htbp!] 
+\centering    
+    \includegraphics[width=1\textwidth]{Chapter3/Figs/Figure5_SLM_source_target.pdf}
 \caption{\textbf{TE loci produce 24nt sRNA that target genic loci for methylation with mismatch targeting}}
 \label{fig:SLM_targeting}
 \captionsetup{font=small}
@@ -162,14 +141,79 @@ Zygote & 0.202 & 0.030 & 0.031 & 0.241 & 0.030 & 0.030 \\
 
 \begin{figure}[htbp!] 
 \centering    
-    \includegraphics[width=1\textwidth]{Chapter3/Figs/Figure11_pairs_examples.pdf}
+    \includegraphics[width=1\textwidth]{Chapter3/Figs/Figure6_pairs_examples.pdf}
 \caption{\textbf{Example of a TE  source and SLM target that gain methylation in the sporophyte}}
 \label{fig:TE_SLM_pairs}
 \captionsetup{font=small}
-    \caption*{MMethylaiton levels in (A) TE source and (B) SLM target pair in CG, CHG and CHH sequence contexts in embryo, sporophyte and thallus.}
+    \caption*{Methylaiton levels in (A) TE source and (B) SLM target pair in CG, CHG and CHH sequence contexts in embryo, sporophyte and thallus.}
 \end{figure}
 
-\section{4mC/5mC methylation compared to H3K27me3 Cut\&Run}
+
+\section{Microscopy}
+
+As described previously, staining live \textit{Marchantia} embryos proved to be challenging. A variety of fixing and staining methods were also trialled. THis included testing DAPI, Hoechst 33342 and ethidium bromide as staining dyes (ethidium bromide was trialled as the small molecule size was hoped to be able to cross into the fixed embryo), as well as different triton concentrations and fixing lengths in paraformaldehyde. Further an egg reporter line was also tested which had strong expression, however it fades after the first zygotic cell division so this was not sufficient to visualise early embryonic development(Figure \ref{fig:MpSUN}). Next, a variety of cell wall digestion enzymes were also trialled incuding cellulase and pectinase. Though these increased the penetration of dyes, they also seemed to damage the cell ultrastructure too much for proper imaging of early embryonic development (Figure \ref{fig:enzyme_tests}). Therefore, 4 constructs were designed that aimed to provide constitutively expressing nuclear reporter lines. The constructs were driven by constitutive promoters 35S or native promoter EF$\alpha$, fused to either citrine or tdTomato, tagged with a nuclear localisation signal (Figures \ref{fig:35S_citrine_map}, \ref{fig:35S_tdTomato_map}, \ref{fig:EFalpha_citrine_map}, \ref{fig:EFalpha_tdTomato_map}). 
+
+\begin{figure}[htbp!] 
+\centering    
+    \includegraphics[width=1\textwidth]{Chapter3/Figs/Figure7_Reporter_line_gemmae_screening.pdf}
+\caption{\textbf{Gemmae screening of constitutively expressed nuclear reporter lines}}
+\label{fig:gemma:screen}
+\captionsetup{font=small}
+    \caption*{Nuclear signal of tdTomato or citrine (second column, red or yellow respectively, white arrows) in gemmae, driven by either 35S constitutive promoter (first row) native constitutive promoter EF$\alpha$ (second and third rows). Scale bar 10$\mu$m.}
+\end{figure}
+
+These were initially transformed into Tak-1 thalli and selected in gemmae to avoid chimeric expression and several independent plants were recovered from 3 of the 4 constructs (Figure \ref{fig:gemma:screen}). Following this, the constructs were also transformed into sporelings from WTxWT, WTx\textit{dn4mt1} \#6 k.o. and WTx\textit{dn4mt1} \#21 k.o. crosses. Subsequently, transformants were recovered and screened for fluorescence expression in gemmae and antheridia (Figure \ref{fig:antheridia_screen}). Interestingly, though expression was strong in the gemmae of transformants with either of the citrine reporter lines, the strongest and most reliable expression was found in transformants with the 35S::tdTomato-NLS and EF$\alpha$::tdTomato-NLS constructs so these were chosen to be crossed to wild type female archegonia.
+
+\begin{figure}[htbp!] 
+\centering    
+    \includegraphics[width=1\textwidth]{Chapter3/Figs/Figure8_Reporter_line_antheridia.pdf}
+\caption{\textbf{The tdTomato based nuclear reporter lines are expressed in the antheridia}}
+\label{fig:antheridia_screen}
+\captionsetup{font=small}
+    \caption*{Nuclear signal of tdTomato or citrine (second column, red or green respectively) in the antheridiophore, driven by either 35S constitutive promoter (first row) native constitutive promoter EF$\alpha$ (second and third rows). Scale bar 10$\mu$m.}
+\end{figure}
+
+Unfortunately, even though strong expression was seen in the antheridia, neither the developing zygote nor the embryo had any nuclear reporter expression at all. This could be due to the aformentioned shutdown of the paternal genome (Figure \ref{fig:malevsfemale}, first and second rows). Due to this observation, wild type female plants were recovered from the WTxWT 35S::tdTomato-NLS and EF$\alpha$::tdTomato-NLS sporeling crosses (Figure \ref{fig:malevsfemale}, rows 3 and 4) strongely expression their respective nuclear reporter lines.
+
+\begin{figure}[htbp!] 
+\centering    
+    \includegraphics[width=1\textwidth]{Chapter3/Figs/Figure9_reporter_line_malevsfemale.pdf}
+\caption{\textbf{Tak1 male nuclear reporter lines crossed to Tak2 females have no nuclear expression in the embryo}}
+\label{fig:malevsfemale}
+\captionsetup{font=small}
+    \caption*{Nuclear signal of tdTomato (second column, red, white arrows) in embryos crossing EF$\alpha$::tdTomato-NLS Tak1 male to WT Tak2 female, 3 days (first row) and 16 days (second row) after fertilisation. Expression of EF$\alpha$::tdTomato-NLS (third row) and  35S::tdTomato-NLS (fourth row) in WT female thallus. Scale bar 10$\mu$m.}
+\end{figure}
+
+
+
+\begin{figure}[htbp!] 
+\centering    
+    \includegraphics[width=1\textwidth]{Chapter3/Figs/Figure10_Developmental_stages.pdf}
+\caption{\textbf{Developmental stages of the early embryo (Tak1 male x EF$\alpha$::tdTomato-NLS WT female)}}
+\label{fig:dev_stages}
+\captionsetup{font=small}
+    \caption*{(A) Zygote (B) Zygote dividing (C) Two-cell stage (D) Two-cell embryo dividing (E) Four-cell stage. Scale bar 10$\mu$m.}
+\end{figure}
+
+\begin{figure}[htbp!] 
+\centering    
+    \includegraphics[width=1\textwidth]{Chapter3/Figs/Figure11_nucleus_number.pdf}
+\caption{\textbf{Embryos fertilised by \textit{dn4mt1} knockout sperm develop more rapidly than WT}}
+\label{fig:nucleus_number}
+\captionsetup{font=small}
+    \caption*{Mean nucleus number of embryos from 1-7 days after fertilisation, fertilised by wild type (blue), \textit{dn4mt1} knockout \#6 (dark green), or \textit{dn4mt1} knockout \#21 (light green) sperm. }
+\end{figure}
+
+\begin{figure}[htbp!] 
+\centering    
+    \includegraphics[width=0.75\textwidth]{Chapter3/Figs/Figure12_circularity.pdf}
+\caption{\textbf{Embryos fertilised by \textit{dn4mt1} knockout sperm elongate earlier and tend mroe circular earlier than those fertilised by wild type sperm}}
+\label{fig:circularity}
+\captionsetup{font=small}
+    \caption*{(A) Mean longitudinal diameter, (B) Mean transverse diameter, (C) Mean circularity of embryos 1-7 days after fertilisation, fertilised by wild type (blue), \textit{dn4mt1} knockout \#6 (dark green), or \textit{dn4mt1} knockout \#21 (light green) sperm.}
+\end{figure}
+
+
 
 
 
