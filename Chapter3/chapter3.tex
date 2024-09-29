@@ -14,9 +14,66 @@
 
 \section{Abstract}
 
+Global cytosine methylation reprogramming has recently been reported in the male sexual lineage of Marchantia polymorpha. During spermiogenesis, global 5mC expansion occurs followed by the expansion of 4mC onto CG sites, a DNA modification previously only described in bacteria and archaea. Following fertilisation, the mature embryo loses this epigenetic mark, so it’s crucial to understand whether 4mC is maintained or passively lost after fertilisation.
+
+
 \section{Introduction}
 
 Recently, our group has shown that during spermatogenesis, there extensive DNA methylation reprogramming in Marchantia. As well as the deposition of 5-methylcytosine (5mC), there is an additional wave of DNA methylation reprogramming whereby N4-methylcytosine (4mC) - an epigenetic modification previously only found in prokaryotes – is deposited at the majority of CG cites across the genome \citep{RN189}. 
+
+\begin{figure}[htbp!] 
+\centering    
+    \includegraphics[width=0.5\textwidth]{Chapter3/Figs/Intro/base_mods.pdf}
+\caption{}
+\label{fig:base_mods}
+\captionsetup{font=small}
+    \caption*{}
+\end{figure}
+
+\begin{figure}[htbp!] 
+\centering    
+    \includegraphics[width=0.5\textwidth]{Chapter3/Figs/Intro/Marchantia_lifecycle.pdf}
+\caption{}
+\label{fig:Mp_lifecycle}
+\captionsetup{font=small}
+    \caption*{}
+\end{figure}
+
+\begin{figure}[htbp!] 
+\centering    
+    \includegraphics[width=0.7\textwidth]{Chapter3/Figs/Intro/Embryo_development.pdf}
+\caption{}
+\label{fig:Mp_embryo_dev}
+\captionsetup{font=small}
+    \caption*{}
+\end{figure}
+\begin{figure}[htbp!] 
+\centering    
+    \includegraphics[width=1\textwidth]{Chapter3/Figs/Intro/Sequencing_techs.pdf}
+\caption{}
+\label{fig:Mp_seq_techs}
+\captionsetup{font=small}
+    \caption*{}
+\end{figure}
+
+\begin{figure}[htbp!] 
+\centering    
+    \includegraphics[width=1\textwidth]{Chapter3/Figs/Intro/Marchantia_germline_seq.pdf}
+\caption{}
+\label{fig:Mp_germline-seq}
+\captionsetup{font=small}
+    \caption*{}
+\end{figure}
+
+\begin{figure}[htbp!] 
+\centering    
+    \includegraphics[width=1\textwidth]{Chapter3/Figs/Intro/Graphical_abstract.pdf}
+\caption{}
+\label{fig:Mp_graphical_abstract}
+\captionsetup{font=small}
+    \caption*{}
+\end{figure}
+
 
 Data from mature embryo reveals that this 4mC methylation is not present. Several hypotheses could explain why this happens. The most likely is that following fertilisation, paternal epigenetic marks are lost passively through cell division. Alternatively, the marks could be maintained through the first few cell divisions and then are actively or passively lost. We also know that the pronuclei take 3 days to fuse \citep{RN139}, so it is also possible that removing paternal epigenetic marks is required for zygote formation. 
 
@@ -29,6 +86,7 @@ Recently, our group has shown that during Marchantia spermiogenesis extensive DN
 However, this methylation is absent in the mature embryo (containing over 1000 cells). The exact point in time when 4mC methylation disappears post-fertilisation remains unknown, as does whether the paternal genome retains any 4mC marks during the early stages of zygotic development. The first division of the zygote in Marchantia takes place around 4 days post-fertilisation1 which suggests that 4mC may be required to be actively removed for pronuclear fusion to occur. This aligns with the observed phenotype where embryos fertilised by Mpdn4mt1 sperm develop more rapidly, though this phenotype needs to be confirmed during early embryonic development. Alternatively, 4mC methylation could be lost passively following fertilisation through dilution by cell division, or actively removed post-fertilisation for DNA replication or cell division to function normally. 4mC may also be crucial in the correct genome dosage/transcriptional activity during early embryonic development. 
 
 In Arabidopsis, 5mC methylation is lost actively to maintain homeostasis of DNA methylation levels through several DNA glycosylases, including ROS1 \citep{RN168}. Therefore, the orthologs of ROS1 in Marchantia, MpROS1a and MpROS1x (located on the female sex chromosome) offer possible candidates for erasing paternal 4mC methylation as they are expressed in the sperm \citep{RN212} and mature eggs/embryos \citep{RN257} respectively.
+DNA demethylases regulate DNA methylation levels in eukaryotes. Arabidopsis encodes four DNA demethylases, DEMETER (DME), REPRESSOR OF SILENCING 1 (ROS1), DEMETER-LIKE 2 (DML2), and DML3. While DME is involved in vegetative cell demethylation in pollen \citep{RN57} (as discussed in Chapter 2), it is also required for the allele-specific expression of maternally imprinted genes in the central cell and endrosperm \citep{RN235}. The rest of the DNA glycosylases seem to be functionally redundant and are involved in preventing the spread of transposon 5mC methylation to genic regions\citep{RN288}. \textit{Marchantia} has 2 orthologs of ROS1, one of which is found on the female chromosome ROS1X and is expressed specifically in the embryo \citep{RN169,RN257,RN189}. 
 
 It has also recently been shown that other epigenetic marks, namely the heterochromatic histone modification H3K27me3 is deposited at the pronuclear stage exclusively on the paternal genome and causes the repression of the paternal genome persisting until the conclusion of embryogenesis \citep{RN160}. In contrast, in mammalian germlines, H3K27me3¬ mediated imprinting is limited to a few loci within the female gamete \citep{RN172}.
 
@@ -84,7 +142,7 @@ Secondly, pre-meiotic embryos were dissected and sequenced using AMD-seq to esta
 
 At a surface level, the early embryo AMD-seq data indicated marginally higher 4mC methylation across genes compared to the mature AMD sequencing library (Figure \ref{tab:methylation_levels}). However, this increase fell within the error range of the experimental limitations (Table \ref{tab:methylation_levels}, "CHG and CHH levels of 4mC"). Moreover, the low levels of residual 4mC methylation did not display the expected distribution over genes and TEs, with no relative increase outside TEs or over genes. This suggests that the removal of paternal 4mC methylation may be essential for embryo development. However, starting with a methylation level of around 20\% in the zygote (based on the sperm AMD-seq levels), passive loss of 4mC by the 16–32 cell stage (7–8 days after fertilisation in our conditions) would result in very low residual 4mC methylation levels (Table \ref{tab:methylation_levels}). 
 
-It has been previously demonstrated that during embryonic development the paternal genome is transcriptionally silenced and is marked with the repressive chromatin mark H3K27me3 mediated by maternally expressed Polycomb Repressive Complex 2 (PRC2) in the male pronucleus before the first zygotic division, approximately 3 days after fertilisation \citep{RN160}.  This suggests the existence of a mechanism for paternal genome recognition, with blanket 4mC methylation being a potential candidate. To this end, visualizing H3K27me3 data across genes and TEs from this study confirms a paternal bias in the deposition of H3K27me3. However, the pattern of H3K27me3 occupancy around gene and transposon transcription start sites does not align with the distribution of 4mC. Additionally, Dr. Shujuan Xu confirmed that H3K27me3 paternal foci still form in embryos fertilized by \textit{dn4mt1} knockout sperm, 13 days after fertilisation \ref{fig:immuno}. These findings suggest that paternal genome recognition is not directly linked to blanket 4mC methylation. To obtain a definitive answer, developing reliable 4mC immunostaining and/or single-cell AMD sequencing methods for the zygote or early embryo is necessary, provided successful dissection at this developmental stage is achievable.
+It has been previously demonstrated that during embryonic development the paternal genome is transcriptionally silenced and is marked with the repressive chromatin mark H3K27me3 mediated by maternally expressed Polycomb Repressive Complex 2 (PRC2) in the male pronucleus before the first zygotic division, approximately 3 days after fertilisation \citep{RN160}. This suggests the existence of a mechanism for paternal genome recognition, with blanket 4mC methylation being a potential candidate. To this end, visualizing H3K27me3 data across genes and TEs from this study confirms a paternal bias in the deposition of H3K27me3. However, the pattern of H3K27me3 occupancy around gene and transposon transcription start sites does not align with the distribution of 4mC.
 
 \begin{table}[htbp!]
 \centering
@@ -145,7 +203,7 @@ Indeed when aligning the sequence of a source TE to its corresponding MetGene, a
 \caption{\textbf{Example of a TE  source and SLM target that gain methylation in the sporophyte}}
 \label{fig:TE_SLM_pairs}
 \captionsetup{font=small}
-    \caption*{Methylation levels in (A) TE source and (B) SLM target pair in CG, CHG and CHH sequence contexts in embryo, sporophyte and thallus.}
+    \caption*{Methylation levels in (A) TE source and (B) SLM target pair in CG, CHG and CHH sequence contexts in embryo, sporophyte and thallus. Overlapping sequence highlighted in red.}
 \end{figure}
 
 \section{Investigating the parental bias of sRNA production in \textit{Marchantia} embryos, sporophyte and thallus}
@@ -155,8 +213,6 @@ In the developing embryo, the paternal genome is deposited with H3K27me3, result
 The sRNA sequencing libraries were mapped to the reference genome with both no mismatches, and allowing one mismatch. Reads with mismatches at SNP positions were retained, as well as perfect matching sRNAs at SNP positions. A SNP ratio was calculated between the alternative and reference alleles for further analysis. Although several thousand SNP regions were initially covered, only those with at least 5 reads were retained to ensure robust results, which substantially reduced the number of SNP locations. 
 
 Reads from archegoniophores displayed a SNP ratio near 1, as expected (Figure \ref{fig:sRNA_SNPs}A,B archegoniophore). Interestingly, in the early embryo, the data suggest a paternal bias in sRNA production, which shifts to a maternal bias in the sporophyte (Figure \ref{fig:sRNA_sizes}A,B embryo and sporophyte). As expected, the SNP ratio distribution in the embryo and sporophyte was less bimodal than in other tissues, indicating concurrent sRNA production from both genomes at multiple loci in the diploid phase. The thallus data seemed unreliable, with a surprising maternal bias despite originating from Tak-1 males \citep{RN265}.
-
-It is important to recognise the limitations of these results. Since Tak-1 and Tak-2 are asexually maintained in lab conditions, accumulated point mutations may alter the genomic sequence significantly over time. In fact, at several SNP positions, bases other than the reference or alternative were found, in all datasets. Additionally, if Tak-1 was crossed with other lines at any point, the SNP distribution in the resulting hybrid would differ from either parent. The unequal SNP distribution along different chromosomes also makes these cultivars suboptimal for complete genome coverage. Variations in SNP ratio distribution across chromosomes (Figure \ref{fig:chrom_ridge}) further illustrate this. Lastly, the filtering steps applied to the sRNA data resulted in a limited number of data points, which restricts the ability to draw definitive conclusions. Therefore, ensuring the precise genetic background of the parental lines is crucial for accurate results, as well as obtaining sufficient sequencing depths, especially to determine definitively whether 24nt sRNAs are produced from both parental genomes in \textit{Marchantia} embryo development.
 
 \begin{figure}[htbp!] 
 \centering    
@@ -171,9 +227,9 @@ It is important to recognise the limitations of these results. Since Tak-1 and T
 
 \section{Developing an effective method for visualising early embryonic development in \textit{Marchantia}}
 
-The next objective was to determine whether the observed phenotype — where embryos fertilized with 4mC methylation mutants reach maturity earlier than wild type (Figure \ref{fig:burstpeak}) — was due to accelerated pronuclear fusion in the zygote, potentially caused by the absence of paternal 4mC. This led to the hypothesis that paternal 4mC may need to be actively removed before pronuclear fusion can occur.
+The next objective was to determine whether the observed phenotype — where embryos fertilised with 4mC methylation mutants reach maturity earlier than wild type (Figure \ref{fig:burstpeak}) — was due to accelerated pronuclear fusion in the zygote, potentially caused by the absence of paternal 4mC. This led to the hypothesis that paternal 4mC may need to be actively removed before pronuclear fusion can occur.
 
-As described earlier, staining live \textit{Marchantia} embryos proved challenging. A variety of fixing and staining methods were also trialled, including DAPI, Hoechst 33342 and ethidium bromide as staining dyes (the latter was used due to its small molecule size, which was expected to penetrate the fixed embryo), as well as different triton and paraformaldehyde concentrations and fixation times. Additionally, an egg cell reporter line was also tested (ECpro:MpSUN-GFP \citep{RN139}) showing strong expression;this faded after the first zygotic division, making it insufficient for visualizing early embryonic development (Figure \ref{fig:MpSUN}). 
+As described earlier, staining live \textit{Marchantia} embryos proved challenging. A variety of fixing and staining methods were also trialled, including DAPI, Hoechst 33342 and ethidium bromide as staining dyes (the latter was used due to its small molecule size, which was expected to penetrate the fixed embryo), as well as different triton and paraformaldehyde concentrations and fixation times. Additionally, an egg cell reporter line was also tested (ECpro:MpSUN-GFP \citep{RN139}) showing strong expression; this faded after the first zygotic division, making it insufficient for visualizing early embryonic development (Figure \ref{fig:MpSUN}). 
 
 Next, cell wall digestion enzymes such as cellulase and pectinase were trialed to improve dye penetration. While these enzymes increased dye uptake, they also compromised cell ultrastructure, hindering proper imaging of early embryonic development and cellular ultrastructure (Figure \ref{fig:enzyme_tests}). As a result, four constructs were designed to create constitutively expressing nuclear reporter lines. These constructs were driven by either the constitutive 35S promoter or the native EF$\alpha$ promoter, fused with citrine or tdTomato, and tagged with a nuclear localisation signal (NLS) (Figures \ref{fig:35S_citrine_map}, \ref{fig:35S_tdTomato_map}, \ref{fig:EFalpha_citrine_map}, \ref{fig:EFalpha_tdTomato_map}). 
 
@@ -186,7 +242,7 @@ Next, cell wall digestion enzymes such as cellulase and pectinase were trialed t
     \caption*{Nuclear signal of tdTomato or citrine (second column, red or yellow respectively, white arrows) in gemmae, driven by either 35S constitutive promoter (first row) native constitutive promoter EF$\alpha$ (second and third rows). Scale bar 10$\mu$m.}
 \end{figure}
 
-The constructs were initially transformed into Tak-1 thalli and selected in gemmae to avoid chimeric expressio, resulting in the recovery of several independent plants from three of the four constructs(Figure \ref{fig:gemma:screen}).The constructs were then also transformed into sporelings from WTxWT, WTx\textit{dn4mt1} \#6 knockout and WTx\textit{dn4mt1} \#21 knockout crosses. Transformants were successfully recovered and screened for fluorescence expression in gemmae and antheridia (Figure \ref{fig:antheridia_screen}). Interestingly, while citrine reporter lines showed strong expression in gemmae, the strongest and most consistent expression was observed in transformants with the 35S::tdTomato-NLS and EF$\alpha$::tdTomato-NLS constructs. These lines were selected for crosses with wild-type female archegonia.
+The constructs were initially transformed into Tak-1 thalli and selected in gemmae to avoid chimeric expression, resulting in the recovery of several independent lines from three of the four constructs (Figure \ref{fig:gemma:screen}).The constructs were then also transformed into sporelings from WTxWT, WTx\textit{dn4mt1} \#6 knockout and WTx\textit{dn4mt1} \#21 knockout crosses. Transformants were successfully recovered and screened for fluorescence expression in gemmae and antheridia (Figure \ref{fig:antheridia_screen}). Interestingly, while citrine reporter lines showed strong expression in gemmae, the strongest and most consistent expression was observed in transformants with the 35S::tdTomato-NLS and EF$\alpha$::tdTomato-NLS constructs. These lines were selected for crosses with wild-type female archegonia.
 
 \begin{figure}[htbp!] 
 \centering    
@@ -197,7 +253,8 @@ The constructs were initially transformed into Tak-1 thalli and selected in gemm
     \caption*{Nuclear signal of tdTomato or citrine (second column, red or green respectively) in the antheridiophore, driven by either 35S constitutive promoter (first row) native constitutive promoter EF$\alpha$ (second and third rows). Scale bar 10$\mu$m.}
 \end{figure}
 
-Unfortunately, despite strong expression in the antheridia, no nuclear reporter expression was detected in the developing zygote or embryo.This may be attributed to the previously mentioned shutdown of the paternal genome (Figure \ref{fig:malevsfemale}, first and second rows).  In response to this, wild-type female plants were recovered from the WTxWT 35S::tdTomato-NLS and  EF$\alpha$::tdTomato-NLS sporeling crosses (Figure \ref{fig:malevsfemale}, rows 3 and 4) strongely expression their respective nuclear reporter lines.
+Unfortunately, despite strong expression in the antheridia, no nuclear reporter expression was detected in the developing zygote or embryo.This may be attributed to the previously mentioned shutdown of the paternal genome (Figure \ref{fig:malevsfemale}, first and second rows).  In response to this, wild-type female plants were recovered from the WTxWT 35S::tdTomato-NLS and  EF$\alpha$::tdTomato-NLS sporeling crosses (Figure \ref{fig:malevsfemale}, rows 3 and 4) with strong expression their respective nuclear reporter lines. To improve clarity and fluorescence signal, a different clearing and staining method was employed, namely iTOMEI \citep{RN279}. In this protocol, the fixing component caprylyl sulfobetaine is able to clear chlorophyll without significantly quenching GFP (or other) fluorophores. After testing several environmental conditions, the best images were collected from 1\% FA fixation in PBS (pH 7.4) buffer for an hour, followed by clearing with caprylyl sulfobetaine for 24 hours (please see Materials and Methods for further details).
+
 
 \begin{figure}[htbp!] 
 \centering    
@@ -210,7 +267,7 @@ Unfortunately, despite strong expression in the antheridia, no nuclear reporter 
 
 \section{Embryos crossed with 4mC metylation mutant sperm develop more rapidly than wild type during the first 7 days post-fertilisation}
 
-Once mature archegoniophore-producing female plants were available from the selected 35S::tdTomato-NLS and EF$\alpha$::tdTomato-NLS lines, they were crossed with WT, \textit{dn4mt1} \#6 and \textit{dn4mt1} \#21 sperm. As before, the sperm was co-cultured with the archegoniophores for an hour, after which the developing embryos were fixed and cleared daily, 1 to 7 days post-fertilisation. 
+Once mature archegoniophore-producing female plants were available from the selected 35S::tdTomato-NLS and EF$\alpha$::tdTomato-NLS lines, they were crossed with WT, \textit{dn4mt1} \#6 and \textit{dn4mt1} \#21 sperm. As before, the sperm was co-cultured with the archegoniophores for an hour, after which the developing embryos were dissected carefully, fixed and cleared daily, 1 to 7 days post-fertilisation. Due to the use of immature archegoniophores, embryos at 3 DAF were unfortunately unsuitable for imaging. In total, 338 embryos were imaged during the 7 days post-fertilisation and the developmental stages manually determined. 
 
 \begin{figure}[htbp!] 
 \centering    
@@ -221,32 +278,67 @@ Once mature archegoniophore-producing female plants were available from the sele
     \caption*{(A) Zygote (B) Zygote dividing (C) Two-cell stage (D) Two-cell embryo dividing (E) Four-cell stage. Scale bar 10$\mu$m.}
 \end{figure}
 
-During the first two zygotic divisions, cells were often observed with multiple nuclei that had not yet undergone cytokinesis (Figure \ref{fig:dev_stages}B and D). Between days 1-5 after fertilisation, embryos fertilised by either independent \textit{dn4mt1} knockout lines appeared to begin dividing earlier than those fertilised by wild type sperm (Figure \ref{fig:nucleus_number}). Interestingly, according to the hypothesis, the task of the removal of the blanket 4mC methylation in the paternal genome should delay pronuclear fusion in wild type zygotes compared to the 4mC knockout mutants, leading to a delayed onset of exponential growth in the developing embryo. However, the results show that up to day 5 post-fertilisation, both WT and 4mC mutants had similar nuclei numbers, despite the earlier zygotic division observed in the 4mC mutants \ref{fig:Dividing_cells}. After day 5, the rate of cell division in 4mC mutants sharply increased, whilst the rate of cell division in wild type showed a less steep gradient (Figure \ref{fig:nucleus_number}).
+The developing embryo initially elongates through a transverse division, perpendicular to the archegonial axis, followed by a second vertical division to form four cells. The third division occurs at right angles to the previous ones, creating an octant of equal cells \citep{RN143,RN144}. Subsequent cell divisions progressively alter the embryo's initially circular shape. To further assess early cellular development, in addition to counting the nuclei, the transverse diameter of the embryonic venter cavity was measured. Interestingly, the mean transverse diameter of the embryos remained consistent and increased at a similar rate across all lines all until day 6, and between WT and \textit{dn4mt1} k.o. \#6 between days 6 and 7 \ref{fig:transverse_diameter}.
 
-The developing embryo initially elongates through a transverse division (perpendicular to the archegonial axis), followed by a second vertical division to form four cells. The third division occurs at right angles to the previous divisions, creating an octant of equal cells \citep{RN143,RN144}, after which a series of cell divisions alters the embryo's initially circular shape. Therefore the mean transverse diameter of the developing cavity of the embryonic venter was used to approximate early cellular development. Interestingly, despite the sharp divergence if nucleus number between wild type and the 4mc knockout lines after 5 DAF, the mean transverse diameter of the embryos remained consistent and increased at a similar rate across all lines all until day 6, and between WT and \textit{dn4mt1} k.o. \#6 between days 6 and 7. 
+During the first two zygotic divisions, cells were frequently observed with multiple nuclei that had not yet undergone cytokinesis (Figure \ref{fig:dev_stages}B and D).  To facilitate tracking of cell development, these different stages were classified into distinct developmental phases:1. 1 nucleus 2. 2 nuclei, 1 cell, 3. 2 nuclei, 2 cells 4. 4 nuclei, 2 cells, 5. 4 nuclei, 4 cells, 6. 8 nuclei, 4 cells, 7. 8 nuclei, 8 cells, 8. 9-16 nuclei, 9. 16-25 nuclei, 10. 26-35 nuclei, 11. 36-45 nuclei, 12. 46 - 55 nuclei, 13. more than 55 nuclei.
+
+Between days 1 and 5 post-fertilisation, embryos fertilised by either of the independent \textit{dn4mt1} knockout lines appeared to initiate division earlier than those fertilised by wild-type sperm. For example, by day 2, nearly all imaged cells in the \textit{dn4mt1} knockout lines had 2 nuclei, compared to fewer than a quarter in the wild type (Figure \ref{fig:nucleus_number}B,C).  
+
+This trend persisted through day 4, where approximately a quarter of cells in the \textit{dn4mt1} knockout line \#6 had reached stage 4, while none of the wild-type cells had progressed that far. By day 5, the proportion of cells in various developmental stages became more synchronized across the genotypes. However, after day 5, embryos from the \textit{dn4mt1} knockout line \#21 continued to develop more rapidly than the wild type, the most advance embryos reaching stage 13 by day 6 compared to stage 10 in wild-type (Figure \ref{fig:nucleus_number}B,C). 
+
+In contrast, the difference between the wild type and the \textit{dn4mt1} knockout line \#6 was less pronounced, with some embryos from a \textit{dn4mt1} \#6 background reaching stage 12 by day 7, while the most developed wild type embryos were slightly behind, in stage 11. It is also noteworthy that embryos from a  \textit{dn4mt1} \#6 knockout background displayed a proportion of cells arrested in stage 1 or 2, even at day 6 and day 7 (\ref{fig:nucleus_number}B,C).
 
 
 \begin{figure}[htbp!] 
 \centering    
-    \includegraphics[width=1\textwidth]{Chapter3/Figs/Figure11_nucleus_number.pdf}
-\caption{\textbf{Embryos fertilised by \textit{dn4mt1} knockout sperm develop more rapidly than WT}}
-\label{fig:nucleus_number}
-\captionsetup{font=small}
-    \caption*{Mean nucleus number of embryos from 1-7 days after fertilisation, fertilised by wild type (blue), \textit{dn4mt1} knockout \#6 (dark green), or \textit{dn4mt1} knockout \#21 (light green) sperm. }
+    \includegraphics[width=0.95\textwidth]{Chapter3/Figs/Figure11_nucleus_number.pdf}
+    \captionsetup{belowskip=0pt, aboveskip=0pt}
+    \caption{\textbf{Embryos fertilised by \textit{dn4mt1} knockout sperm develop more rapidly than WT}}
+    \label{fig:nucleus_number}
+    \caption*{See next page for full caption.}
 \end{figure}
+
+\clearpage 
+
+\FloatBarrier  % Prevents floating content from passing this point
+
+% Full caption on the next page
+\noindent\textbf{Full caption for Figure \ref{fig:nucleus_number}:} \\
+A) Mean nucleus number of embryos from 1-7 days after fertilisation, fertilised by wild type (blue), \textit{dn4mt1} knockout \#6 (dark green), or \textit{dn4mt1} knockout \#21 (light green) sperm. 
+B) Distribution of imaged embryos in different developmental stages from 1-7 days after fertilisation, categorised into distinct stages based on nuclei and cell numbers. 
+Developmental stages: 1. 1 nucleus 2. 2 nuclei, 1 cell, 3. 2 nuclei, 2 cells 4. 4 nuclei, 2 cells, 5. 4 nuclei, 4 cells, 6. 8 nuclei, 4 cells, 7. 8 nuclei, 8 cells, 8. 9-16 nuclei, 9. 16-25 nuclei, 10. 26-35 nuclei, 11. 36-45 nuclei, 12. 46 - 55 nuclei, 13. 55< nuclei.
+C) Proportion of embryos in developmental stages 1-7 days after fertilisation fertilised by wild type, \textit{dn4mt1} knockout \#6, or \textit{dn4mt1} knockout \#21 sperm.
+
 
 \clearpage
 
 
 \section{Discussion}
 
-In angiosperms and other land plants during spermiogenesis, histones get swapped out to  sperm specific histones. However in Marchantia this is not the case, histone modifications cannot be transferred to the  sperm, instead histones get replaced by protamines, thereby DNA methylation is the only heritable epigenetic modification from the paternal side. This is strikingly similar to mammalian sperm compaction. In addition, after fertilisation the developing zygote is quickly demethylated by TET2 enzymes. In plants, DNA demethylation os carried out by RESPRESSOR OF SILENCING 1 (ROS1) and 
 
-DNA demethylases regulate DNA methylation levels in eukaryotes. Arabidopsis encodes four DNA demethylases, DEMETER (DME), REPRESSOR OF SILENCING 1 (ROS1), DEMETER-LIKE 2 (DML2), and DML3. While DME is involved in maternal specific gene expression during seed development and is required for the alllel-specific expression of maternally imprinted genes in the central cell and endrosperm. base excision mechanism - replace 5mC with C. Marchantia hs 2 orthologs of ROS1, one of which is found on the female chromosome ROS1X and is expressed specifically in the embryo. 
+In angiosperms and other land plants, spermiogenesis involves chromatin compaction through the replacement of histones with sperm-specific histone variants \citep{RN283,RN284,RN285}. However, in \textit{Marchantia}, this process differs, as nucleosomes are replaced by protamines rather than histone variants. Consequently, DNA methylation becomes the primary heritable epigenetic mark in the paternal genome. This resembles the process in mammalian sperm, where the majority of histones are replaced by protamines, although some nucleosomes are retained \citep{RN282}. Following fertilisation, mammalian zygotes undergo global DNA demethylation, driven by TET enzymes. This demethylation is crucial for transcriptional regulation, imprinting, and maintaining pluripotency in the early stages of development \citep{RN286,RN287}.
 
-There are two possible pathways through which paternal blanket 4mC methylation would be absent in the mature embryo/sporophyte. One way would be after fertilisation MpDN4MT1 is not expressed or 4mC methylation s not actively maintained so it gets diluted through cell division. (mention sth about uniquitous epigenetic mark connection with transcription perhaps) to go against this theory. Althernatively, we can hypothesise that paternal 4mC methylation needs to be removed to allow pronuclear fusion. This hypothesis could explain the unusually long time it takes for Marchantia embyos to undergo pronuclear fusion and the first zygotic division (up to 3 days after fertilisation). Furthermore, the phenotype observed in embyros fertilised by dn4mt1 mutant sperm compared to wild type (a sporophyte maturation that matures up to 4 days earlier than witld type) would favour this explanation.
+In \textit{Marchantia}, following fertilisation, protamines in the paternal pronucleus are replaced by histones, and H3K27me3 is deposited by a maternally expressed PRC2 complex \citep{RN160} specifically on paternal chromatin. This suggests a potential mechanism for paternal genome recognition, with paternal N4-methylcytosine blanket methylation emerging as a potential candidate.
 
-In comparing early embryonic development between the two 4mC mutants and wild type, we can clearly see that zygotic divisions started earlier in both 4mC mutants than wild type (Figure \ref{fig:Dividing_cells}). Following this however, both genotypes developed at a similar rate until day 5, with similar nucleus numbers. However, from day 5 onward, the 4mC mutants displayed a sharp exponential increase in cell numbers over the following two days, while wild type embryos also underwent rapid cell division but at a much shallower gradient (Figure \ref{fig:nucleus_number}). Contrary to the expectation that a delay in early embryonic development in genotype A would result in a delayed entry into exponential growth compared to 4mC mutants, both genotypes entered this phase simultaneously, with the difference primarily in the rate of cell proliferation rather than the timing of onset.
+However, when examining the distribution of H3K27me3 marks over genes and transposons, there is no clear alignment with 4mC occupancy (Figure \ref{fig:h3k27me3}). Furthermore, results from scBS-seq of early Marchantia embryos revealed no evidence of paternal 4mC (Figure \ref{fig:ends_analysis}, Table \ref{tab:methylation_levels}). Additionally, Dr. Shujuan Xu confirmed that paternal H3K27me3 foci still form in embryos fertilised by \textit{dn4mt1} knockout sperm, 13 days after fertilisation (Figure \ref{fig:immuno}. These findings suggest that paternal genome recognition is not directly linked to blanket genome-wide 4mC methylation. However, it is important to consider that theoretical paternal 4mC trace levels in the embryo would likely be very low by 7-8 days post-fertilisation, assuming passive loss through cell division (Table \ref{tab:methylation_levels}). To obtain a definitive answer,  developing reliable 4mC immunostaining and/or single-cell AMD sequencing methods for zygotes or embryos at the 2-4 cell stage is essential, provided successful dissection at this early developmental stage can be achieved.
+
+ Considering the shut-down of the paternal genome in the sporophyte, the possibility of whether sRNA production from the paternal genome became an intriguing question. Investigating whether there is a difference in sRNA production between the two parental genomes in the sporophyte, particularly in light of this potential suppression, revealed intriguing results. Initially, the sRNA data suggested a paternal bias in the embryo, which appeared to shift toward a maternal bias in the sporophyte, though substantial sRNA production was observed from both parental genomes (Figure \ref{fig:sRNA_SNPs}A,B). 
+ 
+ Despite these findings, it is essential to acknowledge the limitations of this analysis. The male and female accessions used as the parental lines (Tak-1 and Tak-2) are asexually maintained in lab conditions, which means accumulated point mutations over time may significantly alter their genomic sequences. Indeed, at several SNP positions, bases other than the reference or alternative were observed across all datasets. Additionally, if Tak-1 had been crossed with other lines at any point, the resulting hybrid would exhibit a different SNP distribution from either parent.The unequal SNP distribution along different chromosomes further complicates the analysis, making these cultivars less suitable for complete genome coverage (Figure \ref{fig:chrom_ridge}). Moreover, the filtering steps applied to the sRNA data resulted in a limited number of data points, which restricts the ability to draw definitive conclusions. Ensuring the precise genetic background of the parental lines is therefore essential for accurate results, as is obtaining sufficient sequencing depths to definitively answer whether 24nt sRNAs are produced from both parental genomes in \textit{Marchantia} embryos. 
+ 
+ Furthermore, exploring the distribution of H3K9me1 histone modifications on TEs in the mature embryo (as a proxy for locations that may be active in RdDM, as H3K9me2 has a direct interaction with SHH1, which recruits the Pol IV complex in \textit{Arabidopsis} \citep{RN116}) does not reveal a strong parental bias (Figure \ref{fig:h3k8me1}) \citep{RN160}. Nevertheless, addressing the limitations of the current dataset and producing a high-confidence, genetically distinct parental cross would provide valuable insights into the sRNA landscape of Marchantia embryos. These results could then be cross-referenced with bisulfite sequencing data to draw more robust conclusions.
+
+It has been previously noted that similar to genes hypermethylated in the male germline of \textit{Arabidopsis} (MetGenes), \textit{de novo} methylated genes are also present in the sporophyte of \textit{Marchantia} (Figure \ref{fig:SLM_examples} \citep{jimmythesis}. In \textit{Arabidopsis}, few perfectly matching sRNAs map directly to methylated MetGene regions. This observation led to the discovery that HyperTE-derived sRNAs target MetGene locations in meiocytes for methylation with up to three mismatches \citep{RN187} (Figure \ref{fig:At_0v3}). 
+
+Building on this, once MetGene loci were identified in \textit{Marchantia} sporophytes, it was explored whether CHH methylation  at these genes could be targeted by sRNAs produced by TEs with high sequence homology. Although sequence homology between TE sources and target MetGenes was identified (Figure \ref{fig:TE_SLM_pairs}), a clear relationship between sRNA mismatch targeting and CHH methylation was not established. Mapping sRNAs to MetGene locations with up to 3 mismatches did not significantly increase the abundance of sRNAs at these locations (Figure \ref{fig:Mp_0v3}). 
+
+Nevertheless, a mechanism must allow either the production of 24nt sRNAs and/or the targeting of TE-derived sRNAs for methylation at MetGenes specifically during the sporophyte stage. Further investigation is needed to verify this hypothetical causal relationship, including examining RdDM-associated protein variants uniquely expressed in the sporophyte and/or creating CRISPR/Cas9 knockout lines to mutate homologous sequences from the putative TE source to determine whether CHH methylation is abolished at the corresponding MetGene.
+
+ Previous studies have shown that the mature pre-meiotic embryo loses all traces of paternal 4mC methylation \citep{RN189}. The removal of 4mC may be necessary for embryo development, as there is evidence that 4mC suppresses chromatin accessibility and transcription \citep{RN189}. There are two possible pathways through which paternal blanket 4mC methylation could be absent in the mature embryo or sporophyte.  One possibility is that after fertilisation, MpDN4MT1 is not expressed, or 4mC methylation is not actively maintained, leading to its gradual dilution through cell division. Alternatively, we can hypothesise that paternal 4mC methylation needs to be removed to allow pronuclear fusion. This hypothesis could explain the unusually long period required for \textit{Marchantia} embryos to undergo pronuclear fusion and complete the first zygotic division (up to 3-4 days after fertilisation) \citep{RN139}. Additionally, the accelerated sporophyte maturation observed in embryos fertilised by \textit{dn4mt1} mutant sperm, maturing up to 4 days earlier than wild-type embryos (Figure \ref{fig:burstpeak}), could support this explanation. In this scenario, MpROS1X (a DNA glycosylase encoded on the female chromosome) emerges as a potential candidate that could facilitate the removal of paternal blanket 4mC prior to pronuclear fusion.
+
+When comparing early embryonic development between the two 4mC mutants and wild type, it is evident that zygotic divisions began earlier in both 4mC mutants than in the wild type (Figure \ref{fig:nucleus_number}B,C). Following this initial difference, all genotypes developed at a similar rate until day 5, with comparable nucleus numbers. However, after day 5, the 4mC mutants exhibited a sharp exponential increase in cell numbers over the next two days, while wild type embryos also underwent rapid cell division, but with a more gradual increase (Figure \ref{fig:nucleus_number}). Interestingly, despite the expectation that the wild type embryo's delayed early embryonic development would lead to a delayed entry into exponential growth compared to the 4mC mutants, both genotypes entered this phase simultaneously. The primary difference lay in the rate of cell proliferation, rather than the timing of its onset.
+
+These findings suggest that 4mC removal may be required prior to pronuclear fusion. However, more detailed immunostaining or single-cell AMD sequencing in the zygote is necessary, along with an investigation into the phenotypic effects of knocking out DNA demethylases, particularly MpROS1x. Additionally, it would be important to explore whether ROS1x possesses N4-methylcytosine glycosylase activity. Furthermore, despite accelerated embryonic development, the knockout of paternal 4mC appears to have a partial fertility cost, as some embryos in these knockouts exhibit delayed development or arrest (Figure \ref{fig:nucleus_number}B,C), a phenomenon observed in previous studies \citep{RN189}.
 
 \clearpage
 
@@ -278,16 +370,14 @@ Semi in vitro culture and crossing was performed as described previously\citep{R
 
 The archegoniophores were collected for dissection and imaging and were either observed live or were fixed for imaging. For live cell imaging, rows of archegonia were manually dissected from the base of digitate rays and the embryo dissected out using micro knives or double lancet sapphire surgical knives (Fine Science Tools, World Precision Instruments) collected on cavity slides (BRAND\textregistered) and washed twice with 1x PBS to remove any maternal tissue. They were then stained with DAPI for 5 mins and briefly vacuum infiltrated and observed using slides with imaging spacers (Thermo Scientific™ Gene Frame) or on cavity slides \citep{RN139}. 
 
-For observing developmental synchronicity and the Mp\textit{dn4mt1} early developmental phenotype,  rows of archegonia were manually dissected from the base of digitate rays removing involucres. The fluorescent samples were fixed and stained using the iTOMEI protocol \citep{RN148} and mounted in iohexol with imaging spacers (Thermo Scientific™ Gene Frame). The embryo/egg cells were imaged using a Leica SP8X confocal microscope.
+For observing developmental synchronicity and the Mp\textit{dn4mt1} early developmental phenotype,  rows of archegonia were manually dissected from the base of digitate rays removing involucres. The fluorescent samples were fixed and stained using the iTOMEI protocol \citep{RN148} using 1\% FA fixation for an hour in 1X PBS (pH 7.4) followed by clearning (20\% caprylyl sulfobetaine for 24 hours) and mounted in iohexol with imaging spacers (Thermo Scientific™ Gene Frame). The embryo/egg cells were imaged using a Leica SP8X confocal microscope.
 
 \subsection{AMD-sequencing and bisulfite-sequencing library construction}
 
 Dissected Tak-1 x Cam-2 embryos were used to construct 4mC-AMD-seq libraries using the xGen™ Methyl-Sequencing DNA Library Preparation Kit (IDT, 10009860) after treatment of sheared DNA with APOBEC3A (NEB \#E7120S), following manufacturer’s instructions. In parallel, a bisulfite sequencing library was also contructed after APOBEC3A treatment using the Imprint\textregistered DNA Modification Kit (Sigma-Aldrich, MOD50)
 
 
-\subsection{Data analysis}
-
-\subsubsection{Imaging analysis}
+\subsection{Imaging analysis}
 
 The collected images were analysed in Fiji (ImageJ) \citep{RN266}. The macro was created to automate the image analysis steps, whereby a maximum Z projection was applied to the 3D image stack and a Gaussian blur was applied. The selected region on interest (the embryo) was then masked and a local contrast was then enhanced using the CLAHE plugin, and nuclei were counted manually in the resulting images using the ROI Manager. The resulting data was visualised in R using the ggplot2 package.
 
@@ -295,11 +385,11 @@ The collected images were analysed in Fiji (ImageJ) \citep{RN266}. The macro was
 
 MetGene locations were defined using parameters previously described \citep{jimmythesis}. Briefly, bisulfite sequencing reads were mapped using a custom mapping script based on Bismark \citep{RN229}, and fractional methylation (50bp windows) was determined for each sample in the  CG, CHG and CHH contexts using MethylDackel v0.4.0 and custom scripts. Windows were selected where C-methylation was greater than 0.05 and adjacent windows merged if they occured within 200bp. The methylation difference in each context was determined between the sporophyte and thallus, and retained according to these filtering criteria: Islands greater than 99bp; significantly different non-CG metylation between sporophyte and thallus (Fisher's exact test p<0.001); CG, CHG, CHH and non-CG difference between sporophyte and thallus bigger than 0, 0.05, 0.1 and 0.3 respectively. The final filtering step kept islands that had less than 0.1 CG methylation in the thallus and overlapped genic regions. The final list yielded 221 DMRs.
 
-\subsubsection{Histone analysis}
+\subsection{Histone analysis}
 
 CUT\&RUN reads were were processed using SAMtools v1.9 \citep{RN174}, BEDtools v2.27.1 \citep{RN90} and Picard v2.18.27 \citep{RN173} then mapped to the Takv6.1 genome \citep{RN179} using bwa v0.7.17 \citep{RN182}. To distinguish between maternal and paternal sequencing reads, a SNP analysis was conducted. SNPs were called using gatk v4.0.1.2 \citep{RN177} wherein the SNPs between the parental Tak-1 and Cam-2 were replaced with Ns. The parental reads were assigned using SNPSplit v0.3.4 \citep{RN178} and counts for each parental genome were calculated using SAMtools v1.9 and BEDTools v2.27.1. Please see reference \cite{RN160}  for a detailed description of the pipeline. 
 
-\subsubsection{sRNA analysis}
+\subsection{sRNA analysis}
 
 The sRNA reads were processed using Trim Galore! v0.4.2 \citep{trim_galore}, and mapped using bowtie v1.0.1 \citep{RN89} allowing for 0 or up to 3 mismatches with the -v option. For the TE-MetGene matching analysis, the resulting BAM files were converted to fasta files using custom awk scripts. The reads were once again mapped using bowtie, with no mismatches. Finally the resulting reads in the BAM files were queried against original genome locations using custom awk scripts, and the resulting file was filtered by MetGene locations with BEDtools v2.27.0.
 
