@@ -14,11 +14,7 @@
 
 \section{Abstract}
 
-Epigenetic reprogramming is an essential part of reproduction across both animal and plant kingdoms. Although the two kingdoms have diverged more than 1.5 billion years ago, they both have convergently evolved systems that protect the integrity of the genome throughout generations. This is in part due to the threat of mobile transposable elements, which when uncontrolled can lead to genomic instability through insertions and rearrangements. Whilst animals reset DNA methylation during germline development, plants largely maintain symmetric CG and CHG DNA methylation. 
 
-However, asymmetric CHH methylation is reprogrammed in a tightly regulated manner during the development of the male sexual lineage in Arabidopsis thaliana. This is accomplished through germline-specific, non-canonical RNA-directed DNA methylation, which transitions from CHH hypomethylation to CHH methylation while also introducing novel local CHH hypermethylation that is specific to the germline. Whilst the discovery of nurse-cell specific sRNAs and mismatch targeting in the meiocyte have contributed to the understanding of part of this pathway, the specific sRNA profiles and the mechanisms governing the establishment and maintenance of DNA methylation patterns in other germline cells, such as the microspore and pollen, remain elusive.
-
-Other germline-specific epigenetic modifications have also been described including the methylation of cytosine on the 4th carbon: N4-methylcytosine (4mC). 4mC plays an important role in host defence in prokaryotic organisms but more recently has been found in the male germline cells of Marchantia polymorpha. As the mature embryo loses this epigenetic mark, it’s important for our understanding to see whether this epigenetic mark is maintained or passively lost after fertilisation.
 
 
 %\begin{figure}[htbp!] 
@@ -30,14 +26,31 @@ Other germline-specific epigenetic modifications have also been described includ
 
 \section{Introduction}
 
+It was previously thought that DNA methylation largely remained stable across reproductive cells in plants, due to its close association with the regulation of transposon activity \citep{RN247} and therefore genome integrity. Global demethylation does occur in companion cells of the germline, however, via passive or active demethylation. The former is due to decreased expression of MET1, leading to a lack of maintenance of methylation during DNA replication in the central cell. The latter is due to active demethylation by DEMETER (DME), which demethylates CG sites in the vegetative nucleus \citep{RN235,RN57}. This leads to the synthesis of 21nt epigenetically active small interfering RNAs (easiRNAs) in the vegetative cell from typically silenced TEs. As the vegetative cell is a terminal tissue rather than part of the germline, the destabilising effects to the genome is not of evolutionary concern. The easiRNAs produced from the vegetative cells move into the sperm cells where they accumulate and silence complementary target DNA sites through RdDM \citep{RN14,RN16}.
+
+The RdDM pathway provides some of the essential communication between different cell types in reproductive tissue. AGO6 and AGO9 are a close paralog of AGO4 expressed in reproductive cells, which binds to 24nt RNA to direct RdDM. AGO6 is expressed in the shoot apical meristem, and there is increasing evidence that 21-22 nt secondary siRNAs (deriving from the miRNA pathway) can associate with AGO6 and participate in RdDM \citep{RN133,RN61,RN33}. Arabidopsis ago9 produces multiple megaspore mother cells (MMCs) in the female germline. Here, AGO9 is in the surrounding somatic nucellar cells, suggesting that sRNAs and corresponding essential RdDM machinery are transferred between cells.  TEs that are constitutively silenced in wildtype plants were reactivated in ago9 embryo sacs, suggesting a pathway similar to the mammalian piRNA pathway previously discussed \citep{RN14}.
+
+Recent work identified male sexual lineage specific DNA methylation reprogramming in the Arabidopsis germline. In general, male meiocytes maintain high levels of CG and CHG methylation when compared to somatic canonical RdDM loci levels, and a relatively low level of CHH methylation. However, in the CHH context, there is distinct hypermethylation at selected, sexual lineage specific loci (HyperTEs), including novel targets of RdDM activity. Further, de novo gene associated methylated loci were also identified (MetGenes), including a meiosis specific gene \citep{RN199}.
+
+Further, it was discovered that meiocytes themselves are quiescent in sRNA biogenesis. The biogenesis of these germline specific siRNAs is in the somatic tapetal tissue and is associated with the chromatin remodeller CLASSY3. Nurse cell-derived siRNAs are then transported into the meiocyte from the tapetum, inducing DNA methylation at HyperTE loci. MetGene loci can be uniquely targeted for methylation in the meiocyte by imperfectly matching siRNA derived from HyperTEs. These nurse-cell derived siRNAs inform the entire male sexual lineage specific methylation reprogramming, from meiocyte to sperm \citep{RN187}.
+
+The mechanism of movement of sRNA between companion and germline cells needs more evidence, however there is extensive evidence of cross-cellular RNA movement. Plasmodesmata provide a cytoplasmic network between cells (such as the tapetum and meiocyte) which allows nutrient transport but have also been shown to allow RNA movement between cells \citep{RN130,RN132,RN128}.
+
+The aim of this project is to shed light on the mechanism by which this germline specific sRNA and DNA methylation profile is established. Namely, to investigate the sRNA profiles of the microspore, vegetative and sperm cells, and to examine the key factors involved at each step (e.g. CLASSY chromatin remodelers, specific Argonautes).  
+
+
+\begin{landscape}
 \begin{figure}[htbp!] 
 \centering    
-    \includegraphics[width=0.5\textwidth]{Chapter2/Figs/Intro/male_sex_dev.pdf}
+    \includegraphics[width=1.5\textwidth]{Chapter2/Figs/Intro/ncRdDM.pdf}
 \caption{}
-\label{fig:male_sex_deb}
+\label{fig:ncRdDM}
 \captionsetup{font=small}
     \caption*{}
 \end{figure}
+\end{landscape}
+
+
 
 \begin{figure}[htbp!] 
 \centering    
