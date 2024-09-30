@@ -11,18 +11,9 @@
     \graphicspath{{Chapter2/Figs/Vector/}{Chapter2/Figs/}}
 \fi
 
-
 \section{Abstract}
 
-
-
-
-%\begin{figure}[htbp!] 
-%\centering    
-%\includegraphics[width=1.0\textwidth]{minion}
-%\caption[Minion]{This is just a long figure caption for the minion in Despicable Me from Pixar}
-%\label{fig:minion}
-%\end{figure}
+This chapter explores the spatiotemporal expression of RdDM components and the sRNA landscapes in the male germline of \textit{Arabidopsis thaliana}. By employing a combination ofimaging fluorescent reporter lines, small RNA sequencing, and bioinformatics analysis the dynamics of RdDM-associated factors during different stages of pollen development were investigated. It was demonstrated that the expression of key RdDM components such as NRPD1 and NRPE1 is tightly regulated, with NRPD1 showing tapetum-specific expression and NRPE1 being active in both germline and somatic tissues. Furthermore, CLSY3 expression was found to be confined to the tapetum and no other CLSY chromatin remodeler expression was detected after meiosis. Further analysis of the sRNA profiles reveals that the sperm cell harbors a distinct small RNA profile, uncoupled from known CLSY-dependent loci, suggesting a shift towards non-canonical RdDM pathways post-meiosis. 
 
 \section{Introduction}
 
@@ -30,36 +21,18 @@ It was previously thought that DNA methylation largely remained stable across re
 
 The RdDM pathway provides some of the essential communication between different cell types in reproductive tissue. AGO6 and AGO9 are a close paralog of AGO4 expressed in reproductive cells, which binds to 24nt RNA to direct RdDM. AGO6 is expressed in the shoot apical meristem, and there is increasing evidence that 21-22 nt secondary siRNAs (deriving from the miRNA pathway) can associate with AGO6 and participate in RdDM \citep{RN133,RN61,RN33}. Arabidopsis ago9 produces multiple megaspore mother cells (MMCs) in the female germline. Here, AGO9 is in the surrounding somatic nucellar cells, suggesting that sRNAs and corresponding essential RdDM machinery are transferred between cells.  TEs that are constitutively silenced in wildtype plants were reactivated in ago9 embryo sacs, suggesting a pathway similar to the mammalian piRNA pathway previously discussed \citep{RN14}.
 
-Recent work identified male sexual lineage specific DNA methylation reprogramming in the Arabidopsis germline. In general, male meiocytes maintain high levels of CG and CHG methylation when compared to somatic canonical RdDM loci levels, and a relatively low level of CHH methylation. However, in the CHH context, there is distinct hypermethylation at selected, sexual lineage specific loci (HyperTEs), including novel targets of RdDM activity. Further, de novo gene associated methylated loci were also identified (MetGenes), including a meiosis specific gene \citep{RN199}.
-
-Further, it was discovered that meiocytes themselves are quiescent in sRNA biogenesis. The biogenesis of these germline specific siRNAs is in the somatic tapetal tissue and is associated with the chromatin remodeller CLASSY3. Nurse cell-derived siRNAs are then transported into the meiocyte from the tapetum, inducing DNA methylation at HyperTE loci. MetGene loci can be uniquely targeted for methylation in the meiocyte by imperfectly matching siRNA derived from HyperTEs. These nurse-cell derived siRNAs inform the entire male sexual lineage specific methylation reprogramming, from meiocyte to sperm \citep{RN187}.
-
-The mechanism of movement of sRNA between companion and germline cells needs more evidence, however there is extensive evidence of cross-cellular RNA movement. Plasmodesmata provide a cytoplasmic network between cells (such as the tapetum and meiocyte) which allows nutrient transport but have also been shown to allow RNA movement between cells \citep{RN130,RN132,RN128}.
-
-The aim of this project is to shed light on the mechanism by which this germline specific sRNA and DNA methylation profile is established. Namely, to investigate the sRNA profiles of the microspore, vegetative and sperm cells, and to examine the key factors involved at each step (e.g. CLASSY chromatin remodelers, specific Argonautes).  
-
-
-\begin{landscape}
-\begin{figure}[htbp!] 
-\centering    
-    \includegraphics[width=1.5\textwidth]{Chapter2/Figs/Intro/ncRdDM.pdf}
-\caption{}
-\label{fig:ncRdDM}
-\captionsetup{font=small}
-    \caption*{}
-\end{figure}
-\end{landscape}
-
-
+Recent work identified male sexual lineage specific DNA methylation reprogramming in the \textit{Arabidopsis} germline. In general, male meiocytes maintain high levels of CG and CHG methylation when compared to somatic canonical RdDM loci levels, and a relatively low level of CHH methylation. However, in the CHH context, there is distinct hypermethylation at selected, sexual lineage specific loci (HyperTEs), including novel targets of RdDM activity. Further, de novo gene associated methylated loci were also identified (MetGenes), including a meiosis specific gene (Figure \ref{fig:SLH_SLM}) \citep{RN199}.
 
 \begin{figure}[htbp!] 
 \centering    
-        \includegraphics[width=0.7\textwidth]{Chapter2/Figs/Intro/SLH_SLM_methylation.pdf}
+    \includegraphics[width=0.7\textwidth]{Chapter2/Figs/Intro/SLH_SLM_methylation.pdf}
 \caption{}
 \label{fig:SLH_SLM}
 \captionsetup{font=small}
     \caption*{}
 \end{figure}
+
+Further, it was discovered that meiocytes themselves are quiescent in sRNA biogenesis. The biogenesis of these germline specific siRNAs is in the somatic tapetal tissue and is associated with the chromatin remodeller CLASSY3. Nurse cell-derived siRNAs are then transported into the meiocyte from the tapetum, inducing DNA methylation at HyperTE loci. MetGene loci can be uniquely targeted for methylation in the meiocyte by imperfectly matching siRNA derived from HyperTEs. These nurse-cell derived siRNAs inform the entire male sexual lineage specific methylation reprogramming, from meiocyte to sperm (Figure \ref{fig:Jincheng_abstract}) \citep{RN187}.
 
 \begin{figure}[htbp!] 
 \centering    
@@ -71,7 +44,9 @@ The aim of this project is to shed light on the mechanism by which this germline
 \end{figure}
 \clearpage
 
+The mechanism of movement of sRNA between companion and germline cells needs more evidence, however there is extensive evidence of cross-cellular RNA movement. Plasmodesmata provide a cytoplasmic network between cells (such as the tapetum and meiocyte) which allows nutrient transport but have also been shown to allow RNA movement between cells \citep{RN130,RN132,RN128}.
 
+The aim of this chapter is to shed light on how this germline-specific sRNA and DNA methylation profile changes after meiosis. Namely, to investigate the sRNA profiles of the microspore and sperm cells, and to examine the expression of RdDM associated key factors involved during the development of male-sexual lineage.  
 
 \section{NRPD1 is expressed in the tapetum, microspores but not in meiocytes}
 

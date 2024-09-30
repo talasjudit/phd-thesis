@@ -14,12 +14,12 @@
 
 \section{Abstract}
 
-Global cytosine methylation reprogramming has recently been reported in the male sexual lineage of Marchantia polymorpha. During spermiogenesis, global 5mC expansion occurs followed by the expansion of 4mC onto CG sites, a DNA modification previously only described in bacteria and archaea. Following fertilisation, the mature embryo loses this epigenetic mark, so it’s crucial to understand whether 4mC is maintained or passively lost after fertilisation.
+Global cytosine methylation reprogramming has recently been reported in the male sexual lineage of \textit{Marchantia polymorpha}. During spermiogenesis, global 5mC expansion occurs, followed by the expansion of 4mC onto CG sites. Following fertilisation, the mature embryo loses this epigenetic mark. Therefore the fate of paternal N4-methylcytosine methylation is explored in early \textit{Marchantia} embryos. The results suggest that 4mC is actively removed prior to pronuclear fusion. This is further corroborated by exploring the phenotype of embryos fertilised by 4mC knockout sperm using fluorescent reporter lines, which exhibit accelerated embryonic development and a partial fertility cost.
 
 
 \section{Introduction}
 
-Recently, our group has shown that during spermatogenesis, there extensive DNA methylation reprogramming in Marchantia. As well as the deposition of 5-methylcytosine (5mC), there is an additional wave of DNA methylation reprogramming whereby N4-methylcytosine (4mC) - an epigenetic modification previously only found in prokaryotes – is deposited at the majority of CG cites across the genome \citep{RN189}. 
+As discussed in Chapter 1, DNA methylation is an important epigenetic modification in both prokaryotes and eukaryotes. In eukaryotes the most prevalent DNA modification in 5mC, important in gene regulation, imprinting, silencing TEs and responding to environmental stimuli. In prokaryotes, additional base modifications, such as N6-methyladenine (6mA), 4mC, and 5mC, are also present and play key roles in restriction-modification systems and in marking self DNA to distinguish it from foreign DNA (Figure \ref{fig:base_mods}) \citep{RN309}.
 
 \begin{figure}[htbp!] 
 \centering    
@@ -30,6 +30,10 @@ Recently, our group has shown that during spermatogenesis, there extensive DNA m
     \caption*{}
 \end{figure}
 
+DNA methylation reprogramming during sexual development is a common feature in eukaryotes. As discussed in previous chapters, the epigenetic reprogramming in the male sexual lineage of \textit{Arabidopsis} is extensive and is a characteristic shared by other flowering plants. However, given that male sexual lineage development and meiosis in \textit{Arabidopsis} occur within a few cell divisions (Figure \ref{fig:male_sex_dev}), our group aimed to investigate whether gene-targeted methylation is specifically associated with meiosis or spermiogenesis.
+
+The lifecycle of the basal land plant \textit{Marchantia} alternates between haploid and diploid phases. In the haploid vegetative phase (thallus), they can reproduce asexually or be induced by far-red light to produce gametophytes. These gametophytes form antheridiophores (which produce antheridia and sperm in males) and archegoniophores (which produce archegonia and egg cells in females). Once the egg cell is fertilised by sperm, \textit{Marchantia} proceeds to go through a rapid diploid sporophytic phase, which culminates in meiosis and the dispersal of haploid spores s (Figure \ref{fig:Mp_lifecycle}) \citep{RN143}.
+
 \begin{figure}[htbp!] 
 \centering    
     \includegraphics[width=0.5\textwidth]{Chapter3/Figs/Intro/Marchantia_lifecycle.pdf}
@@ -39,31 +43,7 @@ Recently, our group has shown that during spermatogenesis, there extensive DNA m
     \caption*{}
 \end{figure}
 
-\begin{figure}[htbp!] 
-\centering    
-    \includegraphics[width=0.7\textwidth]{Chapter3/Figs/Intro/Embryo_development.pdf}
-\caption{}
-\label{fig:Mp_embryo_dev}
-\captionsetup{font=small}
-    \caption*{}
-\end{figure}
-\begin{figure}[htbp!] 
-\centering    
-    \includegraphics[width=1\textwidth]{Chapter3/Figs/Intro/Sequencing_techs.pdf}
-\caption{}
-\label{fig:Mp_seq_techs}
-\captionsetup{font=small}
-    \caption*{}
-\end{figure}
-
-\begin{figure}[htbp!] 
-\centering    
-    \includegraphics[width=1\textwidth]{Chapter3/Figs/Intro/Marchantia_germline_seq.pdf}
-\caption{}
-\label{fig:Mp_germline-seq}
-\captionsetup{font=small}
-    \caption*{}
-\end{figure}
+Recently, our group demonstrated that during spermiogenesis in \textit{Marchantia}, there is extensive DNA methylation reprogramming. In addition to the deposition of 5mC, a second wave of DNA methylation reprogramming occurs, involving the deposition of 4mC — an epigenetic modification previously thought to exist only in prokaryotes — at the majority of CG sites across the genome (Figure \ref{fig:Mp_graphical_abstract}). A 4mC methyltransferase, MpDN4MT1, was identified as the enzyme catalysing genome-wide 4mC methylation. Knockout of the \textit{dn4mt1} gene results in the loss of 4mC, partial fertility defects, and impaired sperm motility \citep{RN189}.
 
 \begin{figure}[htbp!] 
 \centering    
@@ -74,23 +54,7 @@ Recently, our group has shown that during spermatogenesis, there extensive DNA m
     \caption*{}
 \end{figure}
 
-
-Data from mature embryo reveals that this 4mC methylation is not present. Several hypotheses could explain why this happens. The most likely is that following fertilisation, paternal epigenetic marks are lost passively through cell division. Alternatively, the marks could be maintained through the first few cell divisions and then are actively or passively lost. We also know that the pronuclei take 3 days to fuse \citep{RN139}, so it is also possible that removing paternal epigenetic marks is required for zygote formation. 
-
-Therefore, my project here will help complement the work that has already been done on 4mC methylation in Marchantia; please see our lab’s preprint for other details of this project \citep{RN189}. Namely, I have already managed to isolate and image embryos 12 days after fertilisation (DAF), and I plan to isolate and stage embryos that are as young as possible to make sure that we can detect 4mC signals if paternal epigenetic marks are maintained through zygote formation but are passively lost during cell division.
-
-\subsection{Overview of DNA methylation in the germline of Marchantia polymorpha}
-
-Recently, our group has shown that during Marchantia spermiogenesis extensive DNA methylation reprogramming occurs. As well as the deposition of 5-methylcytosine (5mC), there is an additional wave of DNA methylation reprogramming whereby N4-methylcytosine (4mC) – an epigenetic modification previously only found in prokaryotes – is deposited at the majority of CG cites across the genome \citep{RN189}.
-
-However, this methylation is absent in the mature embryo (containing over 1000 cells). The exact point in time when 4mC methylation disappears post-fertilisation remains unknown, as does whether the paternal genome retains any 4mC marks during the early stages of zygotic development. The first division of the zygote in Marchantia takes place around 4 days post-fertilisation1 which suggests that 4mC may be required to be actively removed for pronuclear fusion to occur. This aligns with the observed phenotype where embryos fertilised by Mpdn4mt1 sperm develop more rapidly, though this phenotype needs to be confirmed during early embryonic development. Alternatively, 4mC methylation could be lost passively following fertilisation through dilution by cell division, or actively removed post-fertilisation for DNA replication or cell division to function normally. 4mC may also be crucial in the correct genome dosage/transcriptional activity during early embryonic development. 
-
-In Arabidopsis, 5mC methylation is lost actively to maintain homeostasis of DNA methylation levels through several DNA glycosylases, including ROS1 \citep{RN168}. Therefore, the orthologs of ROS1 in Marchantia, MpROS1a and MpROS1x (located on the female sex chromosome) offer possible candidates for erasing paternal 4mC methylation as they are expressed in the sperm \citep{RN212} and mature eggs/embryos \citep{RN257} respectively.
-DNA demethylases regulate DNA methylation levels in eukaryotes. Arabidopsis encodes four DNA demethylases, DEMETER (DME), REPRESSOR OF SILENCING 1 (ROS1), DEMETER-LIKE 2 (DML2), and DML3. While DME is involved in vegetative cell demethylation in pollen \citep{RN57} (as discussed in Chapter 2), it is also required for the allele-specific expression of maternally imprinted genes in the central cell and endrosperm \citep{RN235}. The rest of the DNA glycosylases seem to be functionally redundant and are involved in preventing the spread of transposon 5mC methylation to genic regions\citep{RN288}. \textit{Marchantia} has 2 orthologs of ROS1, one of which is found on the female chromosome ROS1X and is expressed specifically in the embryo \citep{RN169,RN257,RN189}. 
-
-It has also recently been shown that other epigenetic marks, namely the heterochromatic histone modification H3K27me3 is deposited at the pronuclear stage exclusively on the paternal genome and causes the repression of the paternal genome persisting until the conclusion of embryogenesis \citep{RN160}. In contrast, in mammalian germlines, H3K27me3¬ mediated imprinting is limited to a few loci within the female gamete \citep{RN172}.
-
-Hence, investigating the methylation profiles of early Marchantia embryos during the first zygotic divisions and examining the early developmental phenotype of Mpdn4mt1 mutants will complement our previous work, expanding our understanding of how paternal DNA methylation affects early embryonic development.
+Paternal 4mC methylation is absent in the mature embryo (contains over 1000 cells). The exact timing of when 4mC methylation is lost post-fertilisation remains unknown, as does whether the paternal genome retains any 4mC marks during the early stages of zygotic development. In \textit{Marchantia}, the first division of the zygote occurs approximately 3-4 days after fertilisation \citep{RN139}, suggesting that 4mC may need to be actively removed for pronuclear fusion to take place. This hypothesis aligns with the observed phenotype where embryos fertilised by \textit{dn4mt1} sperm exhibit accelerated development, though this phenomenon still requires confirmation during early embryonic stages (Figure \ref{fig:burstpeak}). Alternatively, 4mC methylation could be lost passively following fertilisation through dilution by cell division, or actively removed post-fertilisation for DNA replication or cell division to function normally. Additionally, 4mC may play a role in ensuring correct genome dosage and transcriptional activity during early embryonic development.
 
 \begin{figure}[htbp!] 
 \centering    
@@ -100,6 +64,12 @@ Hence, investigating the methylation profiles of early Marchantia embryos during
 \captionsetup{font=small}
     \caption*{Total percentage of burst sporophytes every day since first mature sporophyte, fertilised with wild type sperm (blue), two independent lines of \textit{dn4mt1} knockout sperm (\#6 dark green, \#21 light green) or 5mC (\textit{cmta} (dark brown) or \textit{dnmt3B}) knockout sperm (light brown). }
 \end{figure}
+
+In \textit{Arabidopsis}, 5mC methylation is actively removed to maintain homeostasis through the action of several DNA glycosylases. \textit{Arabidopsis} encodes four DNA demethylases: DEMETER (DME), REPRESSOR OF SILENCING 1 (ROS1), and the DEMETER-LIKE proteins DML2 and DML3. While DME is involved in vegetative cell demethylation in pollen \citep{RN57} (as discussed in Chapter 2), it also plays a critical role in the allele-specific expression of maternally imprinted genes in the central cell and endosperm \citep{RN235}. The remaining DNA glycosylases appear to be functionally redundant, primarily preventing the spread of transposon-derived 5mC methylation into genic regions\citep{RN288}, including ROS1 \citep{RN168}. Therefore, the orthologs of ROS1 in Marchantia, MpROS1a and MpROS1x (located on the female sex chromosome) offer possible candidates for erasing paternal 4mC methylation as they are expressed in the sperm \citep{RN212} and mature eggs/embryos \citep{RN257} respectively \citep{RN169,RN257,RN189}.
+
+Recent findings have shown that the heterochromatic histone modification H3K27me3 is exclusively deposited on the paternal genome during the pronuclear stage in \textit{Arabidopsis}, leading to the repression of the paternal genome, which persists throughout embryogenesis \citep{RN160}. In contrast, in mammalian germlines, H3K27me3-mediated imprinting is limited to a small number of loci within the female gamete \citep{RN172}. 4mC therefore offers a possible mechanism through which the paternal genome could be marked during early development.
+
+Hence, investigating the methylation profiles of early Marchantia embryos during the first zygotic divisions and examining the early developmental phenotype of \textit{dn4mt1} mutants complement our previous work, expanding our understanding of how paternal DNA methylation affects early embryonic development.
 
 \clearpage
 
@@ -284,9 +254,11 @@ During the first two zygotic divisions, cells were frequently observed with mult
 
 Between days 1 and 5 post-fertilisation, embryos fertilised by either of the independent \textit{dn4mt1} knockout lines appeared to initiate division earlier than those fertilised by wild-type sperm. For example, by day 2, nearly all imaged cells in the \textit{dn4mt1} knockout lines had 2 nuclei, compared to fewer than a quarter in the wild type (Figure \ref{fig:nucleus_number}B,C).  
 
-This trend persisted through day 4, where approximately a quarter of cells in the \textit{dn4mt1} knockout line \#6 had reached stage 4, while none of the wild-type cells had progressed that far. By day 5, the proportion of cells in various developmental stages became more synchronized across the genotypes. However, after day 5, embryos from the \textit{dn4mt1} knockout line \#21 continued to develop more rapidly than the wild type, the most advance embryos reaching stage 13 by day 6 compared to stage 10 in wild-type (Figure \ref{fig:nucleus_number}B,C). 
+This trend persisted through day 4, where approximately a quarter of cells in the \textit{dn4mt1} knockout line \#6 had reached stage 4, while none of the wild-type cells had progressed that far. By day 5, the proportion of cells in various developmental stages became more synchronized across the genotypes. 
 
-In contrast, the difference between the wild type and the \textit{dn4mt1} knockout line \#6 was less pronounced, with some embryos from a \textit{dn4mt1} \#6 background reaching stage 12 by day 7, while the most developed wild type embryos were slightly behind, in stage 11. It is also noteworthy that embryos from a  \textit{dn4mt1} \#6 knockout background displayed a proportion of cells arrested in stage 1 or 2, even at day 6 and day 7 (\ref{fig:nucleus_number}B,C).
+After day 5, the developmental differences between the wild type and the \textit{dn4mt1} knockout line \#6 were slight, but present: Some embryos from a \textit{dn4mt1} \#6 background reached stage 12 by day 7, whereas the most developed wild type embryos were slightly behind, at stage 11. It is also noteworthy that embryos from a  \textit{dn4mt1} \#6 knockout background displayed a proportion of cells arrested in stage 1 or 2, even at day 6 and day 7 (\ref{fig:nucleus_number}B,C). In contrast, embryos from the \textit{dn4mt1} knockout line \#21 continued to develop more rapidly than the wild type, the most advanced embryos reaching stage 13 by day 6 compared to stage 10 in wild-type (Figure \ref{fig:nucleus_number}B,C). 
+
+Together this data provides strong support that 4mC delays the onset of the first nuclear division, impacting long term developmental duration.
 
 
 \begin{figure}[htbp!] 
@@ -315,12 +287,11 @@ C) Proportion of embryos in developmental stages 1-7 days after fertilisation fe
 
 \section{Discussion}
 
-
 In angiosperms and other land plants, spermiogenesis involves chromatin compaction through the replacement of histones with sperm-specific histone variants \citep{RN283,RN284,RN285}. However, in \textit{Marchantia}, this process differs, as nucleosomes are replaced by protamines rather than histone variants. Consequently, DNA methylation becomes the primary heritable epigenetic mark in the paternal genome. This resembles the process in mammalian sperm, where the majority of histones are replaced by protamines, although some nucleosomes are retained \citep{RN282}. Following fertilisation, mammalian zygotes undergo global DNA demethylation, driven by TET enzymes. This demethylation is crucial for transcriptional regulation, imprinting, and maintaining pluripotency in the early stages of development \citep{RN286,RN287}.
 
 In \textit{Marchantia}, following fertilisation, protamines in the paternal pronucleus are replaced by histones, and H3K27me3 is deposited by a maternally expressed PRC2 complex \citep{RN160} specifically on paternal chromatin. This suggests a potential mechanism for paternal genome recognition, with paternal N4-methylcytosine blanket methylation emerging as a potential candidate.
 
-However, when examining the distribution of H3K27me3 marks over genes and transposons, there is no clear alignment with 4mC occupancy (Figure \ref{fig:h3k27me3}). Furthermore, results from scBS-seq of early Marchantia embryos revealed no evidence of paternal 4mC (Figure \ref{fig:ends_analysis}, Table \ref{tab:methylation_levels}). Additionally, Dr. Shujuan Xu confirmed that paternal H3K27me3 foci still form in embryos fertilised by \textit{dn4mt1} knockout sperm, 13 days after fertilisation (Figure \ref{fig:immuno}. These findings suggest that paternal genome recognition is not directly linked to blanket genome-wide 4mC methylation. However, it is important to consider that theoretical paternal 4mC trace levels in the embryo would likely be very low by 7-8 days post-fertilisation, assuming passive loss through cell division (Table \ref{tab:methylation_levels}). To obtain a definitive answer,  developing reliable 4mC immunostaining and/or single-cell AMD sequencing methods for zygotes or embryos at the 2-4 cell stage is essential, provided successful dissection at this early developmental stage can be achieved.
+However, when examining the distribution of H3K27me3 marks over genes and transposons, there is no clear alignment with 4mC occupancy (Figure \ref{fig:h3k27me3}). Furthermore, results from scBS-seq of early Marchantia embryos revealed no evidence of paternal 4mC (Figure \ref{fig:ends_analysis}, Table \ref{tab:methylation_levels}). Additionally, Dr. Shujuan Xu confirmed that paternal H3K27me3 foci still form in embryos fertilised by \textit{dn4mt1} knockout sperm, 13 days after fertilisation (Figure \ref{fig:immuno}. These findings suggest that paternal genome recognition is not directly linked to blanket genome-wide 4mC methylation. However, it is important to consider that theoretical paternal 4mC trace levels in the embryo would likely be very low by 7-8 days post-fertilisation, assuming passive loss through cell division (Table \ref{tab:methylation_levels}). Further work is needed to optimise the protocol for low-input AMD-sequencing of \textit{Marchantia} embryos, as previous attempts were unsuccessful despite prior high-quality control datasets. To obtain a definitive answer,  developing reliable 4mC immunostaining and/or single-cell AMD sequencing methods for zygotes or embryos at the 2-4 cell stage is essential, provided successful dissection at this early developmental stage can be achieved.
 
  Considering the shut-down of the paternal genome in the sporophyte, the possibility of whether sRNA production from the paternal genome became an intriguing question. Investigating whether there is a difference in sRNA production between the two parental genomes in the sporophyte, particularly in light of this potential suppression, revealed intriguing results. Initially, the sRNA data suggested a paternal bias in the embryo, which appeared to shift toward a maternal bias in the sporophyte, though substantial sRNA production was observed from both parental genomes (Figure \ref{fig:sRNA_SNPs}A,B). 
  
