@@ -104,6 +104,14 @@
 %\usepackage{sty/caption/subcaption}
 \usepackage{subcaption}
 
+\fancypagestyle{plain}{
+  \fancyhf{} % Clear all headers and footers
+  \fancyfoot[C]{\thepage} % Add the page number to the center of the footer
+  \renewcommand{\headrulewidth}{0pt} % Remove header line
+  \renewcommand{\footrulewidth}{0pt} % Remove footer line
+}
+
+
 % ********************************** Tables ************************************
 \usepackage{booktabs} % For professional looking tables
 \usepackage{multirow}

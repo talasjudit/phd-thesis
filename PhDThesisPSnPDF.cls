@@ -724,7 +724,7 @@ wish to left align your text}
 	\addcontentsline=\nocontentsline#1{#2}
 	\egroup}
 % Removes pagenumber appearing from TOC
-\addtocontents{toc}{\protect\thispagestyle{empty}}
+%\addtocontents{toc}{\protect\thispagestyle{empty}}
 
 
 % ***************************** Header Formatting ******************************
@@ -737,7 +737,7 @@ wish to left align your text}
   \renewcommand{\chaptermark}[1]{\markboth{##1}{}}
   \renewcommand{\sectionmark}[1]{\markright{\thesection\ ##1\ }}
   \fancyhf{}
-  \fancyhead[RO]{\nouppercase \rightmark\hspace{0.25em} | 
+  \fancyhead[RO]{ \nouppercase \rightmark\hspace{0.25em} | 
     \hspace{0.25em} \bfseries{\thepage}}
   \fancyhead[LE]{ {\bfseries\thepage} \hspace{0.25em} | 
     \hspace{0.25em} \nouppercase \leftmark}
@@ -785,9 +785,15 @@ wish to left align your text}
 \setlength{\headheight}{14.5pt}
 %\renewcommand{\headrulewidth}{0.5pt}
 %\renewcommand{\footrulewidth}{0pt}
+%\fancypagestyle{plain}{
+%  \fancyhead{}
+%  \renewcommand{\headrulewidth}{0pt}
+%}
+
 \fancypagestyle{plain}{
-  \fancyhead{}
-  \renewcommand{\headrulewidth}{0pt}
+  \fancyhead[LO]{\nouppercase \rightmark}
+    \fancyhead[LE,RO]{\bfseries\thepage}
+    \fancyhead[RE]{\nouppercase \leftmark}
 }
 
 % If Margin has been set (default margin print/online version)
