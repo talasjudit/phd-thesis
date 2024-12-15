@@ -3,7 +3,7 @@
 %****************************** Second Chapter *********************************
 %*******************************************************************************
 
-\chapter{The spatiotemporal expression of RdDM components and small RNA landscapes in the germline of \textit{Arabidopsis thaliana}}
+\chapter{The spatiotemporal expression of RdDM components and sRNA landscapes in the germline of \textit{Arabidopsis thaliana}}
 
 \ifpdf
     \graphicspath{{Chapter2/Figs/Raster/}{Chapter2/Figs/PDF/}{Chapter2/Figs/}}
@@ -13,15 +13,15 @@
 
 \section{Abstract}
 
-This chapter explores the spatiotemporal expression of RdDM components and the sRNA landscapes in the male germline of \textit{Arabidopsis thaliana}. By employing a combination of imaging fluorescent reporter lines, small RNA sequencing, and bioinformatics analysis, the dynamics of RdDM-associated factors during different stages of pollen development were investigated. It was demonstrated that the expression of key RdDM components such as NRPD1 and NRPE1 is tightly regulated, with NRPD1 showing tapetum-specific expression and NRPE1 being active in both germline and somatic tissues. Furthermore, CLSY3 expression was found to be confined to the tapetum and no other CLSY chromatin remodeller expression was detected after meiosis. Further analysis of the sRNA profiles reveals that the sperm cell harbours a distinct small RNA profile, uncoupled from known CLSY-dependent loci, suggesting a shift towards non-canonical RdDM pathways post-meiosis. 
+This chapter explores the spatiotemporal expression of RdDM components and the sRNA landscapes in the male germline of \textit{Arabidopsis thaliana}. By employing a combination of imaging fluorescent reporter lines, sRNA sequencing, and bioinformatics analysis, the dynamics of RdDM-associated factors during different stages of pollen development were investigated. It was demonstrated that the expression of key RdDM components such as NRPD1 and NRPE1 is tightly regulated, with NRPD1 showing tapetum-specific expression and NRPE1 being active in both germline and somatic tissues. Furthermore, CLSY3 expression was found to be confined to the tapetum and no other CLSY chromatin remodeller expression was detected after meiosis. Further analysis of the sRNA profiles reveals that the sperm cell harbours a distinct sRNA profile, uncoupled from known CLSY-dependent loci, suggesting a shift towards non-canonical RdDM pathways post-meiosis. 
 
 \section{Introduction}
 
-It was previously thought that DNA methylation largely remained stable across reproductive cells in plants, due to its close association with the regulation of transposon activity \cite{RN247} and therefore genome integrity. Global demethylation does occur in companion cells of the germline, however, via passive or active demethylation. The former is due to decreased expression of MET1, leading to a lack of maintenance of methylation during DNA replication in the central cell. The latter is due to active demethylation by DEMETER (DME), which demethylates CG sites in the vegetative nucleus \cite{RN235,RN57}. This leads to the synthesis of 21nt epigenetically active small interfering RNAs (easiRNAs) in the vegetative cell from typically silenced TEs. As the vegetative cell is a terminal tissue rather than part of the germline, the destabilising effects to the genome are not of evolutionary concern. The easiRNAs produced from the vegetative cells move into the sperm cells, where they accumulate and silence complementary target DNA sites through RdDM \cite{RN14,RN16}.
+It was previously thought that DNA methylation largely remained stable across reproductive cells in plants, due to its close association with the regulation of transposon activity \cite{RN247} and therefore genome integrity. However, global demethylation does occur in companion cells of the germline, via passive or active demethylation. The former is due to decreased expression of MET1, leading to a lack of maintenance of methylation during DNA replication in the central cell. The latter is due to active demethylation by DEMETER (DME), which demethylates CG sites in the vegetative nucleus \cite{RN235,RN57}. This leads to the synthesis of 21nt epigenetically active small interfering RNAs (easiRNAs) in the vegetative cell from typically silenced TEs. As the vegetative cell is a terminal tissue rather than part of the germline, the destabilising effects to the genome are not of evolutionary concern. The easiRNAs produced from the vegetative cells are hypothesised to move into the sperm cells, where they accumulate and silence complementary target DNA sites through RdDM \cite{RN14,RN16}.
 
 The RdDM pathway provides some of the essential communication between different cell types in reproductive tissue. AGO6 and AGO9 are a close paralog of AGO4 expressed in reproductive cells, which binds to 24nt RNA to direct RdDM. AGO6 is expressed in the shoot apical meristem, and there is increasing evidence that 21-22 nt secondary siRNAs (deriving from the miRNA pathway) can associate with AGO6 and participate in RdDM \cite{RN133,RN61,RN33}. \textit{Arabidopsis} ago9 produces multiple megaspore mother cells (MMCs) in the female germline. Here, AGO9 is in the surrounding somatic nucellar cells, suggesting that sRNAs and corresponding essential RdDM machinery are transferred between cells.  TEs that are constitutively silenced in wildtype plants were reactivated in ago9 embryo sacs, suggesting a pathway similar to the mammalian piRNA pathway previously discussed \cite{RN14}.
 
-Recent work identified male sexual lineage specific DNA methylation reprogramming in the \textit{Arabidopsis} germline. In general, male meiocytes maintain high levels of CG and CHG methylation when compared to somatic canonical RdDM loci levels, and a relatively low level of CHH methylation. However, in the CHH context, there is distinct hypermethylation at selected, sexual lineage specific loci (HyperTEs), including novel targets of RdDM activity. Further, de novo gene associated methylated loci were also identified (MetGenes), including a meiosis specific gene (Figure \ref{fig:SLH_SLM}) \cite{RN199}.
+Recent work identified male sexual lineage specific DNA methylation reprogramming in the \textit{Arabidopsis} germline. In general, male meiocytes maintain high levels of CG and CHG methylation when compared to somatic canonical RdDM loci levels, and a relatively low level of CHH methylation. However, in the CHH context, there is distinct hypermethylation at selected, sexual lineage specific loci (HyperTEs), including novel targets of RdDM activity. Further, \textit{de novo} gene associated methylated loci were also identified (MetGenes), including a meiosis specific gene (Figure \ref{fig:SLH_SLM}) \cite{RN199}.
 
 \begin{figure}[htbp!] 
 \centering    
@@ -32,32 +32,30 @@ Recent work identified male sexual lineage specific DNA methylation reprogrammin
     \caption*{}
 \end{figure}
 
-Further, it was discovered that meiocytes themselves are quiescent in sRNA biogenesis. The biogenesis of these germline specific siRNAs is in the somatic tapetal tissue and is associated with the chromatin remodeller CLASSY3. Nurse cell-derived siRNAs are then transported into the meiocyte from the tapetum, inducing DNA methylation at HyperTE loci. MetGene loci can be uniquely targeted for methylation in the meiocyte by imperfectly matching siRNA derived from HyperTEs. These nurse-cell derived siRNAs inform the entire male sexual lineage specific methylation reprogramming, from meiocyte to sperm (Figure \ref{fig:Jincheng_abstract}) \cite{RN187}.
+Further, it was discovered that meiocytes themselves are quiescent in sRNA biogenesis. The biogenesis of these germline specific siRNAs is in the somatic tapetal tissue and is associated with the chromatin remodeler CLASSY3. Nurse cell-derived siRNAs are then transported into the meiocyte from the tapetum, inducing DNA methylation at HyperTE loci. MetGene loci can be uniquely targeted for methylation in the meiocyte by imperfectly matching siRNA derived from HyperTEs. These nurse-cell derived siRNAs inform the entire male sexual lineage specific methylation reprogramming, from meiocyte to sperm (Figure \ref{fig:Jincheng_abstract}) \cite{RN187}.
 
 \begin{figure}[htbp!] 
 \centering    
         \includegraphics[width=1\textwidth]{Chapter2/Figs/Intro/Jincheng_paper_abstract.pdf}
-\caption{Tapetum-derived sRNAs shape metylation in the germline of \textit{Arabidopsis}}
+\caption{Tapetum-derived sRNAs shape methylation in the germline of \textit{Arabidopsis}}
 \label{fig:Jincheng_abstract}
 \captionsetup{font=small}
     \caption*{Tapetal sRNAs direct DNA methylation at HyperTEs and MetGenes in the meiocyte (Figure from \cite{RN187})}
 \end{figure}
-\clearpage
 
 The mechanism of movement of sRNA between companion and germline cells needs more evidence, however there is extensive evidence of cross-cellular RNA movement. Plasmodesmata provide a cytoplasmic network between cells (such as the tapetum and meiocyte) which allows nutrient transport but have also been shown to allow RNA movement between cells \cite{RN130,RN132,RN128}.
 
-The aim of this chapter is to shed light on how this germline-specific sRNA and DNA methylation profile changes after meiosis. Namely, to investigate the sRNA profiles of the microspore and sperm cells, and to examine the expression of RdDM associated key factors involved during the development of male-sexual lineage.  
+The aim of this chapter is to shed light on how this germline-specific sRNA and DNA methylation profile changes after meiosis. Namely, to investigate the sRNA profiles of the microspore and sperm cells, and to examine the expression of RdDM associated key factors involved during the development of male-sexual lineage.
+\clearpage
 
 \section{NRPD1 is expressed in the tapetum, microspores but not in meiocytes}
 
-Since RNA polymerase IV and V preferentially associate with methylated RNA, RdDM is thought of as a self-reinforcing pathway. Therefore, the observation that there are few perfect matching 24nt sRNAs in MetGenes in \textit{Arabidopsis} meiocytes, it was hypothesised that the Pol IV dependent pathway is quiescent and that the sRNAs directing DNA methylation at MetGenes are produced from HyperTE loci in the tapetum that target HyperTE and MetGene methylation in the meiocyte \cite{RN199,RN187}. To confirm this expression pattern, pNRPD1::NRPD1-eGFP and pNRPE1::NRPE1-eGFP fluorescent reporter lines (of the largest subunits of RNA Polymerase IV and V respectively\cite{RN33}) were constructed by Dr. Jincheng Long.
-
-The columella in the root tip of \textit{Arabidopsis} is hypermethylated in the CHH context \cite{RN261}, the root tip was imaged to screen and select the best lines selected for further imaging (Figure\ref{fig:Pol4_5_roots}).
+Since RNA polymerase IV and V preferentially associate with methylated DNA, RdDM is thought of as a self-reinforcing pathway. Therefore, the observation that there are few perfect matching 24nt sRNAs in MetGenes in \textit{Arabidopsis} meiocytes, it was hypothesised that the Pol IV-dependent pathway is quiescent and that the sRNAs directing DNA methylation at MetGenes are produced from HyperTE loci in the tapetum that target HyperTE and MetGene methylation in the meiocyte \cite{RN199,RN187}. To confirm this expression pattern, pNRPD1::NRPD1-eGFP and pNRPE1::NRPE1-eGFP fluorescent reporter lines (of the largest subunits of RNA Polymerase IV and V respectively\cite{RN33}) were constructed by Dr. Jincheng Long. Since the columella in the root tip of \textit{Arabidopsis} is hypermethylated in the CHH context \cite{RN261}, the root tip was imaged to screen and select the best lines selected for further imaging (Figure\ref{fig:Pol4_5_roots}).
 
 \begin{figure}[htbp!] 
 \centering    
     \includegraphics[width=1\textwidth]{Chapter2/Figs/Figure3_Pol4_anther_gynecium.pdf}
-\caption{\textbf{NRPD1 is expressed in the tapetum, microspore and gynoecium.}}
+\caption{NRPD1 is expressed in the tapetum, microspore and gynoecium.}
 \label{fig:Pol4_anther}
 \captionsetup{font=small}
     \caption*{NRPD1 expression in meiocyte stage anthers in the tapetum and surrounding somatic cells(first row, third column (GFP, green, white arrows), and expression in microspores (second row third column, white arrows). NRPD1 is also expressed in both the germ and somatic cells of the meiocyte stage gynoecium (third row (GFP, green)). Scale bar 10 $\mu$m.}
@@ -65,13 +63,13 @@ The columella in the root tip of \textit{Arabidopsis} is hypermethylated in the 
 
 Meiocytes are surrounded by the tapetum - a somatic tissue layer of nurse cells with cytoplasmic connections to meiocytes through plasmodesmata. As expected, NRDP1 expression was confined to the tapetal layer and surrounding somatic anther tissue in meiocyte stage anthers (Figure \ref{fig:Pol4_anther}). Once meiocytes undergo meiosis, the plasmodesmatal connection to the tapetum ceases and the meiocytes are surrounded by callose cell walls. At the microspore stage, the germline cells express NRPD1 (Figure \ref{fig:Pol4_anther} second row, \ref{fig:Pol4_germ} first and second rows). NRPD1 was also expected to be expressed strongly in the maternal reproductive tissue \cite{RN165} which was confirmed in several independent reporter lines (Figure \ref{fig:Pol4_anther}, row three).
 
-Following a further two cell divisions, the bicellular and tricellular pollen grains are produced, neither of which express NRPD1 (Figure \ref{fig:Pol4_germ}, rows 3 and 4). However, it must be added that the expression levels of the best NRPD1 reporter lines were a lot lower and more diffuse than the expression of NRPE1 or CLSY3 reporter lines (Figures \ref{fig:CLSY3_anther}, \ref{fig:Pol4_5_roots}). Further, expression in germline tissues wasn't consistent even in lines that exhibited strong root signal (Figure \ref{fig:Pol4_germ}, Figure \ref{fig:Pol4_germ_no_expression}). As these results are from screening 37 independent transformants from the same transformation event, it would be worth constructing new transformants perhaps with a stronger fluorescent reporter (such as tdTomato) to corroborate these results, and confidently confirm whether NRPD1 is expressed in the pollen. 
+Following a further two cell divisions, the bicellular and tricellular pollen grains are produced, neither of which express NRPD1 (Figure \ref{fig:Pol4_germ}, rows 3 and 4). However, it must be added that the expression levels of the best NRPD1 reporter lines were a lot lower and more diffuse than the expression of NRPE1 or CLSY3 reporter lines (Figures \ref{fig:CLSY3_anther}, \ref{fig:Pol4_5_roots}). Further, expression in germline tissues was not consistent even in lines that exhibited strong root signal (Figure \ref{fig:Pol4_germ}, Figure \ref{fig:Pol4_germ_no_expression}). As these results are from screening 37 independent transformants from the same transformation event, it would be worth constructing new transformants perhaps with a stronger fluorescent reporter (such as tdTomato) to corroborate these results, and confidently confirm whether NRPD1 is expressed in the pollen. 
 
 
 \begin{figure}[htbp!] 
 \centering    
     \includegraphics[width=0.8\textwidth]{Chapter2/Figs/Figure4_Pol4_germline.pdf}
-\caption{\textbf{NRPD1 is expressed in microspores, but its expression is absent in pollen}}
+\caption{NRPD1 is expressed in microspores, but its expression is absent in pollen}
 \label{fig:Pol4_germ}
 \captionsetup{font=small}
     \caption*{NRPD1 expression early and late microsproes (first and second rows, third column (GFP, green, white arrows), and expression in microspores (second row third column, white arrows). NRPD1 however us not expressed in bicellular or tricellular pollen (third and fourth rows (DAPI, blue GFP, green). Scale bar 10 $\mu$m.}
@@ -79,12 +77,12 @@ Following a further two cell divisions, the bicellular and tricellular pollen gr
 
 \section{NRPE1 is expressed in both somatic and germline tissues in \textit{Arabidopsis} anthers}
 
-According to methylation and 24nt sRNA datasets,  Pol V-dependent pathway of RdDM be active in the somatic tapetal layer and meiocytes, but it wasn't clear what happens after meiosis in microspores and pollen. As before, strong nuclear signal was confirmed in the root tip (Figure \ref{fig:Pol4_5_roots}).  NRPE1 is strongly expressed in meiocytes, tapetum and in the surrounding somatic tissues of the meiocyte stage anther (Figure \ref{fig:Pol5_germ}, first row). This expression also persists into both soma and germline of microspore stage anthers and the female meiocyte stage gynoecium (Figure \ref{fig:Pol5_germ} second and third rows respectively), indicating that the RNA polymerase V pathway of RdDM is active in both somatic and germline cells of the anther. As we know RdDM is highly active in maternal reproductive tissue, the expression of NRPE1 was confirmed in this tissue as well (Figure \ref{fig:Pol5_germ}, third row).
+According to methylation and 24nt sRNA datasets, the Pol V-dependent pathway of RdDM be active in the somatic tapetal layer and meiocytes, but it was not clear what happens after meiosis in microspores and pollen. As before, strong nuclear signal was confirmed in the root tip (Figure \ref{fig:Pol4_5_roots}). NRPE1 is strongly expressed in meiocytes, tapetum and in the surrounding somatic tissues of the meiocyte stage anther (Figure \ref{fig:Pol5_germ}, first row). This expression also persists into both soma and germline of microspore stage anthers and the female meiocyte stage gynoecium (Figure \ref{fig:Pol5_germ} second and third rows respectively), indicating that the Pol V-dependent pathway of RdDM is active in both somatic and germline cells of the anther. As we know RdDM is highly active in maternal reproductive tissue \cite{RN163,RN165}, the expression of NRPE1 was confirmed in this tissue as well (Figure \ref{fig:Pol5_germ}, third row).
 
 \begin{figure}[htbp!] 
 \centering    
     \includegraphics[width=1\textwidth]{Chapter2/Figs/Figure5_Pol5_germline.pdf}
-\caption{\textbf{NRPE1 is expressed in the tapetum, meiocyte, microspores and gynoecium}}
+\caption{NRPE1 is expressed in the tapetum, meiocyte, microspores and gynoecium}
 \label{fig:Pol5_germ}
 \captionsetup{font=small}
     \caption*{NRPE1 expression in meiocyte stage anthers in the tapetum, meiocyte and surrounding somatic cells(first row, third column (GFP, green, white arrows), and expression in microspores (second row third column, white arrows). NRPE1 is also expressed in both the germ and somatic cells of the meiocyte stage gynoecium (third row (GFP, green)). Scale bar 10 $\mu$m.}
@@ -93,12 +91,12 @@ According to methylation and 24nt sRNA datasets,  Pol V-dependent pathway of RdD
 
 \section{CLSY3 is expressed in the tapetum of meiocyte stage anthers and in the gynoecium}
 
-CLSY3 chromatin remodeller drives sRNA production in the tapetum \cite{RN187} by recruiting Pol IV to discrete loci (including HyperTEs)\cite{RN23}. In accordance with this, the expression of CLSY3 in meiocyte stage anthers is largely restricted to the tapetum (Figure \ref{fig:CLSY3_anther} first row), with diminished expression in the tapetum after meiosis (Figure \ref{fig:CLSY3_anther} second row). CLSY3 is also required for expression of abundant 24nt sRNA in the ovules, and therefore it is strongly expressed in the gynoecium and surrounding somatic tissues (Figure \ref{fig:CLSY3_anther}, third row).
+The CLSY3 chromatin remodeler drives sRNA production in the tapetum \cite{RN187} by recruiting Pol IV to discrete loci (including HyperTEs)\cite{RN23}. In accordance with this, the expression of CLSY3 in meiocyte stage anthers is largely restricted to the tapetum (Figure \ref{fig:CLSY3_anther} first row), with diminished expression in the tapetum after meiosis (Figure \ref{fig:CLSY3_anther} second row). CLSY3 is also required for expression of abundant 24nt sRNA in the ovules, and therefore it is strongly expressed in the gynoecium and surrounding somatic tissues (Figure \ref{fig:CLSY3_anther}, third row).
 
 \begin{figure}[htbp!] 
 \centering    
     \includegraphics[width=1\textwidth]{Chapter2/Figs/Figure1_CLSY3_anther_gynecium.pdf}
-\caption{\textbf{CLSY3 is expressed in the tapetum of meiocyte stage anthers and in the gynoecium}}
+\caption{CLSY3 is expressed in the tapetum of meiocyte stage anthers and in the gynoecium}
 \label{fig:CLSY3_anther}
 \captionsetup{font=small}
     \caption*{CLSY3 is strongly expressed in the nucleus of meiocyte stage tapetal cells (first row (Venus, yellow)), which then diminishes in the senescing tapetum after meiosis in the microspore stage(second row, Venus (yellow)). CLSY3 is also expressed in both the germ and somatic cells of the meiocyte stage gynoecium (third row (Venus, yellow)). Scale bar 10 $\mu$m.}
@@ -109,7 +107,7 @@ However, following meiosis, CLSY3 is not expressed in microspore, bicellular or 
 \begin{figure}[htbp!] 
 \centering    
     \includegraphics[width=0.8\textwidth]{Chapter2/Figs/Figure2_CLSY3_germline.pdf}
-\caption{\textbf{CLSY3 is not expressed in the male germline cells}}
+\caption{CLSY3 is not expressed in the male germline cells}
 \label{fig:CLSY3_germ}
 \captionsetup{font=small}
     \caption*{DAPI stained microspore, bicellular or tricellular pollen (second column (DAPI, blue). CLSY3 signal not detected in any germline cells (third row (Venus, yellow). Scale bar 10 $\mu$m}
@@ -120,12 +118,12 @@ However, following meiosis, CLSY3 is not expressed in microspore, bicellular or 
 
 To dissect the dynamics of the sRNA landscape in the germline, sRNA sequencing libraries were constructed for microspores, sperm cells, and sperm nuclei (2 replicates each). These were then compared to meiocyte and tapetum sRNA libraries \cite{RN187}, as well as to somatic sRNA sequencing libraries from the leaf, root and seedling \cite{RN262,RN263,RN264}. 
 
-All three somatic tissues sampled had a strong 21nt and 24nt peak (Figure \ref{fig:sRNA_sizes}A). However, in the germline, except for microspores, the dominant sRNA length was 24nt, with sperm cells and sperm nuclei exhibiting the highest proportional levels of 24nt sRNA (Figure \ref{fig:sRNA_sizes}B).
+All three somatic tissues had a strong 21nt and 24nt peak (Figure \ref{fig:sRNA_sizes}A). However, in the germline, except for microspores, the dominant sRNA length was 24nt, with sperm cells and sperm nuclei exhibiting the highest proportional levels of 24nt sRNA (Figure \ref{fig:sRNA_sizes}B).
 
 \begin{figure}[htbp!] 
 \centering    
-    \includegraphics[width=0.8\textwidth]{Chapter2/Figs/Figure6_sRNA_sizes.pdf}
-\caption{\textbf{In germline tissues, the dominant sRNA length is 24nt}}
+    \includegraphics[width=1\textwidth]{Chapter2/Figs/Figure6_sRNA_sizes.pdf}
+\caption{In germline tissues, the dominant sRNA length is 24nt}
 \label{fig:sRNA_sizes}
 \captionsetup{font=small}
     \caption*{(A) The size distribution of sRNAs in leaf, root and seedling. X axis: sRNA lengths, Y axis: reads per million (RPM) (B) The size distribution of sRNAs in meiocyte, microspore, sperm cell, sperm nucleus and tapetum. X axis: sRNA lengths, Y axis: reads per million (RPM)}
@@ -133,12 +131,12 @@ All three somatic tissues sampled had a strong 21nt and 24nt peak (Figure \ref{f
 
 When examining genomic features to capture a snapshot of 24nt sRNA distribution in germline tissues, it has been previously shown that HyperTEs dominate the 24nt sRNA landscape in meiocytes \cite{RN187}. However, the proportion of 24nt sRNAs within HyperTE regions gradually declines through cell divisions following meiosis, from meiocytes to sperm cells, suggesting that endogenous HyperTE sRNA production does not continue or ceases in the germline cells after meiosis and the closure of the plasmodesmatal connections to microspores. (Figure \ref{fig:sRNA_pie}A). 
 
-In sperm cells, TE regions become the dominant source of 24nt sRNAs, mirroring the pattern observed in somatic tissues (Figure \ref{fig:sRNA_pie}B). In somatic tissues, a large portion of these canonical RdDM loci are known to be associated with CLSY1 and CLSY2 \cite{RN23}. However, in the pollen, neither CLSY1 nor CLSY2 were strongly expressed (Figure \ref{fig:clsy1_2_pollen} suggesting (provided there's endogenous sRNA production in the pollen), these clusters are not strongly associated with the expression of any protein from the CLSY family.
+In sperm cells, TE regions become the dominant source of 24nt sRNAs, mirroring the pattern observed in somatic tissues (Figure \ref{fig:sRNA_pie}B). In somatic tissues, a large portion of these canonical RdDM loci are known to be associated with CLSY1 and CLSY2 \cite{RN23}. However, in the pollen, neither CLSY1 nor CLSY2 were strongly expressed (Figure \ref{fig:clsy1_2_pollen} suggesting (provided there is endogenous sRNA production in the pollen), these clusters are not strongly associated with the expression of any protein from the CLSY family.
 
 \begin{figure}[htbp!] 
 \centering    
-    \includegraphics[width=0.8\textwidth]{Chapter2/Figs/Figure7_Pie_charts.pdf}
-\caption{\textbf{HyperTE derived 24nt sRNAs decline in proportional abundance after meiosis and throughout pollen development}}
+    \includegraphics[width=1\textwidth]{Chapter2/Figs/Figure7_Pie_charts.pdf}
+\caption{HyperTE derived 24nt sRNAs decline in proportional abundance after meiosis and throughout pollen development}
 \label{fig:sRNA_pie}
 \captionsetup{font=small}
     \caption*{Pie chart showing the proportional mapping of 24nt sRNAs to genomic features of interest: HyperTEs, TEs, Genes, MetGenes and intergenic regions in (A) germline tissue (meiocyte, microspore, sperm cell and sperm nucleus) and (B) somatic tissue (seedling, root and leaf).}
@@ -146,7 +144,16 @@ In sperm cells, TE regions become the dominant source of 24nt sRNAs, mirroring t
 
 \section{Sperm cell sRNA clusters are uncoupled from CLSY-dependent loci}
 
-Examining the expression levels of germline-associated CLSY3-dependent loci, HyperTEs, and somatic tissue-associated CLSY1/2-dependent loci, along with canonical RdDM (cRdDM) loci, we can first conclude that, as expected, CLSY1/2-dependent and cRdDM loci exhibit the highest overall abundance of sRNAs in somatic tissues (leaf, seedling, and root). In contrast, most cRdDM loci do not generate sRNAs in the meiocyte, tapetum, or microspore. Interestingly, the sperm cell and sperm nucleus appear to represent an intermediate stage, where sRNA production at cRdDM loci is reactivated though not to the same extent as in somatic tissues (Figures \ref{fig:hm_CLSY3_CLSY1}B,D, \ref{fig:boxplot-MCMS}).
+Examining the expression levels of germline-associated CLSY3-dependent loci, HyperTEs, and somatic tissue-associated CLSY1/2-dependent loci, along with canonical RdDM (cRdDM) loci, we can first conclude that, as expected, CLSY1/2-dependent and cRdDM loci exhibit the highest overall abundance of sRNAs in somatic tissues (leaf, seedling, and root). In contrast, most cRdDM loci do not generate abundant sRNAs in the meiocyte, tapetum, or microspore. Interestingly, the sperm cell and sperm nucleus appear to represent an intermediate stage, where sRNA production at cRdDM loci is reactivated though not to the same extent as in somatic tissues (Figures \ref{fig:hm_CLSY3_CLSY1}B,D, \ref{fig:boxplot-MCMS}).
+
+\begin{figure}[htbp!] 
+\centering    
+    \includegraphics[width=1\textwidth]{Chapter2/Figs/Figure8_Heatmaps_CLSY3_CLSY1_2vs_cRdDMs_HyperTEs.pdf}
+\caption{CLSY3-dependent loci and HyperTEs generate abundant sRNAs in meiocytes and tapetum, as well as in microspores and sperm cells, though to a lesser degree. CLSY1\&2-dependent loci and canonical RdDM loci primarily produce abundant sRNAs in somatic tissues, with intermediate levels in sperm cells.}
+\label{fig:hm_CLSY3_CLSY1}
+\captionsetup{font=small}
+    \caption*{Heatmaps showing the 24nt sRNA RPKM levels of (A) CLSY3 dependent, (B) CLSY1\&2 dependent, (C) HyperTEs and (D) cRdDM loci in different germline (meiocyte, tapetum, sperm cell, sperm nucleus, pollen) and somatic tissues (leaf, seedling, root). Scale bar shows logRPKM values.}
+\end{figure}
 
 Conversely, in CLSY3-dependent and HyperTE loci, we observe an opposite pattern: 24nt sRNA abundance is highest in the meiocyte, tapetum, and microspore (though somewhat reduced in the microspore at certain loci), while somatic tissues exhibit lower sRNA levels. The sperm cell and sperm nucleus again show intermediate sRNA abundance. Pollen, in particular, displays higher overall levels of 24nt sRNAs from these loci, suggesting they are primarily produced in the vegetative cell. Notably, a subset of HyperTE loci continues to produce sRNAs even in somatic tissues (Figures \ref{fig:hm_CLSY3_CLSY1}A-C, \ref{fig:boxplot-MCMS}).
 
@@ -154,38 +161,29 @@ Since the heatmaps show normalised levels of sRNA against total sRNA levels in e
 
 \begin{figure}[htbp!] 
 \centering    
-    \includegraphics[width=0.8\textwidth]{Chapter2/Figs/Figure8_Heatmaps_CLSY3_CLSY1_2vs_cRdDMs_HyperTEs.pdf}
-\caption{\textbf{CLSY3-dependent loci and HyperTEs generate abundant sRNAs in meiocytes and tapetum, as well as in microspores and sperm cells, though to a lesser degree. CLSY1\&2-dependent loci and canonical RdDM loci primarily produce abundant sRNAs in somatic tissues, with intermediate levels in sperm cells.}}
-\label{fig:hm_CLSY3_CLSY1}
-\captionsetup{font=small}
-    \caption*{Heatmaps showing the 24nt sRNA RPKM levels of (A) CLSY3 dependent, (B) CLSY1\&2 dependent, (C) HyperTEs and (D) cRdDM loci in different germline (meiocyte, tapetum, sperm cell, sperm nucleus, pollen) and somatic tissues (leaf, seedling, root). Scale bar shows RPKM values.}
-\end{figure}
-
-To further understand the sRNA landscape in sperm and microspore, the sRNA profiles were compared pairwise to somatic tissues as well as other germline tissues, namely the meiocyte. Genome wide, 24nt sRNA abundance in 24nt clusters correlate weakly between the meiocyte and microspore (Figure \ref{fig:MSSVMC_scatters}A), but less so than between tapetum and meiocyte (Figure \ref{fig:scatter_SC_chromatin}A). This correlation is then further reduced between the meiocyte and sperm, indicating that global 24nt sRNA profiles are indeed vastly different between these cell types (Figure \ref{fig:MSSVMC_scatters}B).
-
-Additionally, when comparing sperm cell-specific sRNA clusters between the meiocyte and sperm, and highlighting key genomic features, we clearly see that a significant subset of sperm-specific clusters producing sRNAs overlap with HyperTEs. These clusters have correspondingly high sRNA abundance in the meiocyte, with relatively lower abundance in the sperm cell (Figure \ref{fig:MSSVMC_scatters}B). In contrast, loci with low RPKM values in the meiocyte but high in sperm include a mixture of canonical RdDM loci and other sperm-specific loci that do not overlap with either HyperTEs or cRdDMs.
-
-\begin{figure}[htbp!] 
-\centering    
     \includegraphics[width=1\textwidth]{Chapter2/Figs/CLSY_singles_scatterplots.pdf}
-\caption{\textbf{The distribution of the abundance of 24nt sRNAs at CLSY associated loci compared between the meiocyte and sperm cell}}
+\caption{The distribution of the abundance of 24nt sRNAs at CLSY associated loci compared between the meiocyte and sperm cell}
 \label{fig:clsysingle_scatters}
 \captionsetup{font=small}
     \caption*{Scatterplot shows the log(RPKM+1) values of 24nt sRNAs at sperm-specific clusters, split by CLSY-dependent loci A) CLSY 1 B) CLSY2 C) CLSY 3 D) CLSY4 E) Loci that do not overlap any CLSY dependent loci}
 \end{figure}
 
+To further understand the sRNA landscape in sperm and microspore, the sRNA profiles were compared pairwise to somatic tissues as well as other germline tissues, namely the meiocyte. Genome wide, 24nt sRNA abundance in 24nt sRNA clusters correlate weakly between the meiocyte and microspore (Figure \ref{fig:MSSVMC_scatters}A), but less so than between tapetum and meiocyte (Figure \ref{fig:scatter_SC_chromatin}A). This correlation is then further reduced between the meiocyte and sperm, indicating that global 24nt sRNA profiles are indeed vastly different between these cell types (Figure \ref{fig:MSSVMC_scatters}B).
+
+Additionally, when comparing sperm cell-specific sRNA clusters between the meiocyte and sperm, and highlighting key genomic features, we clearly see that a significant subset of sperm-specific clusters producing sRNAs overlap with HyperTEs. These clusters have correspondingly high sRNA abundance in the meiocyte, with relatively lower abundance in the sperm cell (Figure \ref{fig:MSSVMC_scatters}B). In contrast, loci with low RPKM values in the meiocyte but high in sperm include a mixture of canonical RdDM loci and other sperm-specific loci that do not overlap with either HyperTEs or cRdDMs.
+
 Similarly, highlighting CLSY-dependent loci in the same dataset  yields results consistent with those in Figure \ref{fig:MSSVMC_scatters}B. In Figure \ref{fig:clsysingle_scatters}, loci with abundant sRNAs in the meiocyte overlap CLSY3-dependent loci and some CLSY4 and CLSY2 dependent loci (Figure \ref{fig:clsysingle_scatters}B, C, D). Surprisingly, loci that produce abundant sRNAs in sperm distinctly from the meiocyte do not exclusively overlap CLSY1 and CLSY2 dependent loci as would be expected in somatic tissues (Figure \ref{fig:clsysingle_scatters}A,B). Instead, many of these loci do not overlap with any CLSY-dependent loci at all (Figure \ref{fig:clsysingle_scatters}E). 
 
 \section{Sperm-cell specific loci do not completely share sRNA profiles with pollen}
 
-As illustrated in Figures \ref{fig:hm_CLSY3_CLSY1} there is not a complete overlap in sRNA production between sperm and pollen. The expression of sperm-cell-specific clusters was compared with several published pollen datasets, as well as libraries derived from sperm cell and sperm nucleus tissues. While the sRNA profiles of the sperm cell and sperm nucleus are highly correlated (Figure \ref{fig:PLvsSC_overall}) there are distinct sRNA expression patterns between pollen and sperm cells, despite their overall correlation (Figure \ref{fig:PLvsSC_overall}) indicating the contribution of the vegetative cell. 
+As illustrated in Figure \ref{fig:hm_CLSY3_CLSY1} there is not a complete overlap in sRNA production between sperm and pollen. The expression of sperm-cell-specific clusters was compared with several published pollen datasets, as well as libraries derived from sperm cell and sperm nucleus tissues. While the sRNA profiles of the sperm cell and sperm nucleus are highly correlated (Figure \ref{fig:PLvsSC_overall}) there are distinct sRNA expression patterns between pollen and sperm cells, despite their overall correlation (Figure \ref{fig:PLvsSC_overall}) indicating the contribution of the vegetative cell. 
 
-Dissecting this further, we discovered that HyperTEs which continue to produce abundant sRNAs in the sperm cell, also do so in the entire pollen.  This suggests that these sRNAs are either expressed in both the vegetative and sperm cells, or are able to cross into the sperm cell from the vegetative cell. Furthermore, cRdDM loci appear to fall into two categories: one group produces abundant sRNAs in both pollen and sperm, while another exhibits high sRNA levels in pollen but lower levels in sperm, indicating the presence of a vegetative cell-specific sRNA population. A similar pattern can be seen in the sRNA clusters that do not overlap these genomic features at all. Interestingly, the group of MetGenes that produce sRNAs in the sperm cell seem to be  largely specific to this tissue (this is discussed later in the chapter). As the pollen encompasses both sperm cell and vegetative cell sRNA production, these results describe the contribution of the vegetative cell to overall sRNA production in the pollen (\ref{fig:PLvSC_cRdDMs}).
+Dissecting this further, we discovered that HyperTEs which continue to produce abundant sRNAs in the sperm cell, also do so in the entire pollen.  This suggests that these sRNAs are either expressed in both the vegetative and sperm cells, or are able to cross into the sperm cell from the vegetative cell. Furthermore, cRdDM loci appear to fall into two categories: one group produces abundant sRNAs in both pollen and sperm, while another exhibits high sRNA levels in pollen but lower levels in sperm, indicating the presence of a vegetative cell-specific sRNA population. A similar pattern can be seen in the sRNA clusters that do not overlap these genomic features at all. Interestingly, the group of MetGenes that produce sRNAs in the sperm cell seem to be  largely specific to this tissue (this is discussed later in the chapter). As the pollen encompasses both sperm cell and vegetative cell sRNA production, these results describe the contribution of the vegetative cell to overall sRNA production in the pollen (Figure \ref{fig:PLvSC_cRdDMs}).
 
 \begin{figure}[htbp!] 
 \centering    
     \includegraphics[width=1\textwidth]{Chapter2/Figs/PLvsSC_cRdDMs_HyperTEs.pdf}
-\caption{\textbf{The distribution of the abundance of 24nt sRNAs overlapping genomic features of interest, compared between the pollen and sperm cell}}
+\caption{The distribution of the abundance of 24nt sRNAs overlapping genomic features of interest, compared between the pollen and sperm cell}
 \label{fig:PLvSC_cRdDMs}
 \captionsetup{font=small}
     \caption*{Scatterplot shows the log(RPKM+1) values of 24nt sRNAs at sperm-specific clusters, split by cRdDM (green), HyperTE (yellow), MetGene (blue) and non-overlapping (red) loci.}
@@ -193,12 +191,12 @@ Dissecting this further, we discovered that HyperTEs which continue to produce a
 
 \section{Distinct Chromatin and DNA Methylation Patterns in Sperm-Specific sRNA Loci}
 
-Next, examining whether loci that produce abundant sRNAs in sperm compared to the seedling have different chromatin states, (based on H3K9me2 as an indicator of euchromatin or heterochromatin), we find that a subset of loci (n = 568) generating more small RNAs in sperm than in the seedling are predominantly heterochromatic (Figure \ref{fig:MSSVMC_scatters}C, red box). As expected, sperm cell-specific clusters show a strong correlation between the sperm cell and sperm nucleus (Figure \ref{fig:MSSVMC_scatters}D). Furthermore, loci synthesising the most abundant sRNA in both sperm cell and sperm nucleus tend to be heterochromatic.
+As expected, loci with abundant sRNAs in the meiocyte and the tapetum are primarily HyperTEs (Figure \ref{fig:scatter_SC_chromatin}A), which decline in abundance in the sperm cell (Figure \ref{fig:scatter_SC_chromatin}B). Next, examining whether loci that produce abundant sRNAs in sperm compared to the seedling have different chromatin states, (based on H3K9me2 as an indicator of euchromatin or heterochromatin), we find that a subset of loci (n = 568) generating more sRNAs in sperm than in the seedling are predominantly heterochromatic (Figure \ref{fig:scatter_SC_chromatin}C, red box). As expected, sperm cell-specific clusters show a strong correlation between the sperm cell and sperm nucleus (Figure \ref{fig:scatter_SC_chromatin}D). Furthermore, loci synthesising the most abundant sRNA in both sperm cell and sperm nucleus tend to be heterochromatic.
 
 \begin{figure}[htbp!] 
 \centering    
     \includegraphics[width=1\textwidth]{Chapter2/Figs/Figure9_Scatterplots_HyperTEs_chromatin_SC.pdf}
-\caption{\textbf{HyperTEs produce highly abundant 24nt sRNAs specifically in the meiocyte and tapetum, which tapers off in the sperm cell. Loci with highly abundant 24nt sRNAs specifically in the sperm cell tend to be more heterochromatic.}}
+\caption{HyperTEs produce highly abundant 24nt sRNAs specifically in the meiocyte and tapetum, which tapers off in the sperm cell. Loci with highly abundant 24nt sRNAs specifically in the sperm cell tend to be more heterochromatic.}
 \label{fig:scatter_SC_chromatin}
 \captionsetup{font=small}
     \caption*{Correlations between 24nt sRNA abundance and the indicated cell types, highlighting (A-B) genomic features of interest and (C-D) chromatin structure. (C) Sperm cell specific heterochromatic cluster highlighed with red box.}
@@ -209,7 +207,7 @@ It is crucial to investigate whether the heterochromatic sperm-specific n568 sub
 \begin{figure}[htbp!] 
 \centering    
     \includegraphics[width=1\textwidth]{Chapter2/Figs/Figure10_SC_hetero_clusters_methylation.pdf}
-\caption{\textbf{Sperm-specific heterochromatic loci exhibit significantly lower overall methylation levels compared to the entire sperm dataset}}
+\caption{Sperm-specific heterochromatic loci exhibit significantly lower overall methylation levels compared to the entire sperm dataset}
 \label{fig:SC_hetero_clusters}
 \captionsetup{font=small}
     \caption*{CG, CHG and CHH methylation levels of all sperm clusters (dark green) and the heterochromatic 568 loci subset (light green). ***: p-value < 0.001, **: p-value < 0.01,*: p-value < 0.05}
@@ -222,10 +220,10 @@ In contrast to other sex cells, about 20\% of MetGenes generate 24nt sRNAs in th
 \begin{figure}[htbp!] 
 \centering
     \includegraphics[width=0.8\textwidth]{Chapter2/Figs/Figure11_Reactivated_MetGenes_heatmap.pdf}
-\caption{\textbf{Approximately 20\% of MetGenes produce sRNAs in the sperm}}
+\caption{Approximately 20\% of MetGenes produce sRNAs in the sperm}
 \label{fig:hm_metgene_reactivated}
 \captionsetup{font=small}
-    \caption*{Clusters 1,2: sperm specific sRNA production. Cluster 3: HyperTE/MetGene boundary derived meiocyte and tapetum specific clusters}
+    \caption*{Clusters 1,2: sperm specific sRNA production. Cluster 3: HyperTE/MetGene boundary derived meiocyte and tapetum specific clusters. Scale bar shows logRPKM values.}
 \end{figure}
 
 Next, it was important to determine whether the increased sRNA production actually leads to increased DNA methylation in the sperm cell. Overall, the sperm cell-specific MetGenes exhibited higher CG and CHG methylation compared to the full set in meiocytes and microspores (Figure \ref{fig:boxplot_MetGene_methylation}A,B,D,E), and higher methylation in the CHG context in sperm. Interestingly, the only tissue where this subset showed higher CHH methylation was in the sperm cell, suggesting that renewed sRNA production at these loci also drives methylation in the sperm cell (Figure \ref{fig:boxplot_MetGene_methylation}C,F).
@@ -233,10 +231,10 @@ Next, it was important to determine whether the increased sRNA production actual
 \begin{figure}[htbp!] 
 \centering    
     \includegraphics[width=1\textwidth]{Chapter2/Figs/Figure12_Reactivated_MetGenes_methylation.pdf}
-\caption{\textbf{The reactivated MetGenes gain CHH methylation in the sperm cell.}}
+\caption{The reactivated MetGenes gain CHH methylation in the sperm cell.}
 \label{fig:boxplot_MetGene_methylation}
 \captionsetup{font=small}
-    \caption*{(Box plots of CG (A), CHG (B) and CHH (C) methylation of all MetGenes compared to the reactivated subset, in germline and somatic tissues. Heatmaps of the CG (D) CHG (E) and CHH (F) methylation MetGenes that produce sRNAs in the sperm cell. ***: p-value < 0.001, **: p-value < 0.01,*: p-value < 0.05}
+    \caption*{(Box plots of CG (A), CHG (B) and CHH (C) methylation of all MetGenes compared to the reactivated subset, in germline and somatic tissues. Heatmaps of the CG (D) CHG (E) and CHH (F) methylation MetGenes that produce sRNAs in the sperm cell. ***: p-value < 0.001, **: p-value < 0.01,*: p-value < 0.05.}
 \end{figure}
 
 \section{ATGP2N TEs produce highly abundant 24nt sRNAs in sperm cells, the sperm nucleus, and pollen.}
@@ -246,23 +244,25 @@ As previously mentioned, after meiosis, HyperTE-derived sRNAs cease to be the do
 \begin{figure}[htbp!] 
 \centering    
     \includegraphics[width=0.8\textwidth]{Chapter2/Figs/Figure13_TE_families_heatmap.pdf}
-\caption{\textbf{ATGP2N TEs produce highly abundant 24nt sRNAs in the sperm cell, sperm nucleus and pollen}}
+\caption{ATGP2N TEs produce highly abundant 24nt sRNAs in the sperm cell, sperm nucleus and pollen}
 \label{fig:TE_families}
 \captionsetup{font=small}
-    \caption*{(A) Heatmap showing the 24nt sRNA production of TE families in germline and somatic tissues. Cluster 9 contains the ATGP2N families.}
+    \caption*{(A) Heatmap showing the 24nt sRNA production of TE families in germline and somatic tissues. Cluster 9 contains the ATGP2N families. Scale bar shows logRPKM values.}
 \end{figure}
 
-Notably, another LTR/Gypsy transposon ATGP1 has been reported to be a direct target of RdDM in meiocytes, targeted by sRNAs produced in the tapetum, and gaining release from repression in RdDM defective mutants\cite{RN187}, specifically in the male germline.
+Notably, another LTR/Gypsy transposon ATGP1 has been reported to be a direct target of RdDM in meiocytes, targeted by sRNAs produced in the tapetum, and gaining release from repression in RdDM defective mutants \cite{RN187}, specifically in the male germline.
 
 
 \begin{figure}[htbp!] 
 \centering    
     \includegraphics[width=1\textwidth]{Chapter2/Figs/Figure14_TE_methylation.pdf}
-\caption{\textbf{ATGP2N TEs produce highly abundant 24nt sRNAs in the sperm cell, sperm nucleus and pollen}}
+\caption{ATGP2N TEs produce highly abundant 24nt sRNAs in the sperm cell, sperm nucleus and pollen}
 \label{fig:TE_methylation}
 \captionsetup{font=small}
     \caption*{(A) Snapshot CHH methylation levels of three ATGP2N TEs which produces abundant sRNAs in the sperm. (A) Boxplots of CG, CHG and CHH methylation levels of the ATGP2 subset compared to all TEs in germline and somatic tissues. ***: p-value < 0.001, **: p-value < 0.01,*: p-value < 0.05}
 \end{figure}
+
+When comparing ATGP2N methylation between the soma and germline, both showed consistently high methylation in the CG and CHG contexts (Figure \ref{fig:TE_methylation}A), with generally low methylation in the CHH context. However, compared to other TE loci in the genome, ATGP2N retained higher methylation levels in the germline than in the soma in the CG and CHG contexts. Additionally, ATGP2N exhibited low CHH methylation in meiocytes and sperm cells compared to other TE loci but gained CHH methylation in vegetative cells, mirroring the pattern observed in seedlings (Figure \ref{fig:TE_methylation}B).
 
 \clearpage
 
@@ -284,7 +284,7 @@ Several accessory proteins are involved in the RdDM pathway \cite{RN33}, many of
 
 Given the critical importance of genome integrity in reproductive cells, the precise regulation and silencing of TEs are essential. In accordance with this, 568 loci with abundant 24nt sRNAs also have high H3K9me2 methylation, which is associated with heterochromatic regions, however, these loci are not associated with increased CG, CHG or CHH methylation levels when compared to the whole set (Figures \ref{fig:scatter_SC_chromatin} \ref{fig:SC_hetero_clusters}. This may suggest that this subset represent TEs that are activated in the vegetative cell, which are situated in pericentromeric regions, enriched in H3K9me2, and produce 24nt sRNAs that target DNA methylation in sperm cells \cite{RN278}. Nevertheless, further careful study is necessary to determine the specific significance of this group of TEs and to clarify whether they overlap with the heterochromatic TEs activated in the vegetative cell.
 
-The LTR/Gypsy TE family ATGP1 has previously been shown to be specifically active in reproductive cells of RdDM mutants \cite{RN187}. Investigating the 24nt sRNA landscape at TE loci identified another LTR/Gypsy TE family, ATGP2N, which produce abundant sRNAs specifically in the sperm cell (Figure \ref{fig:TE_families}). ATGP2N has previously been reported to gain chromatin accessibility and be transcriptionally upregulated in \textit{met1} mutants. In this study, ATGP2N was part of a subset of TEs that gained chromatin accessibility and increased in transcription as well as an increase in the production of 21nt sRNAs in the inflorescences of \textit{met1} mutants. The other groups gained accessibility but had no change in transcription or sRNA production, one already being highly expressed in wild type plants, and the other remaining repressed with respect to transcription and sRNA production even with increased chromatin accessibility\cite{RN184}. Although CHH methylation levels of TEs  both germline and somatic tissues were generally low, the ATGP2N family had slightly increased CHH methylation in all tissues, most notably in the vegetative cell (Figure \ref{fig:TE_methylation}B and C). Several explanations could account for these findings. 
+The LTR/Gypsy TE family ATGP1 has previously been shown to be specifically active in reproductive cells of RdDM mutants \cite{RN187}. Investigating the 24nt sRNA landscape at TE loci identified another LTR/Gypsy TE family, ATGP2N, which produce abundant sRNAs specifically in the sperm cell (Figure \ref{fig:TE_families}). ATGP2N has previously been reported to gain chromatin accessibility and be transcriptionally upregulated in \textit{met1} mutants. In this study, ATGP2N was part of a subset of TEs that gained chromatin accessibility and increased in transcription as well as an increase in the production of 21nt sRNAs in the inflorescences of \textit{met1} mutants. The other examined groups of TEs gained accessibility but had no change in transcription or sRNA production, one already being highly expressed in wild type plants, and the other remaining repressed with respect to transcription and sRNA production even with increased chromatin accessibility\cite{RN184}. Although CHH methylation levels of TEs  both germline and somatic tissues were generally low, the ATGP2N family had slightly increased CHH methylation in all tissues, most notably in the vegetative cell (Figure \ref{fig:TE_methylation}B and C). Several explanations could account for these findings. 
 
 Firstly, as around 40\% of these ATGP2N loci overlap CLSY3/4 dependent loci, it is possible that these chromatin remodellers are responsible for the cell-specific silencing of these TEs in the sperm cell. An important question to address empirically is whether, in addition to the 21 and 22nt easiRNAs, 24nt sRNAs produced in the hypomethylated vegetative cells can direct methylation in the sperm cells, similar to how tapetal cells mediate methylation at specific loci. Secondly, another potential explanation for this sRNA and methylation pattern is related to the general observation that most TEs are more hypomethylated in the vegetative cell compared to the sperm cell, which leads to the production of abundant easiRNAs that direct RdDM in sperm.  However, since ATGP2N exhibits increased CHH methylation in the vegetative cell compared to the sperm cell, it is plausible that the abundant 24nt sRNAs detected in the sperm cell are produced through the non-canonical PolII-RDR6 or PolII-DCL3 RdDM pathways, due to ATGP2N reactivation specifically in the sperm cell. To verify these hypotheses, it will be necessary to examine ATGP2N expression levels in the germline of wild-type and RdDM mutants, as well as analyse 24nt sRNA production and CHH methylation in clsy3/4 double mutants.
 
@@ -316,7 +316,7 @@ Sperm cells were isolated as previously described \cite{RN140,RN141} except the 
 
 RNA was released from isolated microspores by vortexing the samples with RNase free glass beads (Sigma-Aldrich) for 4 minutes before proceeding with RNA isolation. RNA was isolated from all samples using the Direct-zol™ RNA kit (Zymo Research, CN: R2061).
 
-2 replicates of sRNA sequencing libraries were constructed per cell type (microspore, sperm cell, sperm nuclei) using the RealSeq®-biofluids NGS Library Preparation Kit for miRNAs and small RNAs. For the three library types, the number of cells used for each replicate were as follows: 300 000 cells for microspore, 600 000 cells for sperm cells, and 1 500 000 cells for sperm nuclei.
+2 replicates of sRNA sequencing libraries were constructed per cell type (microspore, sperm cell, sperm nuclei) using the RealSeq®-biofluids NGS Library Preparation Kit for miRNAs and sRNAs. For the three library types, the number of cells used for each replicate were as follows: 300 000 cells for microspore, 600 000 cells for sperm cells, and 1 500 000 cells for sperm nuclei.
 
 Briefly, the RealSeq® adapters were ligated and blocked, then the sample was circularised, and the adapter dimers were removed. Then reverse transcription was performed as well as PCR amplification and size selection to end up with the final library.
 

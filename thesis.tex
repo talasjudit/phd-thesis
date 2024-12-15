@@ -113,17 +113,16 @@
 
 \maketitle
 
-\include{Declaration/declaration}
-\include{Acknowledgement/acknowledgement}
 \include{Abstract/abstract}
 
 % *********************** Adding TOC and List of Figures ***********************
 
+
 \tableofcontents
-
-%\listoffigures
-
-%\listoftables
+\listoffigures
+\listoftables
+\include{Declaration/declaration}
+\include{Acknowledgement/acknowledgement}
 
 % \printnomenclature[space] space can be set as 2em between symbol and description
 %\printnomenclature[3em]
@@ -137,37 +136,13 @@
 \include{Chapter2/chapter2}
 \include{Chapter3/chapter3}
 \include{Chapter4/chapter4}
-\include{Abbreviations/abbreviations}
+
 
 
 
 % ********************************** Back Matter *******************************
 % Backmatter should be commented out, if you are using appendices after References
 %\backmatter
-
-% ********************************** Bibliography ******************************
-\begin{spacing}{0.9}
-
-% To use the conventional natbib style referencing
-% Bibliography style previews: http://nodonn.tipido.net/bibstyle.php
-% Reference styles: http://sites.stat.psu.edu/~surajit/present/bib.htm
-
-%\bibliographystyle{apalike}
-\bibliographystyle{unsrt} % Use for unsorted references  
-%\bibliographystyle{plainnat} % use this to have URLs listed in References
-\cleardoublepage
-\bibliography{References/references} % Path to your References.bib file
-
-
-% If you would like to use BibLaTeX for your references, pass `custombib' as
-% an option in the document class. The location of 'reference.bib' should be
-% specified in the preamble.tex file in the custombib section.
-% Comment out the lines related to natbib above and uncomment the following line.
-
-%\printbibliography[heading=bibintoc, title={References}]
-
-
-\end{spacing}
 
 % ********************************** Appendices ********************************
 
@@ -194,6 +169,34 @@
 \addcontentsline{toc}{chapter}{Appendix B - Chapter 3} % Add to TOC manually
 \label{appendix:chapter3}
 \input{Appendix2/appendix2}
+
+\include{Abbreviations/abbreviations}
+
+
+% ********************************** Bibliography ******************************
+\begin{spacing}{0.9}
+
+% To use the conventional natbib style referencing
+% Bibliography style previews: http://nodonn.tipido.net/bibstyle.php
+% Reference styles: http://sites.stat.psu.edu/~surajit/present/bib.htm
+
+%\bibliographystyle{apalike}
+\bibliographystyle{unsrt} % Use for unsorted references  
+%\bibliographystyle{plainnat} % use this to have URLs listed in References
+\cleardoublepage
+\bibliography{References/references} % Path to your References.bib file
+
+
+% If you would like to use BibLaTeX for your references, pass `custombib' as
+% an option in the document class. The location of 'reference.bib' should be
+% specified in the preamble.tex file in the custombib section.
+% Comment out the lines related to natbib above and uncomment the following line.
+
+%\printbibliography[heading=bibintoc, title={References}]
+
+
+\end{spacing}
+
 
 % *************************************** Index ********************************
 \printthesisindex % If index is present
