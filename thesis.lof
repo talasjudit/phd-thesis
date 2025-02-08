@@ -1,0 +1,63 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces DNA methylation sequence contexts and their associated DNA methyltransferases (Figure from \cite {RN61})}}{22}{figure.caption.7}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces An overview of the canonical RdDM pathway (Figure from \cite {RN33})}}{23}{figure.caption.8}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces An overview of the development of the male sexual lineage in \textit {Arabidopsis}. Figure adapted from \cite {RN199}}}{25}{figure.caption.9}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Hypermethylated and \textit {de novo} gene-associated methylated loci are identified in the germline of \textit {Arabidopsis} (Figure from \cite {RN199})}}{30}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Tapetum-derived sRNAs shape methylation in the germline of \textit {Arabidopsis}}}{31}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces NRPD1 is expressed in the tapetum, microspore and gynoecium.}}{32}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces NRPD1 is expressed in microspores, but its expression is absent in pollen}}{33}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces NRPE1 is expressed in the tapetum, meiocyte, microspores and gynoecium}}{34}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces CLSY3 is expressed in the tapetum of meiocyte stage anthers and in the gynoecium}}{35}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces CLSY3 is not expressed in the male germline cells}}{36}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces In germline tissues, the dominant sRNA length is 24nt}}{37}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces HyperTE derived 24nt sRNAs decline in proportional abundance after meiosis and throughout pollen development}}{38}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces CLSY3-dependent loci and HyperTEs generate abundant sRNAs in meiocytes and tapetum, as well as in microspores and sperm cells, though to a lesser degree. CLSY1\&2-dependent loci and canonical RdDM loci primarily produce abundant sRNAs in somatic tissues, with intermediate levels in sperm cells.}}{39}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces The distribution of the abundance of 24nt sRNAs at CLSY associated loci compared between the meiocyte and sperm cell}}{41}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces The distribution of the abundance of 24nt sRNAs overlapping genomic features of interest, compared between the pollen and sperm cell}}{43}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces HyperTEs produce highly abundant 24nt sRNAs specifically in the meiocyte and tapetum, which tapers off in the sperm cell. Loci with highly abundant 24nt sRNAs specifically in the sperm cell tend to be more heterochromatic.}}{44}{figure.caption.22}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Sperm-specific heterochromatic loci exhibit significantly lower overall methylation levels compared to the entire sperm dataset}}{46}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Approximately 20\% of MetGenes produce sRNAs in the sperm}}{47}{figure.caption.24}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces The reactivated MetGenes gain CHH methylation in the sperm cell.}}{48}{figure.caption.25}%
+\contentsline {figure}{\numberline {2.17}{\ignorespaces ATGP2N TEs produce highly abundant 24nt sRNAs in the sperm cell, sperm nucleus and pollen}}{49}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.18}{\ignorespaces ATGP2N TEs produce highly abundant 24nt sRNAs in the sperm cell, sperm nucleus and pollen}}{50}{figure.caption.27}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Eukaryotic and prokaryotic base modifications}}{60}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The lifecycle of \textit {Marchantia polymorpha}}}{61}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces The landscape of DNA methylation during the spermiogenesis and embryogenesis of \textit {Marchantia}}}{62}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Embryos fertilised by \textit {dn4mt1} knockout sperm develop more rapidly than WT}}{63}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Live cell imaging of the developmental stages of \textit {M. polymorpha} embryos}}{66}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces 4mC methylation occurs in the CG context and is enriched in genic regions and outside TEs, while 5mC methylation is largely confined to TEs}}{67}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces H3K27me3 levels are elevated in the paternal genome and correlate with the presence of 5mC over genes}}{68}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Sporophyte specific methylation exists in the embryos of \textit {Marchantia}}}{70}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces TE loci produce 24nt sRNA that target genic loci for methylation with mismatch targeting}}{72}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Example of a TE source and MetGene target that gain methylation in the sporophyte}}{73}{figure.caption.38}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces The association of sRNA sequences with parental genomes in different tissues}}{75}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Gemmae screening of constitutively expressed nuclear reporter lines}}{77}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces The tdTomato based nuclear reporter lines are expressed in the antheridia}}{78}{figure.caption.41}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Tak1 male nuclear reporter lines crossed to Tak2 females have no nuclear expression in the embryo}}{79}{figure.caption.42}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Developmental stages of the early embryo (Tak1 male x \textit {EF1$\alpha $}::tdTomato-NLS WT female)}}{80}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Embryos fertilised by \textit {dn4mt1} knockout sperm develop more rapidly than WT}}{82}{figure.caption.44}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A1}{\ignorespaces pCLSY3::CLSY3-Venus is not expressed in the root tip}}{97}{figure.caption.46}%
+\contentsline {figure}{\numberline {A2}{\ignorespaces CLSY1 and CLSY2 are not specifically expressed in the pollen}}{97}{figure.caption.47}%
+\contentsline {figure}{\numberline {A3}{\ignorespaces pNRPD1::NRPD1-eGFP and pNRPE1::NRPE1-eGFP are strongly expressed in the root}}{98}{figure.caption.48}%
+\contentsline {figure}{\numberline {A4}{\ignorespaces pNRPD1 is not consistently expressed in germline tissues}}{98}{figure.caption.49}%
+\contentsline {figure}{\numberline {A5}{\ignorespaces Violin/box plots depicting 24nt sRNA abundance normalised against total 21nt miRNAs in different somatic and germline tissues}}{100}{figure.caption.50}%
+\contentsline {figure}{\numberline {A6}{\ignorespaces Violin/box plots depicting 24nt sRNA abundance normalised against total sRNA of cRdDM, genic, HyperTE and MetGene loci in the leaf, meiocyte and microspore}}{101}{figure.caption.51}%
+\contentsline {figure}{\numberline {A7}{\ignorespaces Scatterplot comparing the abundance of 24nt sRNAs between A) the meiocyte and microspore and B) the meiocyte and the sperm cell}}{102}{figure.caption.52}%
+\contentsline {figure}{\numberline {A8}{\ignorespaces Scatterplot comparing the abundance of 24nt sRNAs at sperm specific clusters between the pollen and the sperm cell (top graph) and the sperm nucleus and the sperm cell (bottom graph)}}{103}{figure.caption.53}%
+\contentsline {figure}{\numberline {A9}{\ignorespaces Violin/box plots depicting 24nt sRNA abundance normalised against total sRNA of cRdDM, genic, HyperTE and MetGene loci in replicates of the A) pollen and B) sperm cell}}{104}{figure.caption.54}%
+\contentsline {figure}{\numberline {B1}{\ignorespaces \textit {Marchantia} embryos develop at different rates in different environmental conditions}}{115}{figure.caption.57}%
+\contentsline {figure}{\numberline {B2}{\ignorespaces Fixing and staining results of wild type (first row) ECPro::MpSUN-GFP embryos (third row) and gemmae (second row). Scale bar 10 $\mu $m.}}{116}{figure.caption.58}%
+\contentsline {figure}{\numberline {B3}{\ignorespaces Fixing and staining results of embryos after treatment with cell wall digesting enzymes}}{117}{figure.caption.59}%
+\contentsline {figure}{\numberline {B4}{\ignorespaces Ridge plot to show the SNP ratio of sRNAs in archegoniophores, thallus, embryo and sporophyte, faceted by chromosome.}}{118}{figure.caption.60}%
+\contentsline {figure}{\numberline {B5}{\ignorespaces Violin/box plots of the abundance of 24nt sRNAs in seedling, meiocyte, sperm cell, sperm nucleus and pollen in \textit {Arabidopsis} mapped with 0 (dark green) and 3 (light green) mismatches}}{119}{figure.caption.61}%
+\contentsline {figure}{\numberline {B6}{\ignorespaces Violin/box plots of the abundance of 24nt sRNAs in the thallus, embryo and sporophyte in \textit {Marchantia} mapped with 0 (dark green) and 3 (light green) mismatches}}{119}{figure.caption.62}%
+\contentsline {figure}{\numberline {B7}{\ignorespaces Line graph that shows the transverse diameter of embryos fertilised by wild type (blue) or 2 independent 4mC mutant (green) sperm.}}{120}{figure.caption.63}%
+\contentsline {figure}{\numberline {B8}{\ignorespaces H3K9me1 over genes and TEs is not associated with the paternal genome}}{121}{figure.caption.64}%
+\contentsline {figure}{\numberline {B9}{\ignorespaces Immunostaining of H3K27me3 in 13 DAF embryos fertilised by wild type and dn4mt1 \#21 knockout sperm }}{122}{figure.caption.65}%
+\contentsline {figure}{\numberline {B10}{\ignorespaces Plasmid map of pMpGWB102(35S)-citrine-NLS}}{122}{figure.caption.67}%
+\contentsline {figure}{\numberline {B11}{\ignorespaces Plasmid map of pMpGWB102(35S)-tdTomato-NLS}}{124}{figure.caption.68}%
+\contentsline {figure}{\numberline {B12}{\ignorespaces Plasmid map of pMpGWB103(\textit {EF1$\alpha $})-citrine-NLS}}{124}{figure.caption.69}%
+\contentsline {figure}{\numberline {B13}{\ignorespaces Plasmid map of pMpGWB102(\textit {EF1$\alpha $})-tdTomato-NLS}}{126}{figure.caption.70}%
