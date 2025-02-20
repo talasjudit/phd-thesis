@@ -24,7 +24,7 @@ As discussed in Chapter 1, DNA methylation is an important epigenetic modificati
 \begin{figure}[htbp!] 
 \centering    
     \includegraphics[width=0.5\textwidth]{Chapter3/Figs/Intro/base_mods.pdf}
-\caption{Eukaryotic and prokaryotic base modifications}
+\caption{The structure of eukaryotic and prokaryotic base modifications N6-methyladenine, N4-methylcytosine and 6-methyladenine.}
 \label{fig:base_mods}
 \captionsetup{font=small}
     \caption*{}
@@ -88,7 +88,7 @@ To establish an effective method for staging early \textit{Marchantia} embryos a
 
 As previously established, 4mC methylation is deposited in the CG context over gene bodies and outside TEs during spermiogenesis by MpDN4MT1 (Figure \ref{fig:ends_analysis}A)\cite{RN189}. Although 5mC methylation across all sequence contexts over TEs increases during germline development, non-CG methylation is specifically deposited during spermiogenesis by MpCMTa and MpDNMT3B (Figure \ref{fig:ends_analysis}B,D and F)\cite{RN189}. Additionally, this methylation pattern is deposited and maintained over gene bodies (excluding the transcription start site, TSS), with 4mC serving as the primary methylation mark at the TSS. 
 
-As early embryos are difficult to harvest, first AMD-seq (sequencing specifically 4mC) and EM-seq (sequencing specifically 5mC) was tested on wild type sperm and compared to data previously collected from wild type sperm and \textit{dn4mt1} sperm (Figure \ref{fig:ends_analysis} WT sperm rep2 AMD-seq (light green) and \textit{dn4mt1} sperm AMD-seq (grey)). The expected methylation patterns over genes and TEs in the 4mC and 5mC contexts were confirmed by the sperm AMD-seq and EM-seq libraries (Figure \ref{fig:ends_analysis} wild type sperm rep2 AMD-seq (light green), wild type sperm EM-seq (dark brown).) 
+As early embryos are difficult to harvest, first AMD-seq (sequencing specifically 4mC) and EM-seq (sequencing of 5mC and 4mC) was tested on wild type sperm and compared to data previously collected from wild type sperm and \textit{dn4mt1} sperm (Figure \ref{fig:ends_analysis} WT sperm rep2 AMD-seq (light green) and \textit{dn4mt1} sperm AMD-seq (grey)). The expected methylation patterns over genes and TEs in the 4mC and 5mC contexts were confirmed by the sperm AMD-seq and EM-seq libraries (Figure \ref{fig:ends_analysis} wild type sperm rep2 AMD-seq (light green), wild type sperm EM-seq (dark brown).) 
 
 \begin{figure}[htbp!] 
 \centering    
@@ -143,7 +143,7 @@ Zygote & 0.202 & 0.030 & 0.031 & 0.241 & 0.030 & 0.030 \\
 
 \section{\textit{De novo} methylation is deposited in genic regions specifically in the sporophyte of \textit{Marchantia}, targeted for methylation 24nt sRNAs through mismatches}
 
-As described previously, \textit{de novo} methylation of genes in \textit{Arabidopsis} male meiocytes is mediated by 24nt sRNAs produced by HyperTE loci in the tapetum, the biogenesis of which is mediated by CLSY3 chromatin remodeller. Gene body methylation also exists specifically in the embryo and sporophyte of \textit{Marchantia} (Figure \ref{fig:SLM_examples}, data from Dr. James Walker). Sporophytic non-CG DMRs were determined as described before\cite{jimmythesis} and filtered to yield 221 methylated genic loci (MetGenes).
+As described previously, \textit{de novo} methylation of genes in \textit{Arabidopsis} male meiocytes is mediated by 24nt sRNAs produced by HyperTE loci in the tapetum, the biogenesis of which is mediated by CLSY3 chromatin remodeler. Gene body methylation also exists specifically in the embryo and sporophyte of \textit{Marchantia} (Figure \ref{fig:SLM_examples}, data from Dr. James Walker). Sporophytic non-CG DMRs were determined as described before\cite{jimmythesis} and filtered to yield 221 methylated genic loci (MetGenes).
 
 \begin{figure}[htbp!] 
 \centering    
@@ -151,7 +151,7 @@ As described previously, \textit{de novo} methylation of genes in \textit{Arabid
 \caption{Sporophyte specific methylation exists in the embryos of \textit{Marchantia}}
 \label{fig:SLM_examples}
 \captionsetup{font=small}
-    \caption*{CH, CHG and CHH methylation levels of genes which gain \textit{de novo} methylation specifically in the embyro and sporophyte of \textit{Marchantia}. Thallus (black), embryo (blue) and sporopyte (green)}
+    \caption*{CH, CHG and CHH methylation levels of genes which gain \textit{de novo} methylation specifically in the embryo and sporophyte of \textit{Marchantia}. Thallus (black), embryo (blue) and sporophyte (green)}
 \end{figure}
 
 With access to sRNA sequencing libraries from thallus, embryo, and sporophyte, the next step was to determine whether MetGenes could be targeted for methylation through mismatch targeting. To investigate this, the sRNA libraries were mapped to the reference genome, allowing for 0 and 3 mismatches. The sRNAs from the 3 mismatch dataset were then remapped onto the 0 mismatch dataset to identify identical sRNA sequences capable of targeting both TEs and genes with up to 3 mismatches. Reads overlapping MetGenes with 3 mismatches and TEs with 0 mismatches were then extracted. The resulting TE-MetGene pairs are visualised in Figure \ref{fig:SLM_targeting}A. It must be noted that one limitation of this method is the challenge of obtaining a comprehensive TE annotation for the gene model used in the study, as not all MetGenes could be paired with annotated TEs.

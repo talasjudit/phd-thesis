@@ -94,6 +94,59 @@ Recent work identified male sexual lineage specific DNA methylation reprogrammin
 
 Similarly, in the female germline, the surrounding somatic tissue synthesises RNA polymerase IV-dependent 24-nt sRNAs from siren (siRNA in the endosperm) loci \cite{RN164,RN163,RN162}. Like the tapetal nurse cell-derived sRNAs that catalyse DNA methylation in male meiocytes, these siren loci-derived sRNAs are also dependent on CLSY3 and CLSY4 \cite{RN162}. However, there is little overlap between the loci targeted by these two sets of sRNAs, and even less between siren loci across different species \cite{RN163}. Despite their distinct origins, siren loci-derived sRNAs in \textit{Brassica rapa} similarly catalyse DNA methylation, predominantly at protein-coding genes, thereby regulating gene expression in the ovule \cite{RN165}. Furthermore, it has been recently shown that 24nt sRNAs accumulate in rice zygotes, which overlap gene rich, distinct loci from paternally derived sRNA loci \cite{RN166}, highlighting the conserved nature of 24 nucleotide sRNA driven DNA methylation reprogramming in both the male and female sexual lineage. The importance of RdDM in embryonic development is further underpinned by a recent study that showed embryos resulting from a maternal RdDM mutant cross result in incorrect gene expression in the endosperm and a reduction in seed viability \cite{RN167}.
 
+\subsection{Illumina sequencing}
+
+Over the past two decades, next-generation sequencing (NGS) technologies have transformed biological sequencing by dramatically improving speed, accuracy, and data output. These advancements enable both high-throughput and low-input sequencing while maintaining exceptional fidelity.
+
+Illumina sequencing technology requires constructing a sequencing library tailored to the specific sample, by either converting genomic DNA (gDNA) or complementary DNA (cDNA) into a fragmented library for sequencing. Various workflows are available to accommodate different throughput requirements and starting materials. These include on-bead tagmentation \cite{RN314}, which reduces preparation time, AmpliSeq amplicon library preparation \cite{RN315}, and the widely used adapter ligation workflow \cite{RN316}.
+
+The construction of an Illumina sequencing library using adapter ligation typically involves several key steps (an overview is presented in Figure \ref{fig:illumina_library_prep} \cite{RN312}). For DNA sequencing, the process begins with DNA extraction. In the case of plant material, this may involve a CTAB extraction \cite{RN321} using chloroform to obtain ultra-pure DNA free of secondary metabolites and proteins, though various other DNA extraction methods and kits can also be used. For RNA sequencing, an additional step is required after extraction, namely reverse transcription to convert RNA into complementary DNA (cDNA) \cite{RN312,RN317}.
+
+\begin{figure}[htbp!] 
+\centering    
+    \includegraphics[width=1\textwidth]{Chapter1/Figs/illumina_library_prep.jpg}
+\caption{An overview of the steps involved in library preparation for Illumina sequencing \cite{RN312}}
+\label{fig:illumina_library_prep}
+\captionsetup{font=small}
+\end{figure}
+
+Once extracted, gDNA must be fragmented, as Illumina sequencing is optimised for relatively short sequences, typically in the 300–600 bp range. This fragmentation can be achieved through either mechanical shearing or enzymatic digestion. Mechanical shearing, often performed using high-frequency acoustic sonication, breaks the DNA’s phosphodiester backbone. The optimal force and duration of sonication vary depending on the instrument and experimental needs and should ideally be determined experimentally \cite{RN312}.
+
+Following an end repair step, where the sheared DNA fragments are repaired (polymerase activity) or blunted (exonuclease activity) and the ends phosphorylated, adapters are ligated to the ends of the fragments. Adapters are a pair of oligonucleotides which facilitate the clonal amplification step used during Illumina sequencing. The adapters are normally made up of 3 sections. Firstly, a complementary end which forms the adapter duplex, this is annealed to the ends of the insert. Secondly, the adapters contain unique index sequences which can be used to demultiplex several samples that were sequenced together on the same flow cell. Finally, the adapter sequences contain a non-complementary P5 and P7 end (so-called due to their binding site to the flow cell), which prevents self-ligation \cite{RN312,RN317}. 
+
+After the adapter ligation step, PCR amplification may follow, which allows for a lower sample input, however it can introduce GC bias, polymerase errors, chimeric sequences or amplification bias, which might hinder SNP discovery and \textit{de novo} genome assembly. Therefore, given an amount of starting material, the lowest possible cycles of PCR must be performed to prevent these effects \cite{RN312,RN317}.
+
+After fragmentation, adapter ligation and PCR amplification, a size- selection and clean-up step is usually performed, to ensure uniform library fragment size and remove excess unligated adapters or adapter dimers. The clean-up step may be performed using agarose or sometimes polyacrylamide gels, or more commonly using magnetic beads which can bind and elute DNA in a size-specific manner depending on the bead to sample DNA ratio. These steps help to increase data output, reduce noise and ensure the quality of the data output (as Illumina sequencing has an optimal insert length at which the sequencing is most accurate) \cite{RN312,RN317}.
+
+\begin{figure}[htbp!] 
+\centering    
+    \includegraphics[width=1\textwidth]{Chapter1/Figs/illumina-sequencing.jpg}
+\caption{An overview of sequencing by synthesis \cite{RN313}}
+\label{fig:illumina_sequencing}
+\captionsetup{font=small}
+\end{figure}
+
+Following an accurate library quantification step, the Illumina libraries are ready to be sequenced. Briefly, the adapter ligated DNA fragments are flushed across the flow cell where they hybridise to immobilised complementary primer sequences on the flow cell. The fragments are clonally amplified using bridge amplification to form clusters of identical reads across the flow cell. The forward reads are sequenced by priming and extending the first read using fluorescently tagged dNTPs, which compete to be incorporated into the growing chain. After each cycle of the incorporation of the fluorescently tagged base, the clusters are excited by a light source and the fluorescent signal is recorded (an overview of how bases are sequenced is shown in Figure \ref{fig:illumina_sequencing} \cite{RN313}). In paired-end sequencing, following the sequencing of the forward read, the read product is washed away, the fragments are extended once again and the original forward read is cleaved off, followed by sequencing of the reverse read in a similar manner as before \cite{RN313}. 
+
+\subsection{Detecting methylated cytosines in NGS sequencing}
+
+When we are specifically interested in the methylation profile of a sample, a variety of treatments can be applied, before Illumina library preparation. These use specific chemistries or enzymatic activities to selectively alter methylated bases.
+
+\begin{figure}[htbp!] 
+\centering    
+    \includegraphics[width=1\textwidth]{Chapter1/Figs/sequencing_chemistries.pdf}
+\caption{An overview of the chemistries of modified base sequencing: BS-seq, EM-seq and AMD-seq.}
+\label{fig:sequencing_chemistries}
+\captionsetup{font=small}
+\end{figure}
+
+The most widespread sequencing method utilised to sequence methylated DNA is bisulfite sequencing. The DNA fragments are treated with sodium bisulfite, which (through a series of intermediate steps) selectively deaminates unmethylated cytosines, resulting in uracil. At the same time, due to the structural changes introduced by the methyl group in 5-methylcytosine and N4-methylcytosine, these modified bases are protected from deamination (first panel, Figure \ref{fig:sequencing_chemistries}). Consequently during sequencing, the unmethylated cytosines that were converted to uracils are read as thymines. The protected methylated bases are instead read as cytosines, so this way methylated bases can be identified using alignment of specialist bioinformatics tools that deal with bisulfite sequencing data to reference genomes (for example Bismark \cite{RN229}). Bisulfite sequencing methods are robust and have also been developed for single-cell or very low input sequencing \cite{RN207}. The downsides of bisulfite sequencing are that they do not distinguish between the methylated bases (4mC or 5mC) \cite{RN200} and that bisulfite sequencing itself can introduce DNA damage due to the protocol requiring extremes of pH and temperature, resulting in depyrimidination of DNA \cite{RN318}.
+
+Alternative enzymatic methods have been developed to combat some of the challenges of bisulfite sequencing, namely APOBEC3A-mediated deamination sequencing (AMD-seq) \cite{RN188}, which allows for reading 4mC as Cs specifically, as well as enzymatic methylation sequencing \cite{RN319} (EM-seq) which is a direct alternative to bisulfite sequencing, reading both 5mC and 4mC as Cs during sequencing, but without significant DNA damage.
+
+Both EM-seq and AMD-seq rely on the ability of APOBEC3A, which is an enzyme originally described in primates \cite{RN320}, to deaminate a variety of cytosine forms to uracil. Namely, APOBEC3A can deaminate both unmodified cytosines and 5mC. However, 4mC is protected from deamination by APOBEC3A, so following enzymatic treatment, an Illumina sequencing library is constructed and all unmethylated cytosines as well as 5mC will be read as Ts during sequencing, and only 4mC will be read as Cs \cite{RN188} (Figure \ref{fig:sequencing_chemistries} third panel). EM-seq introduces an additional step, whereby prior to ABOBEC3A treatment, the Tet methylcytosine dioxygenase 2 (TET2) enzyme specifically converts 5mC sites to alternative cytosine forms which are not substrates of APOBEC3A. As a result, similar to traditional bisulfite sequencing, in EM-seq, both 5mC and 4mC are be read as Cs while unmethylated cytosines are be read as Ts (Figure \ref{fig:sequencing_chemistries} second panel).
+
+
 \section{Thesis outline}
 
 This thesis explores the dynamics of RdDM and DNA methylation after meiosis in the male sexual lineage of \textit{Arabidopsis} and in the embryo of \textit{Marchantia}.
